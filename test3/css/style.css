@@ -65,4 +65,16 @@ nav {
 }
 .nav > li {
   float: left;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s;
+}
+.nav > li:after {
+  clear: both;
+}
+.nav > li:hover {
+  color: #fff;
+  background-color: #996699;
 }
