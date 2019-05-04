@@ -78,3 +78,21 @@ nav {
   color: #fff;
   background-color: #996699;
 }
+
+.submenu {
+  background-color: rgba(255,255,255,0.8);
+  margin-top: 5px;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  display: none;
+}
+.submenu > li {
+  padding: 5px 0;
+  color: #000;
+  transition: all 0.4s;
+}
+.submenu > li:hover {
+  background-color: #cc9999;
+  color: inherit;
+}
