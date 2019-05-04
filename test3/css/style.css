@@ -32,10 +32,7 @@ a {
   text-decoration: none;
   font: #666;
 }
-a:hover {
-  cursor: pointer;
-}
 .clear {
   clear: both;
-  display: inherit;
+  position: inherit;
 }
