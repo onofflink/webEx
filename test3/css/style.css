@@ -98,11 +98,16 @@ nav {
   color: inherit;
 }
 
+#imgslide {
+  height: 350px;
+}
 .imgs {
   position: relative;
+  overflow: hidden;
+  height: 350px;
 }
 #slide > img {
   position: absolute;
   display: block;
-  float: left;
+  width: 100%;
 }
