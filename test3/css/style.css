@@ -14,7 +14,7 @@ html, body {
   color: #996699;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 .all {
@@ -30,9 +30,22 @@ img {
 }
 a {
   text-decoration: none;
-  font: #666;
+  color: #666;
 }
 .clear {
   clear: both;
   position: inherit;
+}
+
+/* header and logo section */
+header {
+  height: 180px;
+}
+.header_logo {
+ padding-top: 20px;
+}
+.logo {
+  height: 100px;
+  overflow: hidden;
+  float: left;
 }
