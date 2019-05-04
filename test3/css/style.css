@@ -73,6 +73,7 @@ nav {
 }
 .nav > li:after {
   clear: both;
+  display: none;
 }
 .nav > li:hover {
   color: #fff;
