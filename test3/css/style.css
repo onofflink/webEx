@@ -97,3 +97,12 @@ nav {
   background-color: #cc9999;
   color: inherit;
 }
+
+.imgs {
+  position: relative;
+}
+#slide > img {
+  position: absolute;
+  display: block;
+  float: left;
+}
