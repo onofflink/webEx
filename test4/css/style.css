@@ -128,3 +128,58 @@ nav{
 	text-align: center;
 	margin-top: 20px;
 }
+
+#contents {
+	height: 500px;
+}
+.notice {
+
+}
+.notice h2 {
+	text-align: center;
+}
+.table {
+	width: 460px;
+	border-collapse: collapse;
+}
+.table tr>td {
+	padding-top: 10px;
+	padding: 5px;
+	}
+	
+.table tr:nth-child(2){
+	background-color: #888
+}
+
+.partner {
+	width: 480px;
+	float: right;
+	margin-top: 10px;
+}
+.partner_info {
+	text-align: center;
+}
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	text-align: center;
+	
+}
+
+.modal .content{
+	width: 500px;
+	margin: 0 auto;
+}
+.modal .cotent img {
+	display: block;
+	margin: 0 auto;
+}
+.modal .content button {
+	border-radius: 3px;
+	cursor: pointer;
+	border: none;
+}
