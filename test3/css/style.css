@@ -49,3 +49,6 @@ header {
   overflow: hidden;
   float: left;
 }
+div.logo > a > img {
+  width: 300px;
+}
