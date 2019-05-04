@@ -1,0 +1,41 @@
+@charset "utf8";
+
+/* css reset */
+
+*{
+	margin: 0 auto;
+	list-style: none;
+	font-family: "맑은 고딕";
+	padding: 0;
+}
+html, body {
+  background-color: #fff;
+  min-width: 1000px;
+  color: #996699;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.all {
+  width: 100%;
+  float: left;
+}
+.wrap {
+  width: 1000px;
+
+}
+.content {
+  width: 1000px;
+}
+a {
+  text-decoration: none;
+  font: #666;
+}
+a:hover {
+  cursor: pointer;
+}
+.clear {
+  clear: both;
+  display: inherit;
+}
