@@ -103,11 +103,53 @@ nav {
 }
 .imgs {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 350px;
 }
 #slide > img {
   position: absolute;
   display: block;
   width: 100%;
+  float: left;
 }
+
+.welcome{
+  height: 40px;
+  width: 300px;
+  position: absolute;
+  margin: -50px 0 0 0px !important;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgba(255,255,255,0.2);
+  left: 40%;
+  top: 50px;
+}
+.welcome h2 span{
+  color: #CCCCCC;
+  font-family: "Times New Roman", Times, serif;
+}
+#slides {
+ width: 1000px;
+ height: 300px;
+ margin: 0 auto;
+ padding: 0;
+}
+#slides li {
+ display: none;
+}
+#slides li:first-child {
+ display: block;
+}
+#slides li img {
+ width: 1000px;
+ height: 350px;
+}
+
+#btn_slides {
+ text-align: center;
+ z-index: 20;
+}
+#btn_slides a.off {
+ cursor: default;
+ opacity: 0.5;
+} 
