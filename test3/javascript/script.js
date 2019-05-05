@@ -25,11 +25,11 @@ $(document).ready(function () {
 
     $(".btn_slides_next").click(function(){
       if(!$("#slides li").last().is(":visible")){
-        $(#slides li:visible).hide().next("li").fadeIn("40");
+        $("#slides li:visible").hide().next("li").fadeIn("40");
         $(".btn_slides_prev").removeClass("off");
       }
       if(!$("#slides li").last().is(":visible")){
-        $(#slides li:visible).hide().next("li").fadeIn("40");
+        $("#slides li:visible").hide().next("li").fadeIn("40");
         $(".btn_slides_next").addClass("off");
       }
       return false;

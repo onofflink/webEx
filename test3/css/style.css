@@ -127,6 +127,7 @@ nav {
 .welcome h2 span{
   color: #CCCCCC;
   font-family: "Times New Roman", Times, serif;
+  box-shadow: 5px 10px #000; 
 }
 #slides {
  width: 1000px;
@@ -147,7 +148,9 @@ nav {
 
 #btn_slides {
  text-align: center;
- z-index: 20;
+ z-index: 40;
+ box-shadow: #666 5px 3px;
+ background-color: rgba(151, 150, 150, 0.4)
 }
 #btn_slides a.off {
  cursor: default;
