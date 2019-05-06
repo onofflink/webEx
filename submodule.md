@@ -1,4 +1,7 @@
-# webEx
+# webEx- [webEx](#webex)
+  - [resources url](#resources-url)
+  - [submodule reading](#submodule-reading)
+  - [git diff commands](#git-diff-commands)
 
 ## resources url
 - [x] [file link](http://license.youngjin.com/artyboard/mboard.asp?Action=view&strBoardID=Pds_g&intPage=1&intCategory=0&strSearchCategory=|s_name|s_subject|&strSearchWord=&intSeq=75663)
@@ -13,3 +16,16 @@
 |  in short  | git submodule update --init --recursive -j 8   |    |    |
 | inc/ changes in module   | git pull --recurse-submodules   | only 4 module   | git submodule update --remote   |
 | # add submodule and define the master branch as the one you want to track   | git submodule add -b master [URL to Git repo]    |    | git submodule init    |
+
+
+## submodule reading
+[submodule file](./submodule.txt)
+***
+## git diff commands
+|  command  | actions   |
+|:---|:---|
+| git diff path   |  # uncommited file to HEAD  |
+|  git diff HEAD^ -- path  |  # uncommited file to before last commit  |
+| git diff HEAD^ HEAD -- path   | #last commit to before last commit   |
+| git diff HEAD~n HEAD -- path   |   #difference between HEAD and n-th grandparent |
+| git whatchanged -- path   | #Another cool feature is whatchanged command   |
