@@ -9,6 +9,8 @@
 - [ ] aiegoo vaio*** 
 - [ ] [submodule howto](https://www.vogella.com/tutorials/GitSubmodules/article.html) 
 
+## submodule commands
+
 | when   | command   | when   | command   |
 |:---|:--:|:---|:--:|
 |  clone a repo w/ modules  | git clone --recursive [URL to Git repo]   | load into existing repo   | git submodule update --init --recursive   |
