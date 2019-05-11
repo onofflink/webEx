@@ -1,7 +1,10 @@
 
 
 ## git diff
+- git diff
 - git difftool -d commit1 commit2
+- git diff {commit1,commit2}:path/to/file.cpp
+- git diff commit1 commit2 -- path/to/file.cpp path/to/anotherfile.cpp path/to/subdir
 - compare the previous committed state from HEAD with the state branch1 was 3 commits ago \
 - git diff HEAD^ branch1~3 filepath
 - git diff HEAD^ --  web-design-license/js-sample/
