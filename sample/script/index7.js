@@ -1,3 +1,9 @@
+$(".nav").hover(function(){
+	$("ul.submenu", $(this)).stop().slideDown();
+}, function(){
+	$("ul.submenu", $(this)).stop().slideUp();
+})
+
 var n = 0;
 
 $("#bt_next").click(function(){
