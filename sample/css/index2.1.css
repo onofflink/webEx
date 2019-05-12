@@ -1,5 +1,6 @@
 html, body {width: 100%; height: 100%; font-size: 16px; margin: 0; padding: 0; text-align: left; color: #000;}
 div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
 
 .clear {clear: both; content: ""; display: block;}
 
@@ -12,7 +13,8 @@ div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 .sub {width: 1200px; background-color: rgba(0, 0, 0, 0.5);position: absolute; top: 100px; right: 0;display: none; z-index: 9999; }
 .sub > ul {float: right; width: 200px; }
 .sub > ul > li {line-height: 75px; }
-.sub > ul > li:hover {background: #999; color: white;}
+.sub > ul > li > a {color: #fff;  }
+.sub > ul > li:hover {background: #999;}
 
 
 .section {width: 100%; height: 800px}
