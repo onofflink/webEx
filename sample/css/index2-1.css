@@ -2,7 +2,7 @@ html, body {width: 100%; height: 100%; font-size: 16px; margin: 0; padding: 0; t
 div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none;}
 
-.clear {clear: both; content: ""; display: block;}
+.clear:after {clear: both; content: ""; display: block;}
 
 .wrap {width: 1200px; margin: 0 auto;}
 .header {width: 100%; height: 100px; background: #ccc; line-height: 100px; position: relative;}
