@@ -15,6 +15,6 @@ div, ul, li, ol, h1, h2, h3, h4, h5 {margin:0; padding:0; list-style:none;}
 .sub > ul > li:hover {background:#999;}
 
 .section {width:100%; height:800px;}
-.banner {width:1000px; height:400px; margin:0 auto; position:relative;}
+.banner {width:1000px; height:400px; margin:0 auto; position:relative; }
 .banner > ul {width:1000px; height:400px;}
 .banner > ul > li {position:absolute; top:0; left:0; z-index:1;}
