@@ -12,8 +12,11 @@ a {text-decoration: none;}
 .nav > div {height: 100px; background: #ccc;}
 .nav > div:hover {background: rgba(120, 4, 245, 0.1);}
 .nav > ul {display: none; z-index: 9999;position: absolute;}
-.nav > ul > li {height: 60px; background: rgba(100, 0, 245, 0.1); line-height: 60px;}
+.nav > ul > li {height: 60px; width: 180px; background: rgba(100, 0, 245, 0.1); line-height: 60px;}
 .nav > ul > li:hover {background:rgba(120, 4, 245, 0.1);}
 .nav > ul > li > a {color:#fff;}
+
 .section {width: 1000px; height: 700px; margin: 0 auto;}
 .banner {width: 1000px; height: 400px; position: relative;}
+.banner > ul {top: 120px;}
+.banner > ul > li {position: absolute; top: 0; left: 0;}
