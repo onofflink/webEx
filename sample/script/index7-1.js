@@ -9,7 +9,7 @@ $("#bt_next").click(function(){
       if(n < 4) n++;
       ani();
 });
-$("#bt_prv").click(function(){
+$("#bt_prev").click(function(){
       if(n > 0) n--;
       ani();
 });
