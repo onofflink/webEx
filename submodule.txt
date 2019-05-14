@@ -110,3 +110,8 @@ echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
 cat file1 file2 > tmp ; mv tmp newfile
+
+파일을 에디터에서 열기
+start directory/filename (open file in a browser)
+start . (open folder in a browser)
+code directory/filename (open in VSCODE)
