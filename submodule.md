@@ -59,7 +59,12 @@ git rm --cached filename (to remove from the staging area)
 
 > sample
 > 
-> $ git submodule update --init --recursive
+> $ git submodule update --init --recursive \
 Submodule 'web-design-license' (https://github.com/onofflink/web-design-license.git) registered for path 'web-design-license'
 Cloning into 'D:/repo/school/webtest/web-design-license'...
 Submodule path 'web-design-license': checked out '174edcd2488bdaba5ba9c0984fd92e43174ffe6e'
+
+> [re-add submodule](https://stackoverflow.com/questions/36386667/how-to-make-an-existing-directory-within-a-git-repository-a-git-submodule) 
+
+> [How to create git submodule from repository subdirectory](http://blog.davidecoppola.com/2015/02/how-to-create-git-submodule-from-repository-subdirectory/)
+> 

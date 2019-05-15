@@ -106,12 +106,25 @@ Move folder to a new repository
 run npm init inside both repositories
 run npm install --save git://github.com/user/project.git#commit-ish where you want your dependencies installed
 alias.a !git config --global
-echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias.amd !git add -A && git commit --amend --no-edit
+echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txt
+alias.amd !git add -A && git commit --amend --no-edit
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
 alias.unstream !git branch --unset-upstream
 alias.upstream !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
+
+git a alias.alias 'config --get-regexp ^alias\.'
+alias.lg '!git log --all --graph --oneline --date=short --pretty=format:"%C(yellow)%h%Creset%C(red)%C(bold)%d%Creset%C(white)(%cd)%Creset %s"'
+or or 날짜와 작성자표시
+alias.lg '!git log --decorate --date-order --date=iso --graph --full-history --all --pretty=format:"%x08%x09%C(red)%h %C(cyan)%ad%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08 %C(bold blue)%aN%C(reset)%C(bold yellow)%d %C(reset)%s--oneline"'
 cat file1 file2 > tmp ; mv tmp newfile
+PDFtoPrinter.exe filename.pdf "Name of Printer"
+
+checkout -b branchname (to three prior commits)
+git checkout -b branchname
+git checkout master
+git reset --hard HEAD~3
+
 
 파일을 에디터에서 열기
 start directory/filename (open file in a browser)
