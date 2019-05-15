@@ -1,4 +1,4 @@
-function winOpen() {
+ function winOpen() {
 	//window.open(param1, param2, param3);
 	//param1 -> 윈도우창에 나타낼 웹페이지
 	//param2 -> 윈도우창의 이름
