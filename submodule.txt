@@ -109,6 +109,8 @@ alias.a !git config --global
 echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias.amd !git add -A && git commit --amend --no-edit
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
+alias.unstream !git branch --unset-upstream
+alias.upstream !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
 cat file1 file2 > tmp ; mv tmp newfile
 
 파일을 에디터에서 열기
