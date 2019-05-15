@@ -112,6 +112,8 @@ alias.sub '!git submodule update --init --recursive'
 alias.p '!git push origin $(git rev-parse --abbrev-ref HEAD)'
 git a alias.alias 'config --get-regexp ^alias\.'
 alias.lg '!git log --all --graph --oneline --date=short --pretty=format:"%C(yellow)%h%Creset%C(red)%C(bold)%d%Creset%C(white)(%cd)%Creset %s"'
+or or 날짜와 작성자표시
+alias.lg '!git log --decorate --date-order --date=iso --graph --full-history --all --pretty=format:"%x08%x09%C(red)%h %C(cyan)%ad%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08 %C(bold blue)%aN%C(reset)%C(bold yellow)%d %C(reset)%s--oneline"'
 cat file1 file2 > tmp ; mv tmp newfile
 PDFtoPrinter.exe filename.pdf "Name of Printer"
 
