@@ -110,6 +110,7 @@ echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
 alias.submodule '!git clone --recurse-submodules -j8'
+lc '!git log ORIG_HEAD.. --stat --no-merges'
 ## https://git.wiki.kernel.org/index.php/Aliases
 
 cat file1 file2 > tmp ; mv tmp newfile
@@ -131,3 +132,5 @@ tree /a /f >gogleDocTree.txt
 touch "blah blah blah" | cat - abc.txt (""를 abc 내용 맨 위에 삽입)
 edit = "!f() { $(git config core.editor) -- $@; }; f"
 reedit = "!f() { $(git config core.editor) -- $(git diff --name-only $1); }; f"
+edit-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`'
+add-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`'

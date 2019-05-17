@@ -1,0 +1,4 @@
+/* div.wrap>.header.clear>.logo>img^div.navs>.nav*4>div{MENU $}+ul>li*4>a{submenu$} index.html
+div.wrap>div.header.clear>.logo>img^li.navs>ul.nav>li{MENU $}*4^div.sub>ul*4>li*4>a{submenu$} index2.html
+div.wrap>.header.clear>.logo>img^^div.section.clear>div.navs>.nav*4>div{MENU$$}+ul>li*4>a{submenu$} index3.html
+*/
