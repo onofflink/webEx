@@ -110,3 +110,11 @@ echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
 cat file1 file2 > tmp ; mv tmp newfile
+
+git reset에 대한 참고 자료
+https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html
+
+--soft
+--mixed
+--hard
+-f -d -x
