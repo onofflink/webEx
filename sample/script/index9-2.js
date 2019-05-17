@@ -4,10 +4,10 @@ function winOpen() {
 
 function modalOpen() {
       $("#modal_bg").show(0);
-      $("modal_wrap").css({"display":"table"});
+      $("#modal_wrap").css({"display":"table"});
 }
 
 function modalClose() {
       $("#modal_bg").hide(0);
-      $("modal_wrap").css({"display":"none"});
+      $("#modal_wrap").css({"display":"none"});
 }
