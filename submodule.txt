@@ -109,6 +109,8 @@ alias.a !git config --global
 echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias.amd !git add -A && git commit --amend --no-edit
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
+alias.submodule '!git clone --recurse-submodules -j8'
+
 cat file1 file2 > tmp ; mv tmp newfile
 
 git reset에 대한 참고 자료
@@ -118,3 +120,11 @@ https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html
 --mixed
 --hard
 -f -d -x
+
+## folder there
+tree /a /f >gogleDocTree.txt
+
+> file replaced
+>> append to the contents of a file
+(in use with cat)
+touch "blah blah blah" | cat - abc.txt (""를 abc 내용 맨 위에 삽입)
