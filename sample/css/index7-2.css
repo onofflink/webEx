@@ -1,0 +1,13 @@
+html, body {margin: 0; padding: 0; font-size: 16px; text-align: left; color: #000; width: 100%; height: 100%}
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+
+.clear:after {clear: both;content: ""; display: block}
+a {text-decoration: none;}
+
+.wrap {width: 1200px; height: 800px;margin: 0 auto;}
+.header {width: 100%; height: 100px; background: #ccc;}
+.logo {float: left;}
+
+.navs {/* width: 1200px; height: 100%; margin: 0 auto; */ float: right; position: relative;}
+.nav {width: 800px; height: 800px;}
+.nav > div {width: 200px; float: left;}
