@@ -111,6 +111,8 @@ alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
 alias.submodule '!git clone --recurse-submodules -j8'
 lc '!git log ORIG_HEAD.. --stat --no-merges'
+alias.upstream !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
+alias.unstream !git branch --unset-upstream $(git rev-parse --abbrev-ref HEAD)
 ## https://git.wiki.kernel.org/index.php/Aliases
 
 cat file1 file2 > tmp ; mv tmp newfile
