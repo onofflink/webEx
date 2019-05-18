@@ -136,3 +136,31 @@ edit = "!f() { $(git config core.editor) -- $@; }; f"
 reedit = "!f() { $(git config core.editor) -- $(git diff --name-only $1); }; f"
 edit-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`'
 add-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`'
+
+git log css..css-js --oneline
+git log css...test4
+
+git log css...
+git log -–graph –pretty=oneline –graph –abbrev-commit –first-parent
+
+git log --decorate --pretty=oneline --reverse --name-status css..tmp
+
+git log $(git merge-base css tmp)..HEAD
+
+git log --all --not $(git rev-list --no-walk --exclude=refs/heads/tmp --all)
+
+git log tmp --not $(git for-each-ref --format='%(refname)' refs/heads/)
+
+git reset --soft HEAD^ 
+
+or
+
+git reset --soft HEAD~1
+
+Then reset the unwanted files in order to leave them out from the commit:
+
+git reset HEAD path/to/unwanted_file
+
+Now commit again, you can even re-use the same commit message:
+
+git commit -c ORIG_HEAD  
