@@ -1,5 +1,5 @@
 $(".nav").hover(function(){
-  $("ul", $(this)).stop.slideDown();
+  $("ul > li", $(this)).stop.slideDown();
 }, function(){
-  $("ul", $(this)).stop.slideUp();
+  $("ul > li", $(this)).stop.slideUp();
 });
