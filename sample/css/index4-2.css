@@ -9,10 +9,9 @@ a {text-decoration: none;}
 .logo {float: left;}
 
 .section {width: 1000px; height: 800px; float: left;}
-.navs {width: 200px; height: 800px;}
+.navs {width: 200px; height: 800px;float: left;}
 .nav {background: #eee; cursor: pointer;position: relative;}
-.nav > div {background: #999; }
-.nav > ul {position: absolute; left:200px; top:0;}
-.nav > ul {position: absolute; left:200px; top:0; display: none;}
+.nav > div {padding: 1rem; background: #999; }
+.nav > ul {position: absolute; left:200px; top:0; display: none; background: #eee}
 .nav > ul > li {padding: 0.5rem 0.5rem 0.5rem 1.5rem;} 
 .nav > ul > li:hover {background: #ccc;} 
