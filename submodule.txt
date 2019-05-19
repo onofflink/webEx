@@ -118,4 +118,21 @@ PDFtoPrinter.exe filename.pdf "Name of Printer"
 checkout -b branchname (to three prior commits)
 git checkout -b branchname
 git checkout master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+q
 git reset --hard HEAD~3
