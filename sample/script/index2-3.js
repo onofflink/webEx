@@ -1,5 +1,5 @@
-$("navs").hover(function(){
-  $("ul", $(this)).stop().slideDown();
+$(".navs").hover(function(){
+  $(".sub", $(this)).stop().slideDown();
 }, function() {
-  $("ul", $(this)).stop().slideUp();
+  $(".sub", $(this)).stop().slideUp();
 })

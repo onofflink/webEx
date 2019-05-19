@@ -7,7 +7,11 @@ a {text-decoration: none;}
 .wrap {width: 1200px; height: 100%; margin: 0 auto;}
 .header {width: 100%; height: 100px; background: #ccc;}
 .logo {float: left;}
-.navs {width: 100%; height: 100px; line-height: 100px;}
-.nav {float: left; width: 200px;}
-.nav > li {width:200px; height: 60px; line-height: 60px;}
-.sub {width: 200px;}
+.navs {float: right; width: 600px; height: 100px; line-height: 100px;position: relative; text-align: center;}
+.nav {width: 600px;}
+.nav > li {float: left; width: 150px;}
+.nav > li:hover {background: #999}
+.sub {width: 1200px; position: absolute; top: 100px; right: 0; color: #ccc;display: none;background: rgba(0, 0, 0, 0.3)}
+.sub > ul {width: 150px; float: right;}
+.sub > ul > li {line-height: 60px;}
+.sub > ul > li:hover {background: #999;}
