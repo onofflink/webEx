@@ -1,0 +1,22 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; color: #000;}
+div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none}
+
+.clear:both {clear: both; content: ""; display: block;}
+a {text-decoration: none; color: inherit}
+
+.wrap {width: 1200px; height: 100%; margin: 0 auto;}
+.header {width: 100%; height: 100px; background: #ccc;}
+.logo {float: left;}
+
+.navs {float: right;}
+.section {width: 1000px; height: 800px; float: left;}
+.nav {width: 200px; height: 100px; line-height: 100px; background: #999;}
+.nav > div {padding: 1rem;}
+.nav > ul {cursor: pointer; width: 200px; background: #eee;}
+.nav > ul > li {padding: 0.5rem 0.5rem 0.5rem 1rem}
+.nav > ul > li:hover {background: #999;}
+
+.banner {width: 1000px; position: relative;}
+.banner > ul {width: 6000px; float: left;}
+.banner > ul > li {position: absolute; top: 0; left: 0;}
+ 
