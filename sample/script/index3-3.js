@@ -1,5 +1,5 @@
 $(".nav").hover(function(){
-  $("ul", $(this)).stop().slidDown();
+  $("ul", $(this)).stop().slideDown();
 }, function(){
   $("ul", $(this)).stop().slideUp();
 })
