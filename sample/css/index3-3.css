@@ -1,4 +1,6 @@
 /* div.wrap>.header>.logo>img^^div.section>div.navs>.nav*4>div{MENU$$}+ul.sub>li>a{submenu$}*4 */
+/* index3-2
+   div.wrap>.header.clear>.logo>img^^div.section.clear>div.navs>.nav*4>div{Menu$}+ul>li*4 */
 html, body {margin: 0; padding: 0; width: 100%; height: 100%; color: #000; font-size: 16px; text-align: left; }
 div, ul, ol, li, h1, h2, h3, h4 {padding: 0; margin: 0; list-style: none}
 
