@@ -1,4 +1,13 @@
+/* div.wrap>.header>.logo>img^li.navs>ul.nav>li{MENU$$}*4^div.sub>ul*4>li*4>a{submenu$} */
 html, body {margin: 0; padding: 0; width: 100%; height: 100%; color: #000; font-size: 16px}
 div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 .clear:after {clear: both; content: ""; display: "block";}
 a {text-decoration: none;}
+
+.wrap {width: 1200px; height: 100%; margin: 0 auto;}
+.header {width: 100%; height: 100px; background: #ccc;}
+.logo {float: left;}
+.navs {width: 100%; height: 100px; line-height: 100px;}
+.nav {float: left; width: 200px;}
+.nav > li {width:200px; height: 60px; line-height: 60px;}
+.sub {width: 200px;}
