@@ -5,9 +5,15 @@ $(".nav").hover(function(){
 });
 
 var n = 0;
-var depth = 100;
+var depth = 2;
 
 (function ani(){
-  $(".banner > ul").delay(2000).fadeIn(0);
-  ani();
+  $(".banner li").eq(n).css("z-index", depth++).fadeOut(0);
+  $(".banner li").eq(n).delay(2000).fadeIn(2000, function(){
+    if(n == 4) n = 0;
+    else n++;
+    ani();
+  })
+
+  
 })();
