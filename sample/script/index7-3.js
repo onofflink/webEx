@@ -1,12 +1,22 @@
+$(".nav").hover(function(){
+	$("ul.submenu", $(this)).stop().slideDown();
+}, function(){
+	$("ul.submenu", $(this)).stop().slideUp();
+})
 
 var n = 0;
+
 $("#bt_next").click(function(){
-      if(n < 4) n++;
-      ani();
+	if(n < 4) n++;
+	ani();
 });
-$("#btn_prev").click(function(){
-      if(n > 0) n--;
+
+$("#bt_prev").click(function(){
+	if(n > 0) n--;
+	ani();
 });
+
 function ani() {
-      $(".banner > ul").stop().animate({"left":(-n*1000)+"px"}, 500);
+	$(".banner > ul").stop().animate({"left":(-n*1000)+"px"}, 500);
 }
+
