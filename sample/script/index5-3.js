@@ -1,4 +1,4 @@
-//jshint jsversion:6
+//jshint esversion:6
 var n = 0;
 $(".nav").hover(function(){
   $("ul", $(this)).stop().slideDown();
