@@ -1,6 +1,6 @@
-(function winOpen(){
-      window.open("win.html", "win", "width=400, height=400, top=200, left=200");
-});
+function winOpen(){
+      window.open("win-3.html", "win", "width=400, height=400, top=200, left=200");
+}
 
 function modalOpen() {
       $("#modal_bg").show(0);
