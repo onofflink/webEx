@@ -1,0 +1,19 @@
+/* 
+
+*/
+
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; color: #000}
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+.clear:after {clear: both; content: ""; display: block;}
+
+.wrap {width: 1200px; height: 100%; margin: 0 auto;}
+.header {width: 100%; height: 200px; line-height: 200px; background: #6a6a6a;}
+.logo {float: left;}
+.logo > img{width: 250px; vertical-align: middle;}
+
+.navs {float: right; width: 750px; height: 100%;}
+.nav {width: 250px;}
+.nav > div {padding:1rem; font-size: 1rem;}
+.nav > ul {width: 250px; float: left;}
