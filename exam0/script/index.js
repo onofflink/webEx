@@ -13,5 +13,6 @@ var n = 0;
       $(this).css({"left": "0px"});
       }
             ani();
+            setInterval(function(){slide();}, 2000)
       });
 })();
