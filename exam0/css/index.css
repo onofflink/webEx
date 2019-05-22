@@ -32,13 +32,21 @@ a {text-decoration: none; color: inherit;}
 div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partner>h2{web partner site}+div.partner_info>img^^div.modal>div.content>img+button{Close}^^div.service>table>tr>td*3>div.icon_content>div.icons>div>img^h3{인터넷}+div.icon_body>p{인터넷}
 */
 .contents {width: 1000px; height: 100%;}
-.notice {width: 750px; position: relative; float: left;}
-
+.notice {width: 500px; position: relative; float: left;}
+.notice h2 {text-align: center; padding-bottom: 10px; border-bottom: 1px solid #666;}
 td.tom {background:rgb(211, 211, 211); padding: 0.5rem}
 td:nth-child(odd) {padding: 0.5rem}
 
-.partner {height: 400px}
+
+.partner {height: 400px; margin: 0 auto; width: 480px; text-align: center; float: right;}
+.partner > h2 {text-align: center}
+.partner pre {margin: 15px 150px 0 0; font-size: 1.3rem; color: #666; text-align: center;}
+.partner_info {margin-top: 10px;}
+.partner_info img:nth-child(1){width: 60%; cursor: pointer;}
+.partner_info img:nth-child(2){width: 40%; cursor: pointer;}
 
 .icon_content {width: 380px; }
-.icons {height: 250px}
+.icons {height: 250px; text-align: center;}
+.icons > div {width: 160px; margin: 0 20px; display: inline-block;}
 .icons > div > image {width: 50px} 
+.icons > h3 {}
