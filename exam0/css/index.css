@@ -9,7 +9,7 @@ a {text-decoration: none; color: inherit;}
 .clear:after {clear: both; content: ""; display: block;}
 
 .wrap {width: 1200px; height: 100%; margin: 0 auto;}
-.header {width: 100%; height: 200px; line-height: 200px; background: #6a6a6a;}
+.header {width: 100%; height: 200px; line-height: 200px; background: rgba(111, 111, 111, 0.2);}
 .logo {float: left;}
 .logo > img{width: 250px; vertical-align: middle;}
 
@@ -31,3 +31,14 @@ a {text-decoration: none; color: inherit;}
 /* 
 div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partner>h2{web partner site}+div.partner_info>img^^div.modal>div.content>img+button{Close}^^div.service>table>tr>td*3>div.icon_content>div.icons>div>img^h3{인터넷}+div.icon_body>p{인터넷}
 */
+.contents {width: 1000px; height: 100%;}
+.notice {width: 750px; position: relative; float: left;}
+
+td.tom {background:rgb(211, 211, 211); padding: 0.5rem}
+td:nth-child(odd) {padding: 0.5rem}
+
+.partner {height: 400px}
+
+.icon_content {width: 380px; }
+.icons {height: 250px}
+.icons > div > image {width: 50px} 
