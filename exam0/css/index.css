@@ -27,3 +27,7 @@ a {text-decoration: none; color: inherit;}
 .banner > ul > li {float: left;}
 .welcome {height: 100px; width: 300px; top: 15%; left: 50%; transform: translate(-50%, -50%); line-height: 100px; border-radius: 30px; background: rgba(255,255,255,0.2); text-align: center;}
 .banner  div {position: absolute; color: #fff;}
+
+/* 
+div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partner>h2{web partner site}+div.partner_info>img^^div.modal>div.content>img+button{Close}^^div.service>table>tr>td*3>div.icon_content>div.icons>div>img^h3{인터넷}+div.icon_body>p{인터넷}
+*/
