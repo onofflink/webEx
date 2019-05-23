@@ -1,5 +1,5 @@
 /* 
-
+div#modal>.body>img>img*2^div.button>button#btn-close{닫기}^^^^div.wrap>.header.clear>.logo>a>img^^div.navs>.nav.clear>div>a{MENU$$}^^div.nav.clear*2>div>a{MENU$$}+ul.submenu.clear>li*4>a{submenu$}^^^^^^div.banner>ul>li*5>img
 */
 
 html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; color: #000}
@@ -17,10 +17,11 @@ a {text-decoration: none; color: inherit;}
 .nav {width: 250px; float: left; text-align: center;}
 .nav > div {/* padding:1rem; */ font-size: 1.3rem;}
 .nav > div:hover {background: #eee}
-.nav > ul {width: 250px; background-color: rgba(1, 1, 1, 0.2); display: none; text-align: center; position:absolute;z-index:999; margin-top:5px }
+.nav > ul {width: 250px; background-color: rgba(1, 1, 1, 0.2); display: none; text-align: center; position:absolute;z-index:9999; margin-top:5px }
 .nav > ul > li {font-weight: bold; }
 .nav > ul > li:hover {background: #eee;}
 
+/* div.welcome>h1>span{환영합니다}^h3>span{한국대학교 동문 여러분} */
 .section {width: 100%; height: 700px;}
 .banner {width: 1000px; height: 700px; position: relative; margin: 0 auto; z-index: 1000; overflow: hidden; }
 .banner > ul {width: 6000px; height: 350px; top:0px; left: 0; margin: 0 auto; position: absolute; }
@@ -30,4 +31,14 @@ a {text-decoration: none; color: inherit;}
 
 /* 
 div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partner>h2{web partner site}+div.partner_info>img^^div.modal>div.content>img+button{Close}^^div.service>table>tr>td*3>div.icon_content>div.icons>div>img^h3{인터넷}+div.icon_body>p{인터넷}
+*/
+
+/* 
+div.contents.wrap>.notice>h1{공지사항}+table.table>tr>th*2^tr*6>td>a^td
+*/
+
+
+
+/* 
+footer>.wrap>ul>li*2>a^^p{사업자번호}
 */
