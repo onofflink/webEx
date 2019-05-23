@@ -6,13 +6,12 @@ $(".nav").hover(function(){
 
 var n = 0;
 (function ani() {
-  $(".banner > ul").delay(2000).animate({"left":"-=1000px"}, 5000, function() {
-    /* if(n = n==ul?0:n+=1)  */n++;
+  $(".banner li").delay(400).animate({"left":"-=1000px"}, 2000, function() {
+    n++;
     if(n == 5) {
       n = 0;
       $(this).css({"left": "0px"});
       }
-            ani();
-            setInterval(function(){slide();}, 2000)
+            ani();            
       });
 })();

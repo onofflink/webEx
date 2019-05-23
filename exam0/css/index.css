@@ -29,9 +29,9 @@ ul.submenu {float: left; width: 200px; height: 360px; background: #ccc; position
 ul.submenu > li {width: 200px; height: 40px; line-height: 40px;padding: 1.5rem 0; text-align: center; }
 ul.submenu > li:hover {background: #eee; }
 
-.banner {width: 1200px; height: 100%; position: relative; }
-.banner ul {width: 1000px; height: 350px; margin: 0 auto; overflow: hidden; }
-.banner > ul > li {float: left;}
+.banner {width: 1200px; height: 350px; position: relative; }
+.banner > ul {width: 1000px; height: 100%; margin: 0 auto; position: relative; overflow: hidden; }
+.banner > ul > li {float: left; position: absolute; width: 100%}
 .welcome {width: 300px; height: 100px; position: absolute; top: 175px; left: 50%;transform: translate(-50%, -50%);
 background: rgba(0,0,0,0.2); border-radius: 30px; text-align: center;line-height: 50px;
 }
