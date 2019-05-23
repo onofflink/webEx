@@ -2,32 +2,34 @@
 div#modal>.body>img>img*2^div.button>button#btn-close{닫기}^^^^div.wrap>.header.clear>.logo>a>img^^div.navs>.nav.clear>div>a{MENU$$}^^div.nav.clear*2>div>a{MENU$$}+ul.submenu.clear>li*4>a{submenu$}^^^^^^div.banner>ul>li*5>img
 */
 
-html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; color: #000}
-div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
-a {text-decoration: none; color: inherit;}
+@charset "utf-8";
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-family: "맑은 고딕"; font-size: 16px; color: #000; }
+div, ul, ol, li, h1, h2, h3,h4 {margin: 0; padding: 0; list-style: none;}
+button {cursor: pointer;}
+#modal {width: 100%; height: 100%; position: fixed;left: 0; top: 0; background: rgba(0,0,0,0.5); z-index: 9999;display: none; opacity: 0;}
+#modal .body {position: fixed;left: 50%; top: -20%; opacity: 0; transform: translate(-50%, -50%); background: white; padding: 20px}
+#modal.active {display: block; opacity: 1;}
+#modal.active .body {top: 25%; opacity: 1;}
+#modal .body img {display: block; margin-bottom: 20px;}
+#modal .body .button {margin-top: 20px; text-align: center}
+#modal .body .button button {padding: 6px 12px; border-radius: 6px; background: #009688; color: white;}
 
+a {text-decoration: none; color: inherit}
 .clear:after {clear: both; content: ""; display: block;}
 
-.wrap {width: 1200px; height: 100%; margin: 0 auto;}
-.header {width: 100%; height: 200px; line-height: 200px; background: #6a6a6a;}
-.logo {float: left;}
-.logo > img{width: 250px; vertical-align: middle;}
+.wrap {width: 1000px; height: 100%; margin: 0 auto}
+.header {width: 1200px; height: 200px; background: #ccc;}
+.logo {float: left; width: 250px; overflow: hidden;}
+.logo img {width: 100%;}
 
-.navs {float: right; width: 750px; height: 100%;}
-.nav {width: 250px; float: left; text-align: center;}
-.nav > div {/* padding:1rem; */ font-size: 1.3rem;}
-.nav > div:hover {background: #eee}
-.nav > ul {width: 250px; background-color: rgba(1, 1, 1, 0.2); display: none; text-align: center; position:absolute;z-index:9999; margin-top:5px }
-.nav > ul > li {font-weight: bold; }
-.nav > ul > li:hover {background: #eee;}
-
+.navs {float: right; width: 600px}
+.nav {float: left; width: 200px; cursor: pointer;}
+.nav > div {padding: 0.5rem; height: 100px; line-height: 100px;}
+.nav > ul {float: left; width: 600px; height: 150px; background: #ccc}
+.nav > ul > li {height: 40px; line-height: 40px;}
+.nav > ul > li:hover {background: #eee}
 /* div.welcome>h1>span{환영합니다}^h3>span{한국대학교 동문 여러분} */
-.section {width: 100%; height: 700px;}
-.banner {width: 1000px; height: 700px; position: relative; margin: 0 auto; z-index: 1000; overflow: hidden; }
-.banner > ul {width: 6000px; height: 350px; top:0px; left: 0; margin: 0 auto; position: absolute; }
-.banner > ul > li {float: left;}
-.welcome {height: 100px; width: 300px; top: 15%; left: 50%; transform: translate(-50%, -50%); line-height: 100px; border-radius: 30px; background: rgba(255,255,255,0.2); text-align: center;}
-.banner  div {position: absolute; color: #fff;}
+
 
 /* 
 div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partner>h2{web partner site}+div.partner_info>img^^div.modal>div.content>img+button{Close}^^div.service>table>tr>td*3>div.icon_content>div.icons>div>img^h3{인터넷}+div.icon_body>p{인터넷}
