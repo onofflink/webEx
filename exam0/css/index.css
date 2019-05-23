@@ -18,16 +18,19 @@ a {text-decoration: none; color: inherit}
 .clear:after {clear: both; content: ""; display: block;}
 
 .wrap {width: 1000px; height: 100%; margin: 0 auto}
-.header {width: 1200px; height: 200px; background: #ccc;}
+.header {width: 1200px; height: 100px; background: #ccc;}
 .logo {float: left; width: 250px; overflow: hidden;}
 .logo img {width: 100%;}
 
 .navs {float: right; width: 600px}
 .nav {float: left; width: 200px; cursor: pointer;}
-.nav > div {padding: 0.5rem; height: 100px; line-height: 100px;}
-.nav > ul {float: left; width: 600px; height: 150px; background: #ccc}
-.nav > ul > li {height: 40px; line-height: 40px;}
-.nav > ul > li:hover {background: #eee}
+.nav > div {height: 100%; line-height: 100px;  width: 100%; padding: 0, 0, 1.5rem 0; text-align: center;}
+ul.submenu {float: left; width: 200px; height: 360px; background: #ccc; position: absolute; z-index: 9999; display:none}
+ul.submenu > li {width: 200px; height: 40px; line-height: 40px;padding: 1.5rem 0; text-align: center; }
+ul.submenu > li:hover {background: #eee; }
+
+.banner {width: 1200px; height: 100%; }
+.banner ul {width: 1000px; height: 400px; margin: 0 auto; }
 /* div.welcome>h1>span{환영합니다}^h3>span{한국대학교 동문 여러분} */
 
 
