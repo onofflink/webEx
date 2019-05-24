@@ -17,7 +17,7 @@ button {cursor: pointer;}
 a {text-decoration: none; color: inherit}
 .clear:after {clear: both; content: ""; display: block;}
 
-.wrap {width: 1000px; height: 100%; margin: 0 auto}
+.wrap {width: 1000px; height: 700px; margin: 0 auto}
 .header {width: 1200px; height: 100px; background: #ccc;}
 .logo {float: left; width: 250px; overflow: hidden;}
 .logo img {width: 100%;}
@@ -29,19 +29,28 @@ ul.submenu {float: left; width: 200px; height: 360px; background: #ccc; position
 ul.submenu > li {width: 200px; height: 40px; line-height: 40px;padding: 1.5rem 0; text-align: center; }
 ul.submenu > li:hover {background: #eee; }
 
-.banner {width: 1200px; height: 350px; position: relative; }
-.banner > ul {width: 1000px; height: 100%; margin: 0 auto; position: relative; overflow: hidden; }
+.banner {width: 1200px; height: 350px; position: relative; margin: 0 auto;}
+.banner > ul {width: 1000px; height: 350px; margin: 0 auto; position: relative; overflow: hidden; }
 .banner > ul > li {float: left; position: absolute; width: 100%}
 .welcome {width: 300px; height: 100px; position: absolute; top: 175px; left: 50%;transform: translate(-50%, -50%);
 background: rgba(0,0,0,0.2); border-radius: 30px; text-align: center;line-height: 50px;
 }
+.welcome h1 span {color:#009688;}
+.welcome h3 span {color:#6a6a6a;}
 /* div.welcome>h1>span{환영합니다}^h3>span{한국대학교 동문 여러분} */
 
+.contents {width: 1000px; height: 500px; margin-top: -180px; position: relative;}
+.notice {width: 48%; float: left;}
+.notice h1 {text-align: center; border-bottom: 1px solid black; padding-bottom: 8px;}
 
 /* 
 div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partner>h2{web partner site}+div.partner_info>img^^div.modal>div.content>img+button{Close}^^div.service>table>tr>td*3>div.icon_content>div.icons>div>img^h3{인터넷}+div.icon_body>p{인터넷}
 */
-
+.partner {width: 480px; float: right;}
+.partner > h1 {text-align: center; border-bottom: 1px solid black; padding-bottom: 8px;}
+.partner_info {display: block; float: left; width: 100%;}
+.partner_info > img {display: block; margin: 0 auto;}
+.partner  pre {color: #009688; float: left; padding: 0 160px; font-size: 2rem;}
 /* 
 div.contents.wrap>.notice>h1{공지사항}+table.table>tr>th*2^tr*6>td>a^td
 */
