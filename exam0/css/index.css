@@ -42,6 +42,7 @@ background: rgba(0,0,0,0.2); border-radius: 30px; text-align: center;line-height
 .contents {width: 1000px; height: 500px; margin-top: -180px; position: relative;}
 .notice {width: 48%; float: left;}
 .notice h1 {text-align: center; border-bottom: 1px solid black; padding-bottom: 8px;}
+.odd-td {background: rgba(0,0,0,0.2)}
 
 /* 
 div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partner>h2{web partner site}+div.partner_info>img^^div.modal>div.content>img+button{Close}^^div.service>table>tr>td*3>div.icon_content>div.icons>div>img^h3{인터넷}+div.icon_body>p{인터넷}
@@ -50,13 +51,22 @@ div.contents.wrap>.notice>h2{공지사항}+table.table>tr*6>td>a^td^^^div.partne
 .partner > h1 {text-align: center; border-bottom: 1px solid black; padding-bottom: 8px;}
 .partner_info {display: block; float: left; width: 100%;}
 .partner_info > img {display: block; margin: 0 auto;}
-.partner  pre {color: #009688; float: left; padding: 0 160px; font-size: 2rem;}
+.partner  pre {color: #009688; float: left; padding: 0 120px; font-size: 2rem;}
 /* 
 div.contents.wrap>.notice>h1{공지사항}+table.table>tr>th*2^tr*6>td>a^td
 */
 
-
+.icon {width: 100%; height: 300px; margin: 5rem 0;}
+.icons {width: 1000px; }
+.icons > .a {float: left; border: 1px solid black; margin: 0 10px;}
+.a img {width: 150px;}
+.a button {padding: 1rem; bottom: 30px; left: 50%; transform: translateX(-50%); border-radius: 10px;}
 
 /* 
 footer>.wrap>ul>li*2>a^^p{사업자번호}
 */
+footer {width: 100%; height: 300px; margin: 0 auto; margin-top: 30px; position: relative; }
+.legal {width: 40%; float: left; height: 100%;}
+.legal-item {float: left; margin-top: 30px; margin-left: 20px;}
+
+.footer-content {width: 60%; float: right; line-height: 30px;}
