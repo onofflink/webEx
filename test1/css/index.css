@@ -1,0 +1,29 @@
+html, body {margin: 0; padding: 0; text-align: center; font-size: 16px; color: #000; width: 100%; height: 100%; }
+
+maincolor{color: #893700; background: #4298cc}
+
+div, ul, li, ol, h1, h2, h3, h4 {width: 100%; height: 100%; list-style: none;}
+
+a {text-decoration: none; color: inherit}
+.clear:after {clear: both; content: ""; display: block;}
+
+.boxing {border: 1px solid red;}
+
+.wrap {width: 1000px; height: 500px;}
+.header {width: 100%; height: 150px; background: #eee;}
+.logo {float: left; width: 200px; overflow: hidden;}
+.logo > img {width: 200px;}
+
+.navs {float: right; width: 600px; height: 100%;}
+.nav {height: 150px; line-height: 150px; width: 600px}
+.nav > div {float: left; font-size: 1.2rem; width: 200px;}
+.nav > div:hover {background: rgba(0, 0, 0, 0.3)}
+ul.submenu {height: 400px; width: 600px;}
+
+.banner {width: 1000px; height: 350px;}
+.banner > ul {position: relative; width: 100%; float: left; }
+.banner > ul > li {position: abs}
+.contents {width: 1000px; height: 500px;}
+
+
+footer {width: 1000px; height: 100px;}
