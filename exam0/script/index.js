@@ -15,3 +15,17 @@ var n = 0;
             ani();            
       });
 })();
+
+$(".a > button").hover(function(){
+  $(this).css("background", "#eee");
+}, function() {
+  $(this).css("background", "#fff")
+});
+
+$(".partner img").click(function(){
+  $("#modal").addClass("active");
+});
+
+$("#modal button").click(function(){
+  $("#modal").removeClass("active");
+});
