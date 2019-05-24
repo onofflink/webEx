@@ -23,7 +23,7 @@ a {text-decoration: none; color: inherit}
 .submenu li {width: 150px; margin-left: -20px; height: 70px; line-height: 70px;  }
 .submenu li:hover {width: 150px; background: #fff}
 
-.banner {width: 1000px; height: 350px; position: relative; margin: 0 auto; overflow: hidden;}
+.banner {width: 960px; height: 350px; position: relative; margin: 0 auto; overflow: hidden;}
 .banner > ul {width: 4000px; height: 350px; ; position: absolute; left: 0; top: 0}
 .banner > ul > li {float: left; width: 1000px; margin-left: -20px;}
 
