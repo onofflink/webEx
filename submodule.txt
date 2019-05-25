@@ -142,3 +142,8 @@ add-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git a
     [difftool "vscode"]
         cmd = code --wait --new-window --diff $LOCAL $REMOTE
         prompt = false
+
+    
+## n-commit; branch off n-3
+
+git branch branchname <sha1-of-commit>
