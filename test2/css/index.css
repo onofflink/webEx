@@ -16,13 +16,13 @@ ul.submenu { width: 150px; height: 300px;  background: rgba(238, 238, 238, 0.5);
 .submenu > li {height: 60px; line-height: 60px; padding: 10px 0;}
 .submenu > li:hover {background: rgba(211,0,0,0.3); color: #fff; font-weight: bold;}
 
-.banner {width: 960px; height: 400px; position: relative;}
+.banner {width: 960px; height: 400px; position: relative; overflow: hidden;}
 .banner ul {width: 5760px; }
-.banner > ul > li {width: 960px; height: 400px; left: 0; top: 150px; float: left; position: absolute; overflow: hidden;}
+.banner > ul > li {width: 960px; height: 400px;float: left; left: 0; top: 150px;}
 
-.welcome {position: absolute; width: 400px; height: 130px; line-height: 65px; border-radius: 30px; background: rgba(238, 238, 238, 0.5); color: #7b422e; left: 50%; top: 60%; transform: translate(-50%); z-index: 1;}
+.welcome {position: absolute; width: 400px; height: 130px; line-height: 65px; border-radius: 30px; background: rgba(238, 238, 238, 0.5); color: #7b422e; left: 50%; top: 40%; transform: translate(-50%); z-index: 1;}
 .welcome > h1 {font-size: 2rem; text-align: center}
-.welcome > span {color: #fff; font-size: 1.2rem; }
+.welcome > span {color: #fff; font-size: 1.2rem; margin-left: 100px}
 
 .contents {width: 960px; height: 500px; margin: 0 auto}
 .notice {width: 53%; height: 250px; float: left; }
@@ -34,6 +34,7 @@ ul.submenu { width: 150px; height: 300px;  background: rgba(238, 238, 238, 0.5);
 .partner {width: 45%; float: left;}
 .partner > h1 {text-align: center; width: 80%;margin: 0 auto; border-bottom: 1px solid black;}
 .partner_info img {width: 100%;}
+.partner_info img:nth-child(1) {cursor: pointer;}
 
 .icon {width: 960px; height: 100%;}
 .icons {width: 960px; margin: 0 auto; }

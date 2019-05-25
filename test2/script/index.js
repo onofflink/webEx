@@ -6,11 +6,15 @@ $(".nav").hover(function(){
 
 var n = 0;
 (function ani(){
-  $(".banner > ul > li").delay(2000).animate({"margin-left":"-=960px"}, 2000, function(){
+  $(".banner > ul").delay(2000).animate({"margin-left":"-=960px"}, 2000, function(){
     n++;
-    if(n = 5) {
-     $(".banner > ul > li").css("margin-left", "0px");
+    if(n == 5) {
+     $(".banner > ul").css("margin-left", "0px");
     }
     ani();
   });  
 })();
+
+function popUp() {
+  window.open("win.html", "win", "width=300, height=150, top=100, left=200");
+}
