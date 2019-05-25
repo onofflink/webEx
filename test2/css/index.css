@@ -4,7 +4,7 @@ a {text-decoration: none; color: inherit}
 .clear:after {display: block; clear: both; content: ""}
 .boxing {border: 1px solid red}
 maincolor {color:#7b422e; background: #bb692d}
-.wrap {width: 1000px; height: 100%; margin: 0 auto}
+.wrap {width: 1000px; height: 650px; margin: 0 auto}
 .header {width: 960px; height: 150px; background-color: #eee;}
 .logo {float: left;width: 250px; overflow: hidden; margin-left: 50px;}
 
@@ -22,15 +22,28 @@ ul.submenu { width: 150px; height: 300px;  background: rgba(238, 238, 238, 0.5);
 
 .welcome {position: absolute; width: 400px; height: 130px; line-height: 65px; border-radius: 30px; background: rgba(238, 238, 238, 0.5); color: #7b422e; left: 50%; top: 60%; transform: translate(-50%); z-index: 1;}
 .welcome > h1 {font-size: 2rem; text-align: center}
-.welcome > span {color: #fff; font-size: 1.3rem; font-weight: bold; margin-left: 50px}
+.welcome > span {color: #fff; font-size: 1.2rem; }
 
+.contents {width: 960px; height: 500px; margin: 0 auto}
+.notice {width: 53%; height: 250px; float: left; }
+.table {border-collapse: collapse; font-size: 0.9em;}
+.notice > h1 {text-align: center;border-bottom: 1px solid black;}
+.notice tr>th {text-align: center;padding: 0.3rem;}
+.notice tr>td {padding: 5px;}
 
-header {
-  border: 2px solid red;
-}
-#imageslide {
-  border: 5px solid blue;
-}
-#contents {
-  border: 5px solid yellow;
-}
+.partner {width: 45%; float: left;}
+.partner > h1 {text-align: center; width: 80%;margin: 0 auto; border-bottom: 1px solid black;}
+.partner_info img {width: 100%;}
+
+.icon {width: 960px; height: 100%;}
+.icons {width: 960px; margin: 0 auto; }
+.icon-wrap {float: left; width: 33.33%; text-align: center}
+.icon-wrap img {width: 100%; margin-top: 250px;}
+.icon-wrap button {padding: 1rem; background: rgba(187, 105, 45, 0.8); color: #fff}
+
+footer {max-width: 100%; height: 100%; margin-top: 600px}
+.footer-wrap {padding: 10px 20px; height: 100%;}
+.footer-wrap > ul {width: 50%; float: left; }
+.footer ul>li {float: left;}
+
+.footer p {float: right; font-size: 12px;}
