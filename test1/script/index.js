@@ -17,3 +17,10 @@ var n = 0;
   ani();
 });
 })();
+
+$(".partne img").click(function(){
+  winOpen();
+});
+function winOpen(){
+  window.open("win.html", "win", "width=200px, height=150px, top=100, left=100");
+}
