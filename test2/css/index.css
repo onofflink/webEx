@@ -8,17 +8,21 @@ maincolor {color:#7b422e; background: #bb692d}
 .header {width: 960px; height: 150px; background-color: #eee;}
 .logo {float: left;width: 250px; overflow: hidden; margin-left: 50px;}
 
-.navs {width: 600px; height: 100%;float: right; position: relative;}
+.navs {width: 600px; height: 100%;float: right; position: relative; z-index: 9999;}
 .nav {float: left; width: 150px; height: 20px; line-height: 130px;}
 .nav > div {padding: 0.8rem; text-align: center}
 .nav > div:hover {background: rgba(211,0,0,0.3);}
-ul.submenu { width: 150px; height: 300px; z-index: 9999; background: rgba(238, 238, 238, 0.5); text-align: center}
+ul.submenu { width: 150px; height: 300px;  background: rgba(238, 238, 238, 0.5); text-align: center; display: none;}
 .submenu > li {height: 60px; line-height: 60px; padding: 10px 0;}
 .submenu > li:hover {background: rgba(211,0,0,0.3); color: #fff; font-weight: bold;}
 
 .banner {width: 960px; height: 400px; position: relative;}
 .banner ul {width: 5760px; }
 .banner > ul > li {width: 960px; height: 400px; left: 0; top: 150px; float: left; position: absolute; overflow: hidden;}
+
+.welcome {position: absolute; width: 400px; height: 130px; line-height: 65px; border-radius: 30px; background: rgba(238, 238, 238, 0.5); color: #7b422e; left: 50%; top: 60%; transform: translate(-50%); z-index: 1;}
+.welcome > h1 {font-size: 2rem; text-align: center}
+.welcome > span {color: #fff; font-size: 1.3rem; font-weight: bold; margin-left: 50px}
 
 
 header {
