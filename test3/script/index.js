@@ -22,3 +22,7 @@ $(".btn_next").click(function(){
 function ani() {
      $(".banner > ul").stop().animate({"left": (-n*1000+"px")}, 2000);
 }
+
+function popUp() {
+     window.open("popup.html", "popup", "width=300, height=200, top=200, left=300");
+}

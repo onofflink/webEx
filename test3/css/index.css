@@ -5,7 +5,19 @@ a {text-decoration: none; color: inherit}
 
 .clear:after {clear: both; content: ""; display: block;}
 
+.wrap {width: 1200px; height: 550px; margin: 0 auto;}
+.header {width: 1000px; height: 150px; background: #ccc;}
+.logo {float: left;width: 250px; overflow: hidden;}
+.logo > img {width: 250px; margin-top: 30px}
 
+.navs {float: right; position: relative; z-index: 9999; width: 600px; height: 100%}
+.nav {float: left; width:200px; height: 150px; color: #999 }
+.nav > div {height: 80%; line-height: 150px; text-align: center}
+.nav > div:hover {background: rgba(153, 102, 153, 0.8); color: white}
+
+.submenu {text-align: center; display: none}
+.submenu > li {background: rgba(153, 102, 153, 0.4); padding: 10px 0;}
+.submenu > li:hover {color: black; font-weight: bold;}
 
 .banner {width: 1000px; height: 350px; position: relative; overflow: hidden;}
 .banner > ul {width: 4000px; height: 350px; position: absolute; left: 0; top: 0;}
@@ -16,3 +28,34 @@ a {text-decoration: none; color: inherit}
 .banner .button {width: 200px; position: absolute; bottom: 50px; left: 50%; transform: translate(-50%, 0)}
 .banner .button>a {padding: 1rem; font-weight: bold; font-size: 2rem;}
 .banner .button>a:hover {color:red;}
+
+.contents {width: 100%; height: 500px; margin: 0 auto;}
+.notice {width: 480px; font-size: 0.8em; float: left;}
+.notice h2 {text-align: center; margin-bottom: 15px; border-bottom: 1px solid black; width: 100%; transform: translateX(-10%); margin-top: 8px;}
+
+.table {border-collapse: collapse;}
+.table tr>th {text-align: center;padding: 5px 0; font-weight: bold;}
+.table tr>td {padding: 5px 0}
+.table tr:nth-child(2n) {background: rgba(222, 222, 222, 0.7)}
+
+.partner {width: 50%; float: left; margin-left: 30px}
+.partner h2 {text-align: center; margin-bottom: 10px; border-bottom: 1px solid black; width: 100%; transform: translateX(-10%)}
+.partner_info {float: left;}
+.partner_info > img:nth-child(1) {width: 80%; }
+.partner_info > img:nth-child(2) {width: 40%}
+
+.icon {width: 1200px; margin: 0 auto;}
+.icons {width: 1000px; margin: 0 50px;}
+.icons .btn {width: 200px; overflow: hidden;float: left; padding-left: 70px }
+.icons .btn:nth-child(1) {cursor: pointer;}
+.icons .btn img {max-width: 200px;}
+.icons button {width: 80%; text-align: center; border: none; padding: 1rem; border-radius: 8px;}
+.icons button:hover {background: rgba(153, 102, 153, 0.8)}
+
+footer {width: 1200px; height: 150px; background: #999; margin-top: 400px; color: #fff}
+.footer {text-align: left; width: 1000px}
+.footer-wrap {width: 1000px; }
+.footer-wrap > ul {width: 300px; padding: 20px 10px; float: left;}
+.footer-wrap li {float: left; width: 200px; padding: 10px 0 }
+.footer-wrap > p {float:left; width:650px; height: 150px; padding: 20px 0}
+.footer-wrap .col-xs {float: right; margin-top: -80px}
