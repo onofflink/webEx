@@ -1,7 +1,7 @@
 $(".nav").hover(function(){
-     $("ul", $(this)).stop().slideDown();
+     $(".submenu", $(this)).stop().slideDown();
 }, function(){
-     $("ul", $(this)).stop().slideUp();
+     $(".submenu", $(this)).stop().slideUp();
 });
 
 n = 0;
@@ -32,4 +32,4 @@ $("#modal").click(function(){
 });
 $("#btn-close").click(function(){
      $(".modal-img").removeClass("active");
-})
+});

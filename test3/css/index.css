@@ -1,0 +1,57 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; color: #999; text-align: left;}
+
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit}
+.clear:after {clear: both; content: ""; display: block;}
+.all {max-width: 1000px; height: 1300px}
+
+.wrap {width: 1000px; margin: 0 auto;}
+.header {width: 100%; height: 150px; background: #ccc;}
+.logo {float: left;}
+.logo > div {padding: 1rem; height: 150px; line-height: 100px;}
+
+.navs {float: right; position: relative; z-index: 9999;}
+.nav {width: 200px; height: 100%;float: left; }
+.nav > div {padding: 0.2rem 1rem; height: 150px; line-height: 100px;}
+.nav > div:hover {background: #fff;}
+.submenu {width: 600px; height: 100%;display: none; }
+
+.submenu > li {height: 60px; width: 200px; line-height: 60px; z-index: 9999;}
+.submenu > li:hover {background: #ccc;}
+
+img {white-space: nowrap;display: block;}
+.banner {width: 1000px; height: 400px; position: relative;}
+.banner > ul {width: 4000px; height: 400px; position: absolute; top: 0; left: 0;}
+.banner > ul > li {float: left;}
+
+.welcome {width: 300px; height: 80px; border-radius: 10px; background: rgba(213, 215, 0, 0.3);color: #fff; z-index: 10; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)}
+.welcome h2 {padding: 0.8rem; text-align: center;}
+
+.banner .button {position: absolute;bottom: 60px; left: 50%; transform: translate(-50%, -50%); color: white;}
+
+.contents {width: 100%; height: 500px;}
+.notice {width: 480px; height: 100%; float: left;}
+.notice > h2 {text-align: center; border-bottom: 1px solid black; padding: 0.5rem;}
+.table {border-collapse: collapse; font-size: 0.9em; color: #6666}
+.table tr>th {padding: 0.8em;text-align: center}
+.table tr>td {padding: 5px 2px}
+.table tr:nth-child(2n) {background: rgba(213, 215, 145, 0.5)}
+
+.partner {width: 49%; height: 200px; float: left; margin-left: 10px;}
+.partner > h2 {text-align: center; border-bottom: 1px solid black; padding: 0.5rem; width: 400px;}
+.partner_info {margin-top: 10px;}
+.parnter_info > img:nth-child(1) {width: 60%;}
+.parnter_info > img:nth-child(2) {width: 40%;}
+
+.icon {width: 100%; height: 300px;}
+.icons {width: 800px;  height: 300px; margin: 0 auto;}
+.icons > div.btn {width: 33%; float: left;}
+.btn > img {width: 30%;} 
+
+
+footer {width: 100%; height: 150px; background: #ccc; padding: 1px 0}
+.footer {margin: 0 auto;}
+footer .wrap{padding:5px 20px;}
+footer ul{width:20%;float:left;}
+footer ul>li{float:left;margin-left:20px;margin-top:10px}
+footer p{width:50%;font-size:10px;float:right;color:#ffffff;line-height: 20px}
