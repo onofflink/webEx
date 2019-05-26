@@ -20,5 +20,5 @@ $(".btn_next").click(function(){
 });
 
 function ani() {
-     $(".banner > ul").animate({"left": "-n*1000px"}, 2000);
+     $(".banner > ul").stop().animate({"left": (-n*1000+"px")}, 2000);
 }
