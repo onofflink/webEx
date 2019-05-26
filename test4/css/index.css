@@ -5,8 +5,6 @@ html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; t
 div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color: inherit}
 .clear:both {clear: both; content: ""; display: block;}
-<<<<<<< HEAD
-=======
 #main-color {background-color: #969;}
 #hover-color {color:#c99 }
 #rgb-color {color: rgba(255, 255, 255, 0.8)}
@@ -25,13 +23,24 @@ a {text-decoration: none; color: inherit}
 .submenu li {color: white; padding: 1.3rem 0;}
 .submenu li:hover {background: rgba(0,0,0, 0.5)}
 
-.banner {width: 1000px; height: 350px; position: relative;overflow: hidden;}
+/* .banner {width: 1000px; height: 350px; position: relative;overflow: hidden;}
 .banner > ul {}
-.banner li {position: absolute;top: 0; left: 0; z-index: 1;}
+.banner li {position: absolute;top: 0; left: 0; z-index: 1;} */
 
 /* .banner {width: 1000px; height: 350px;}
-.banner ul {width: 4000px;position: relative;}
-.banner > ul > li {float: left;;} */
+.banner ul {width: 3000px;position: relative;}
+.banner > ul > li {float: left;} */
+.banner {width: 1000px; height: 350px; position: relative;}
+.banner ul {width: 3000px; }
+.banner > ul > li {float: left;}
+.welcome {position: absolute; width: 300px; height: 140px; top:50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.4); border-radius: 30px}
+.welcome > h2 {text-align: center; font-weight: bold; padding: 5px 0; line-height: 40px; margin-top: 20px; color: #939}
+.welcome > h2 > span {color: white;}
+.btn-slide {position: absolute;width: 150px; height: 30px; bottom: 50px; left: 52%; transform: translateX(-50%);}
+.btn-slide .btn_prev {border-right: 1px solid white; font-size: 1.5rem; padding-right: 10px;}
+.btn-slide .btn_prev:hover {color: #939}
+.btn-slide .btn_next {font-size: 1.5rem; padding-left: 10px;}
+.btn-slide .btn_next:hover {color: #939}
 
 .contents {width: 1000px; height: 500px;}
 .notice {width: 480px; color: black; float: left;}
@@ -61,5 +70,4 @@ footer { height: 150px; width: 1000px; background: #969; max-width: 100%; color:
 
 .footer p {float: left; line-height: 30px;}
 
->>>>>>> cb5bf89cfcbc1a9b92f21f3b08b963681d3c0d9a
 
