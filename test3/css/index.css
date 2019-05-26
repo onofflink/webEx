@@ -5,6 +5,7 @@ a {text-decoration: none; color: inherit}
 
 .clear:after {clear: both; content: ""; display: block;}
 
+.all {max-width: 1400px;margin: 0 200px}
 .wrap {width: 1200px; height: 550px; margin: 0 auto;}
 .header {width: 1000px; height: 150px; background: #ccc;}
 .logo {float: left;width: 250px; overflow: hidden;}
