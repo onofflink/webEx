@@ -27,3 +27,7 @@ function ani(){
   });
 }
 ani();
+
+function popUp(){
+  window.open("popUp.html", "win", "width=400, height=200, top=100, left=200");
+}

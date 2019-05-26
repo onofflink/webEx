@@ -9,11 +9,13 @@ a {text-decoration: none; color: inherit}
 #hover-color {color:#c99 }
 #rgb-color {color: rgba(255, 255, 255, 0.8)}
 
+.boxing {border: 1px solid red}
+
 .wrap {width: 1200px; margin: 0 auto}
 .header {width: 1000px; height: 150px; background:rgba(0,0,0, 0.8)}
 .logo {float: left;}
 
-.navs {float: right; width: 600px; position: relative;}
+.navs {float: right; position: relative; z-index: 9999; width: 600px; height: 100%}
 .nav {float: left; width: 200px; text-align: center}
 .nav > div {color: white; height: 150px; line-height: 130px;}
 .nav > div:hover {background: rgba(203, 153, 153, 0.8)}
@@ -28,3 +30,33 @@ a {text-decoration: none; color: inherit}
 /* .banner {width: 1000px; height: 350px;}
 .banner ul {width: 4000px;position: relative;}
 .banner > ul > li {float: left;;} */
+
+.contents {width: 1000px; height: 500px;}
+.notice {width: 480px; color: black; float: left;}
+.notice h2 {text-align: center; margin: 15px 0; border-bottom: 1px solid black; width: 95%;}
+.notice tr>td {padding: 0.3rem;}
+.notice tr:nth-child(2n) {background: rgba(203, 153, 153, 0.4)}
+
+.partner {width: 480px; position: relative; float: left;}
+.partner h2 {text-align: center; margin: 17px 0 15px; border-bottom: 1px solid #999; width: 60%; margin-left: 50px}
+img {white-space: nowrap; display: block;}
+.parter_info {width: 500px; margin: 0 auto;}
+.partner_info img:nth-child(1) {width: 80%; margin-left: 20px; cursor: pointer;}
+.partner_info img:nth-child(2) {width: 60%; display: none}
+
+.icon {width: 1000px; margin: 0 auto; float: left; margin-top: 30px;}
+.icons {width:31%; height:230px;  text-align: center; float: left; margin: 0 5px 0 }
+.icons:hover {background: #939;}
+.icons > div {text-align: center; width: 100%;}
+.icons > div img{margin: 0 auto; background: rgba(0, 0, 0, 0.4)}
+.icons > p {line-height: 30px; width: 90%}
+
+footer { height: 150px; width: 1000px; background: #969; max-width: 100%; color: #fff; margin-left: 100px}
+.footer-wrap {padding: 10px 20px;}
+
+.footer ul {width: 40%; float: left;}
+.footer ul > li {margin: 10px 0 0 20px;}
+
+.footer p {float: left; line-height: 30px;}
+
+
