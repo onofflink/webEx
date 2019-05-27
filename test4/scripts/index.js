@@ -28,7 +28,7 @@ function ani(){
 }
 ani(); */
 
-var n = 0;
+/* var n = 0;
 $(".btn_prev").click(function(){
   if(n > 0) n--;
   ani();
@@ -40,7 +40,14 @@ $(".btn_next").click(function(){
 
 function ani(){
   $(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
-}
+} */
+
+$(".dots").click(function(){
+  var n = $(this).index();
+  $(".dots").css({"color": "#fff"});
+  $(".dots").eq(n).css({"color": "#f30"});
+  $(".banner > ul").stop().animate({"left": (-n*1000)+"px"}, 2000);
+});
 
 function popUp(){
   window.open("popUp.html", "win", "width=400, height=200, top=100, left=200");
