@@ -30,13 +30,13 @@ a {text-decoration: none; color: inherit}
 /* .banner {width: 1000px; height: 350px;}
 .banner ul {width: 3000px;position: relative;}
 .banner > ul > li {float: left;} */
-.banner {width: 1000px; height: 350px; position: relative;}
-.banner ul {width: 3000px; }
+.banner {width: 1000px; height: 350px; position: relative;  overflow: hidden;}
+.banner ul {width: 3000px; position: absolute; top: 0; left: 0;}
 .banner > ul > li {float: left;}
-.welcome {position: absolute; width: 300px; height: 140px; top:50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.4); border-radius: 30px}
+.welcome {position: absolute; width: 300px; height: 140px; top:50%; left: 500px; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.4); border-radius: 30px}
 .welcome > h2 {text-align: center; font-weight: bold; padding: 5px 0; line-height: 40px; margin-top: 20px; color: #939}
 .welcome > h2 > span {color: white;}
-.btn-slide {position: absolute;width: 150px; height: 30px; bottom: 50px; left: 52%; transform: translateX(-50%);}
+.btn-slide {position: absolute;width: 150px; height: 30px; bottom: 50px; left: 500px; transform: translateX(-50%);}
 .btn-slide .btn_prev {border-right: 1px solid white; font-size: 1.5rem; padding-right: 10px;}
 .btn-slide .btn_prev:hover {color: #939}
 .btn-slide .btn_next {font-size: 1.5rem; padding-left: 10px;}

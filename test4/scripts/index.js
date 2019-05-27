@@ -30,17 +30,16 @@ ani(); */
 
 var n = 0;
 $(".btn_prev").click(function(){
+  if(n > 0) n--;
   ani();
 });
 $(".btn_next").click(function(){
+  if(n < 2) n++;
   ani();
 });
 
 function ani(){
-  $(".banner .slide").eq(n).animate({"left": (-n*1000)+"px"}, 2000, function(){
-    if(n > 0) n++;
-    n--;
-  });
+  $(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
 }
 
 function popUp(){
