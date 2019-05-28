@@ -1,0 +1,17 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; text-align: left; color: #000;}
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit}
+clear:after {display: block; content: ""; clear: both;}
+
+.wrap {width: 1000px; height: 100%; margin: 0 auto;}
+
+#header_div {width: 960px; height: 200px; background: #ccc;}
+#header_logo {float: left;}
+
+nav {float: right; margin-top: 40px;}
+.nav {float: left; width: 600px; height: 100px; line-height: 60px;}
+.nav > li {float: left; width: 200px; text-align: center}
+.nav > li:hover {background: #eee}
+.nav > li:first-child {color: pink; background: #666; border-radius: 10px}
+ul.submenu {width: 200px; background: #ccc; line-height: 150px;}
+.submenu > li {}

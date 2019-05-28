@@ -1,0 +1,10 @@
+
+header {
+  border: 2px solid red;
+}
+#imageslide {
+  border: 5px solid blue;
+}
+#contents {
+  border: 5px solid yellow;
+}

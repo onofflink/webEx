@@ -1,0 +1,155 @@
+
+
+
+YYY
+ |- .git  <-- Project .git
+ |-  ZZZ  <-- Project ZZZ
+      |- .git <-- Don't add this
+      |- (project files) <-- do add these
+ |-  QQQ  <-- just another folder with..
+      |-  MMM  <-- Project MMM inside
+           |- .git <-- Don't add this
+           |- (project files) <-- do add these
+
+ |-  (project files)
+
+remove cached entry
+
+git rm --cached web/libraries/randomLibrary
+then add all files in that folder
+
+ git add web/libraries/randomLibrary/*
+then add all
+
+ git add --all && git commit -m "Message"
+
+.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ In the following answer, you will know how to extract a folder from a repository and make a git repository from it and then including it as a submodule instead of a folder.
+
+Inspired from Gerg Bayer's article Moving Files from one Git Repository to Another, Preserving History
+
+At the beginning, we have something like this:
+
+<git repository A>
+    someFolders
+    someFiles
+    someLib <-- we want this to be a new repo and a git submodule!
+        some files
+In the steps bellow, I will refer this someLib as <directory 1>.
+
+At the end, we will have something like this:
+
+<git repository A>
+    someFolders
+    someFiles
+    @submodule --> <git repository B>
+
+<git repository B>
+    someFolders
+    someFiles
+Create a new git repository from a folder in an other repository
+Step 1
+Get a fresh copy of the repository to split.
+
+git clone <git repository A url>
+cd <git repository A directory>
+Step 2
+The current folder will be the new repository so remove the current remote.
+
+git remote rm origin
+Step 3
+Extract history of the desired folder and commit it
+
+git filter-branch --subdirectory-filter <directory 1> -- --all
+You should now have a git repository with the files from directory 1 in your repo's root with all related commit history.
+
+Step 4
+Create your online repository and push your new repository!
+
+git remote add origin <git repository B url>
+git push
+You may need to set the upstream branch for your first push
+
+git push --set-upstream origin master
+Clean <git repository A> (optional, see comments)
+We want to delete traces (files and commit history) of <git repository B> from <git repository A> so history for this folder is only there once.
+
+This is based on Removing sensitive data from github.
+
+Go to a new folder and
+
+git clone <git repository A url>
+cd <git repository A directory>
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch <directory 1> -r' --prune-empty --tag-name-filter cat -- --all
+Replace <directory 1> by the folder you want to remove. -r will do it recursively inside the specified directory :). Now push to origin/master with --force
+
+git push origin master --force
+Boss Stage (See Note below)
+Create a submodule from <git repository B> into <git repository A>
+
+git submodule add <git repository B url>
+git submodule update
+git commit
+Verify if everything worked as expected and push
+
+git push origin master
+Note
+After doing all of this, I realized in my case that it was more appropriate to use npm to manage my own dependencies instead. We can specify git urls and versions, see the package.json git urls as dependencies.
+
+If you do it this way, the repository you want to use as a requirement must be an npm module so it must contain a package.json file or you'll get this error: Error: ENOENT, open 'tmp.tgz-unpack/package.json'.
+
+tldr (alternative solution)
+You may find it easier to use npm and manage dependencies with git urls:
+
+Move folder to a new repository
+run npm init inside both repositories
+run npm install --save git://github.com/user/project.git#commit-ish where you want your dependencies installed
+alias.a !git config --global
+echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias.amd !git add -A && git commit --amend --no-edit
+alias.sub !git submodule update --init --recursive
+alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
+alias.submodule '!git clone --recurse-submodules -j8'
+lc '!git log ORIG_HEAD.. --stat --no-merges'
+alias.upstream !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
+alias.unstream !git branch --unset-upstream $(git rev-parse --abbrev-ref HEAD)
+## https://git.wiki.kernel.org/index.php/Aliases
+
+cat file1 file2 > tmp ; mv tmp newfile
+
+git reset에 대한 참고 자료
+https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html
+
+--soft
+--mixed
+--hard
+-f -d -x
+
+## folder there
+tree /a /f >gogleDocTree.txt
+
+> file replaced
+>> append to the contents of a file
+(in use with cat)
+touch "blah blah blah" | cat - abc.txt (""를 abc 내용 맨 위에 삽입)
+edit = "!f() { $(git config core.editor) -- $@; }; f"
+reedit = "!f() { $(git config core.editor) -- $(git diff --name-only $1); }; f"
+edit-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`'
+add-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`'
+[diff]
+        tool = vscode
+    [difftool "vscode"]
+        cmd = code --wait --new-window --diff $LOCAL $REMOTE
+        prompt = false
+
+    
+## n-commit; branch off n-3
+
+git branch branchname <sha1-of-commit>
+git checkout -b branchname HEAD~n
+
+git diff --stat origin/tests
+git log tests --not --remotes --decorate
+
+git rev-list --all filename
+git rev-list origin/user/bob/testbranch -1 src/bfiles/*.txt

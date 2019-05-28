@@ -1,0 +1,7 @@
+[submodule "webex"]
+	path = webex
+	url = https://github.com/aiegoo/webex
+	branch = master
+[submodule "web-design-license"]
+	path = web-design-license
+	url = https://github.com/onofflink/web-design-license.git
