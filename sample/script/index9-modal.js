@@ -14,10 +14,12 @@ function modalClose(){
 
 var n = 0;
 (function ani(){
-     $(".slide").delay(2000).animate({"left": "-=200px"}, 3000, function(){
+     $(".slide").delay(2000).animate({"left": "-=200px"}, 2000, function(){
           n++;
-          if(n == 2) n = 0;
-          $(this).animate({"left": "0px"}, 2000);
+          if(n == 2) {
+               n = 0;
+          $(this).animate({"left": "0px"}, 1000);
+          }
           ani();
      });
 })();
