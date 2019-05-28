@@ -7,34 +7,38 @@
       <title>인터넷 센터</title>
       <link rel="stylesheet" href="css/style.css">
       <script src="scripts/jquery-1.12.2.min.js"></script>
-      <script src="scripts/script.js"></script>
+      <script src="scripts/index.js" defer="defer"></script>
 </head>
 <body>
-      <header class="all">
-            <div id="header_logo" class="wrap">
+      <div class="wrap">
+            <div class="header">
                 <div class="logo">
                 <a href="#"><img src="./images/LOGO.png" alt="no"></a>
                 </div>
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li><a href="#">센터소개</a>
+            
+            <div class="navs">
+                <div class="nav">
+                    <div> <a href="#">센터소개</a></div>
                       <ul class="submenu">
                         <li><a href="#">연혁</a></li>
                         <li><a href="#">조직도</a></li>
                         <li><a href="#">구성원</a></li>
                       </ul>
-                    </li>
-                    <li><a href="#">센터업무</a>
+                    </div>
+                <div class="nav">
+                    <div><a href="#">센터업무</a></div>
                       <ul class="submenu">
                         <li><a href="#">하는일</a></li>
                         <li><a href="#">포트폴리오</a></li>
                       </ul>
-                    </li>
-                    <li onClick="winOpen();">CONTACT</li>
-                </ul>
-            </nav>
+                </div>
+                <div class="nav">
+                    <div class="popup"><a href="#" onclick="javascript:winOpen();">CONTACT</a></div>
+                </div>
+                    
+            </div>
+          </div>
             <div class="clear"></div>
-            </header>
+      </div>
 </body>
 </html>
