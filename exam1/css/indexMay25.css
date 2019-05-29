@@ -33,6 +33,17 @@ a {text-decoration: none; color: inherit}
 .welcome span {color: #4298cc}
 
 .contents {width: 1000px; height: 500px;}
+.notice {width: 480px; margin-top: 25px;}
+table {float: left;}
+.table {padding: 0 5px; float: left;}
+.notice h2 {text-align: center;width: 480px;height: 40px; border-bottom: 1px solid black; padding-bottom: 15px;}
+.notice tr>th {text-align: center;}
+
+.notice tr:nth-child(2n) {background: rgba(222, 0, 155, 0.3)}
+
+.partner {width: 500px;float: right;}
+.partner > h2 {float: left; width:100px; text-align: center; }
+.partner img {width: 25%; height: 200px;}
 
 
 footer {width: 1000px; height: 100px;}
