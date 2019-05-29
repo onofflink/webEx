@@ -8,9 +8,7 @@ $(".nav").hover(function(){
 var n = 0;
 (function ani(){
      $(".slide").delay(2000).animate({"left": "-=960"}, 2000, function(){
-          n++;
-          if(n == 2){
-               n=0;
+          n++;if(n == 2){n=0;
                $(this).animate({"left": "0px"}, 2000);
           }
           ani();
