@@ -4,13 +4,13 @@ a {text-decoration: none; color: inherit}
 .clear::after {clear: both; content: ""; display: block;}
 
 #main {color: #7b422e;}
-#main2 {color: #bb692d;}
+#main2 {color: rgb(187, 105, 45);}
 .boxing {border: 1px solid red;}
 
 .wrap {width: 1000px; margin: 0 auto}
 .header {width: 960px; height: 150px; background: #fff;}
 .logo {float: left;}
-.navs {float: right; width: 600px;}
+.navs {float: right; width: 600px; z-index: 9999;}
 .nav {float: left; width: 200px; height: 150px; line-height: 150px; text-align: center; }
 .nav:hover {background: #ccc;}
 .nav > div {text-align: center; color: #000;}
@@ -18,12 +18,16 @@ a {text-decoration: none; color: inherit}
 
 .submenu {width: 200px; line-height: 50px; display: none;text-align: center;}
 .submenu > li {background: #ccc;}
-.submenu > li:hover {background: #fff;}
+.submenu > li:hover {background: rgba(187, 105, 45, 0.4);}
 
-.banner {width: 960px; height: 400px;  overflow: hidden; position: relative;}
+.banner {width: 960px; height: 400px;  overflow: hidden; position: relative; z-index: -100;}
 .slide {width: 5760px; position: absolute;top: 0; left: 0; }
 .slide > li {float: left; overflow: hidden;}
 
 /*  .banner {width: 960px; height:400px;position: relative; overflow: hidden; z-index: -100;}
  .slide {width:3840px; height: 400px; position: absolute; }
  .slide li {float: left; width: 960px; top: 0; left: 0; } */
+
+ .welcome {position: absolute; width: 400px; height: 100px; line-height: 100px; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(187, 105, 45, 0.4); color: white; border-radius: 15px;}
+
+ 
