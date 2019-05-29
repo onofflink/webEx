@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>sample modal for index9</title>
+     <link rel="stylesheet" href="css/index9-modal.css">
+     <script src="script/jquery-3.3.1.min.js"></script>
+     <script src="script/index9-modal.js" defer="defer"></script>
+</head>
+<body>
+     <!-- div.wrap>a*2^div.modal-bg+div.modal-wrap>div>div#modal-content+button#modal-btn -->
+     <div class="wrap"><a href="javascript: popUp();">popup window</a><a href="javascript: modalOpen();" id="modal">modal</a></div>
+     <div class="modal-bg"></div>
+     <div id="modal-wrap">
+          <div>
+               <div id="modal-content">
+                    <div class="banner">
+                         <ul class="slide">
+                              <li><img src="../images/images(1).jpg" alt="no"></li>
+                              <li><img src="../images/images(2).jpg" alt="no"></li>
+                              <li><img src="../images/images(3).jpg" alt="no"></li>
+                         </ul>
+                    </div>
+               
+               <button id="modal-btn" type="button" onclick="self.modalClose();">닫기</button>
+               </div>
+          </div>
+          
+     </div>
+</body>
+</html>
