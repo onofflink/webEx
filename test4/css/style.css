@@ -20,7 +20,7 @@ img{
 	float: left;
 }
 .wrap{
-	width: 1000px;
+	width: 1000px;margin: 0 auto;
 }
 .content{
 	width: 1000px;
@@ -31,13 +31,12 @@ a{
 }
 .clear{clear:both;position:inherit;}
 
-header{
-	height: 150px;
+.header{
+	height: 150px; width: 960px;
 }
-#header_logo{
-	padding-top: 20px;
-}
+
 .logo{
+	padding-top: 20px;
 	height: 100px; 
 	overflow: hidden;
 	float: left
@@ -45,16 +44,18 @@ header{
 .logo>a>img{
 	width: 250px;
 }
-nav{
-	float: left;
+.navs{
+	float: right;
 	padding-left: 100px;
+	width: 600px;
 }
 .nav{
-	width: 600px;
+	width: 200px;
 	height: 20px;
 	margin-top:10px;
+	float: left;
 }
-.nav>li{
+.nav>div{
 	width: 200px;
 	float: left;
 	text-align: center;
@@ -62,10 +63,10 @@ nav{
 	transition: all 0.4s;
 	padding: 5px 0
 }
-.nav>li:after{
+.nav>div:after{
 	clear: both;
 }
-.nav>li:hover{
+.nav>div:hover{
 	background-color: #6699FF;
 	color: #FFFFFF
 }
@@ -74,8 +75,9 @@ nav{
    background-color: rgba(255,255,255,0.8);
    position: absolute;
    z-index: 1;
-   width: 100%;
-   margin-top: 5px
+   width: 200px;
+   margin-top: 5px;
+   text-align: center;
 }
 .submenu>li{
    padding: 5px 0 5px 0;

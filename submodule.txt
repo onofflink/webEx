@@ -136,7 +136,6 @@ edit = "!f() { $(git config core.editor) -- $@; }; f"
 reedit = "!f() { $(git config core.editor) -- $(git diff --name-only $1); }; f"
 edit-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`'
 add-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`'
-
 [diff]
         tool = vscode
     [difftool "vscode"]
@@ -148,3 +147,13 @@ add-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git a
 
 git branch branchname <sha1-of-commit>
 git checkout -b branchname HEAD~n
+
+git diff --stat origin/tests
+git log tests --not --remotes --decorate
+
+git rev-list --all filename
+git rev-list origin/user/bob/testbranch -1 src/bfiles/*.txt
+
+conflicts = !git diff --name-only --diff-filter=U | grep -oE '[^/ ]+$'
+
+---------------------------- end of may 28
