@@ -12,13 +12,14 @@ a {text-decoration: none; color: inherit}
 .logo {width: 180px; overflow: hidden; padding: 25px 10px}
 .logo > img {width: 80%;}
 
-.navs {width: 200px; height: 600px; margin: 0 auto; position: absolute;}
+.navs {width: 200px; height: 600px; position: absolute;}
 .nav {width: 150px; height: 60px; padding: 0 15px;}
 .nav div {font-size: 1.2rem; color: #893700; font-weight: bold;}
 .nav div:hover {color: rgb(66, 152, 204); height: 50px; width: 200px;}
 
-.submenu {margin-left: 200px; width: 200px; height: 50px; line-height: 30px; margin-top: -50px; position: absolute; top: 1; display: none; cursor: pointer;}
-.submenu > li {background-color: #893700;}
+.submenu {margin-left: 180px; width: 120px; height: 50px; line-height: 30px; margin-top: -50px; position: absolute; top: 1; display: none; cursor: pointer;}
+.submenu > li {background-color: #893700; text-align: center}
+.submenu > li:hover {color: #000; background: #ccc;}
 
 
 .side-wrap {width: 1000px; height: 400px; float: left;}
@@ -30,10 +31,29 @@ a {text-decoration: none; color: inherit}
 .welcome {position: absolute; width: 500px; height: 80px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255, 255, 255, 0.3); text-align: center; line-height: 80px; border-radius: 20px}
 .welcome h2 {color: #fff}
 
-.contents {width: 960px; height: 500px;}
+.contents {width: 960px; height: 500px; position: absolute; top: 425px; left: 225px;}
 .notice {width: 450px; float: left;}
 .notice > h2 {text-align: center; padding: 25px 0; border-bottom: 1px solid black; width: 96%;}
 table {font-size: 0.96rem; padding: 10px 0}
 .table {line-height: 40px; color: #000}
 .table tr>th {font-weight: bold; text-align: center;}
 .table tr:nth-child(2n) {background: rgba(66, 152, 204, 0.3)}
+
+.partner {width: 500px;float: right;}
+.partner > h2 {text-align: center;padding: 28px 0; }
+.partner_info {margin-top: 80px; margin-left: 30px}
+.partner_info img:nth-child(1) {width: 80%; margin-top: -30px}
+.partner_info img:nth-child(2) {width: 60%; display: none;}
+
+.icon {width: 960px; margin: 0 auto; float: left; padding: 60px 0 0 0}
+.icons {text-align: center; width: 320px; float: right; }
+.icons .btn {background: #893700; width: 50%; height: 50px; border-radius: 20px; line-height: 50px; color: #fff;font-weight: 900; margin-left: 80px;}
+.icons .btn:hover {background: rgba(66, 152, 204, 0.9)}
+
+footer {width: 960px; position: absolute; left: 25px; }
+.footer {margin: 0 auto; background: rgba(137, 55, 0, 0.7); height: 150px; margin-top: 50px; color: #fff;}
+.footer-wrap {width: 90%; line-height: 40px;padding: 20px;}
+.legal {float: left; width: 300px}
+.legal > li {float: left;}
+
+.footer p {width: 500px; float: right; line-height: 25px; margin-top: -10px; }
