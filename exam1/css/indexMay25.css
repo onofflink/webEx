@@ -10,22 +10,27 @@ a {text-decoration: none; color: inherit}
 /* img {display: block; margin: 0;} */
 .boxing {border: 1px solid red;}
 
-.wrap {width: 1000px; height: 550px;}
+.wrap {width: 1000px; height: 500px;}
 .header {width: 100%; height: 150px; background: #eee;}
 .logo {float: left; width: 200px; overflow: hidden;}
 .logo > img {width: 200px;}
 
-.navs {float: right;width: 600px; cursor: pointer; position: relative;}
-.nav {float: left;  height: 150px; width: 150px; line-height: 150px;}
+.navs {float: right;width: 600px; cursor: pointer; position: relative;  z-index: 9999; }
+.nav {float: left;  height: 150px; width: 200px; line-height: 150px;}
 .nav > div {font-weight: bold}
-.nav > div:hover {background: #fff }
-.submenu {float: left; width: 150px; height: 150%; position: absolute; left:225px; top: 240px; transform: translate(-50%, -50%); z-index: 9999; background: rgba(0,0,0,0.5); display: none; }
-.submenu li {width: 150px; margin-left: -20px; height: 70px; line-height: 70px;  }
-.submenu li:hover {width: 150px; background: #fff}
+.nav > div:hover {background: #fff; width: 200px }
+.submenu {float: left; width: 200px; height: 300px; background: rgba(0,0,0,0.5); display: none; }
+.submenu li {width: 200px; margin-left: -20px; height: 40px; line-height: 40px; color: white; font-weight: bold; }
+.submenu li:hover {width: 200px; background: rgba(222,222,222,.5)}
 
-.banner {width: 1000px; height: 350px; position: relative; margin: 0 auto; overflow: hidden;}
-.banner > ul {width: 4000px; height: 350px; ; position: absolute; left: 0; top: 0}
+
+
+.banner {width: 960px; height: 350px; position: relative; margin: 0 auto; overflow: hidden;}
+.banner > ul {width: 4000px; height: 350px; ; position: absolute; left: 0; top: 0;}
 .banner > ul > li {float: left; width: 1000px; margin-left: -20px;}
+
+.welcome {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 70px; line-height: 40px; background: rgba(0,0,0,0.5); border-radius: 20px; color:#eee;}
+.welcome span {color: #4298cc}
 
 .contents {width: 1000px; height: 500px;}
 
