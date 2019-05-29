@@ -1,0 +1,18 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; color: #000;text-align: left;}
+div, ul, ol, li, h1, h2, h3, h4 {padding: 0; margin: 0; list-style: none;}
+
+.clear:after {clear: both; content: ""; display: block;}
+a {text-decoration: none;}
+
+.wrap {width: 1200px; margin: 0 auto; height: 100%}
+.header {width: 100%; height: 100px; background: #ccc}
+.logo {float: left;}
+
+.section {width: 1000px; height: 800px; float: left;}
+.navs {width: 200px; height: 800px;}
+.nav {background: #eee; cursor: pointer;position: relative;}
+.nav > div {background: #999; }
+.nav > ul {position: absolute; left:200px; top:0;}
+.nav > ul {position: absolute; left:200px; top:0; display: none;}
+.nav > ul > li {padding: 0.5rem 0.5rem 0.5rem 1.5rem;} 
+.nav > ul > li:hover {background: #ccc;} 

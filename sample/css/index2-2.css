@@ -1,0 +1,21 @@
+/* div.wrap>.header.clear>.logo>img^div.navs>.nav*4>div{MENU $}+ul>li*4>a{submenu$} index.html
+div.wrap>div.header.clear>.logo>img^li.navs>ul.nav>li{MENU $}*4^div.sub>ul*4>li*4>a{submenu$} index2.html
+div.wrap>.header.clear>.logo>img^^div.section.clear>div.navs>.nav*4>div{MENU$$}+ul>li*4>a{submenu$} index3.html
+*/
+html, body {margin: 0; padding: 0; width: 100%; text-align: left; color: #000; font-size: 16px}
+div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+
+.clear:after {clear: both; content: ""; display: block}
+a {text-decoration: none;}
+
+.wrap {width: 1200px; height: 100%; margin: 0 auto;}
+.header {width: 100%; height: 100px; line-height: 100px; background: #ccc;}
+.logo {float: left;}
+.navs {width: 600px; height: 100%; float: right;position: relative;}
+ul.nav {width: 600px;}
+ul > li {float: left; width:150px;}
+div.sub {width: 1200px; position: absolute; top: 100px; right: 0; background: rgba(0, 0, 0,0.2);/*  transition: all 0.3s; */}
+/* 내가 못했던 매직 코딩은 아래와 위 ul > li임 그리고 div.sub -- 요것이 방씨의 bg와 같음 */
+div.sub > ul {float: right; width:150px;}
+.sub > ul > li {line-height: 60px;}
+.sub > ul > li:hover {background: #999;}

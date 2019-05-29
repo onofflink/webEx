@@ -1,8 +1,11 @@
-$(".nav").hover(function(){
-      $("ul", $(this)).stop().slideDown();
-}, function(){
-      $("ul", $(this)).stop().slideUp();
+var n = 0;
+
+$(".nav").hover(function() {
+  $("ul", $(this)).stop().slideDown();
+}, function() {
+  $("ul", $(this)).stop().slideUp();
 });
+
 var n = 0;
 
 $("#bt_next").click(function(){

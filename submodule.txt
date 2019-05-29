@@ -109,3 +109,58 @@ alias.a !git config --global
 echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias.amd !git add -A && git commit --amend --no-edit
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
+alias.submodule '!git clone --recurse-submodules -j8'
+lc '!git log ORIG_HEAD.. --stat --no-merges'
+alias.upstream !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
+alias.unstream !git branch --unset-upstream $(git rev-parse --abbrev-ref HEAD)
+## https://git.wiki.kernel.org/index.php/Aliases
+
+cat file1 file2 > tmp ; mv tmp newfile
+
+git reset에 대한 참고 자료
+https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html
+
+--soft
+--mixed
+--hard
+-f -d -x
+
+## folder there
+tree /a /f >gogleDocTree.txt
+
+> file replaced
+>> append to the contents of a file
+(in use with cat)
+touch "blah blah blah" | cat - abc.txt (""를 abc 내용 맨 위에 삽입)
+edit = "!f() { $(git config core.editor) -- $@; }; f"
+reedit = "!f() { $(git config core.editor) -- $(git diff --name-only $1); }; f"
+edit-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`'
+add-unmerged '!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`'
+
+git log css..css-js --oneline
+git log css...test4
+
+git log css...
+git log -–graph –pretty=oneline –graph –abbrev-commit –first-parent
+
+git log --decorate --pretty=oneline --reverse --name-status css..tmp
+
+git log $(git merge-base css tmp)..HEAD
+
+git log --all --not $(git rev-list --no-walk --exclude=refs/heads/tmp --all)
+
+git log tmp --not $(git for-each-ref --format='%(refname)' refs/heads/)
+
+git reset --soft HEAD^ 
+
+or
+
+git reset --soft HEAD~1
+
+Then reset the unwanted files in order to leave them out from the commit:
+
+git reset HEAD path/to/unwanted_file
+
+Now commit again, you can even re-use the same commit message:
+
+git commit -c ORIG_HEAD  
