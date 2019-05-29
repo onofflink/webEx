@@ -1,14 +1,15 @@
 $(".nav").hover(function(){
      $("ul", $(this)).stop().slideDown();
+     /* $(".navs", $(this)).css("z-index", "9999"); */
 }, function(){
      $("ul", $(this)).stop().slideUp();
 });
 
 var n = 0;
 (function ani(){
-     $(".banner > ul").delay(2000).animate({"left": "-=1000"}, 2000, function(){
+     $(".slide").delay(2000).animate({"left": "-=960"}, 2000, function(){
           n++;
-          if(n == 2){
+          if(n == 4){
                n=0;
                $(this).css("left", "0px");
           }

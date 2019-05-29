@@ -5,17 +5,43 @@ a {text-decoration: none; color: inherit}
 
 #main {color: rgb(66, 152, 204);}
 #sub {color: #893700;}
-.boxing {background: rgba(66, 152, 204, 0.5);}
+.boxing {background: rgba(66, 152, 204, 0.5); border: 5px solid red}
 
-.wrap {width: 1000px; height: 100%; margin: 0 auto;}
+.wrap {width: 1000px; height: 550px; margin: 0 auto;}
 .header {width: 960px; height: 150px; background: #fff}
 .logo {float: left;padding: 25px;}
 
-.navs {float: right;}
+.navs {float: right; z-index: 9999; }
 .nav {float: left; width: 200px; height: 100px; line-height: 100px;}
 .nav > div {text-align: center; color: #000; font-weight: bold;}
 .nav > div:hover {background: rgba(66, 152, 204, 0.7)}
 
-.submenu {width: 200px; line-height: 40px; text-align: center;display: none;}
+.submenu {width: 200px; line-height: 40px; text-align: center;display: none; z-index: 9999;}
 .submenu > li {background: rgba(66, 152, 204, 0.5); color: #000}
 .submenu > li:hover {background: #893700; color:#fff}
+
+.banner {width: 960px; height:400px;position: relative; overflow: hidden; z-index: -100;}
+.slide {width:3840px; height: 400px; position: absolute; }
+.slide li {float: left; width: 960px; top: 0; left: 0; }
+
+.welcome {position: absolute; width: 500px; height: 80px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255, 255, 255, 0.3); text-align: center; line-height: 80px; border-radius: 20px}
+.welcome h2 {color: #fff}
+
+.contents {width: 960px; height: 500px; margin: 0 auto;}
+.notice {width: 450px; float: left;}
+.notice > h2 {text-align: center; padding: 25px 0; border-bottom: 1px solid black; width: 96%;}
+table {font-size: 0.96rem; padding: 10px 0}
+.table {line-height: 40px; color: #000}
+.table tr>th {font-weight: bold; text-align: center;}
+.table tr:nth-child(2n) {background: rgba(66, 152, 204, 0.3)}
+
+.partner {width: 500px; float: left; margin-left: 30px;  margin: 0 auto;}
+.partner > h2 {text-align: center;padding: 28px 0; }
+.partner_info {margin-top: 80px; margin-left: 30px}
+.partner_info img:nth-child(1) {width: 80%; margin-top: -30px}
+.partner_info img:nth-child(2) {width: 60%; display: none;}
+
+.icon {width: 960px; margin: 0 auto; float: left; padding: 60px 0}
+.icons {text-align: center; width: 320px; float: right; }
+.icons .btn {background: #893700; width: 50%; height: 50px; border-radius: 20px; line-height: 50px; color: #fff;font-weight: 900; margin-left: 80px;}
+.icons .last-icon {background: red}
