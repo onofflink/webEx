@@ -16,12 +16,12 @@ a {text-decoration: none; color: inherit}
 .logo > img {width: 200px;}
 
 .navs {float: right;width: 600px; cursor: pointer; position: relative;  z-index: 9999; }
-.nav {float: left;  height: 150px; width: 200px; line-height: 150px;}
-.nav > div {font-weight: bold}
+.nav {float: left;  height: 150px; width: 198px; line-height: 150px;}
+.nav > div {font-weight: bold;}
 .nav > div:hover {background: #fff; width: 200px }
-.submenu {float: left; width: 200px; height: 300px; background: rgba(0,0,0,0.5); display: none; }
-.submenu li {width: 200px; margin-left: -20px; height: 40px; line-height: 40px; color: white; font-weight: bold; }
-.submenu li:hover {width: 200px; background: rgba(222,222,222,.5)}
+.submenu { background: rgba(0,0,0,0.5);/*  display: none;  */}
+.submenu li {height: 40px; line-height: 40px; color: white; font-weight: bold; }
+.submenu li:hover {background: rgba(222,222,222,.2)}
 
 
 
@@ -41,9 +41,9 @@ table {float: left;}
 
 .notice tr:nth-child(2n) {background: rgba(222, 0, 155, 0.3)}
 
-.partner {width: 500px;float: right;}
-.partner > h2 {float: left; width:100px; text-align: center; }
-.partner img {width: 25%; height: 200px;}
+.partner {width: 410px;float: right;}
+.partner > h2 {float: right; width:100px; text-align: center; }
+.partner img {width: 25%; height: 200px; float: right;}
 
 
 footer {width: 1000px; height: 100px;}
