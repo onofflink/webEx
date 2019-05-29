@@ -41,7 +41,15 @@ table {font-size: 0.96rem; padding: 10px 0}
 .partner_info img:nth-child(1) {width: 80%; margin-top: -30px}
 .partner_info img:nth-child(2) {width: 60%; display: none;}
 
-.icon {width: 960px; margin: 0 auto; float: left; padding: 60px 0}
+.icon {width: 960px; margin: 0 auto; float: left; padding: 60px 0 0 0}
 .icons {text-align: center; width: 320px; float: right; }
 .icons .btn {background: #893700; width: 50%; height: 50px; border-radius: 20px; line-height: 50px; color: #fff;font-weight: 900; margin-left: 80px;}
 .icons .last-icon {background: red}
+
+footer {width: 960px; }
+.footer {margin: 0 auto; background: rgba(137, 55, 0, 0.7); height: 150px; margin-top: 50px; color: #fff;}
+.footer-wrap {width: 90%; line-height: 40px;padding: 20px;}
+.legal {float: left; width: 300px}
+.legal > li {float: left;}
+
+.footer p {width: 500px; float: right; line-height: 25px; margin-top: -10px; }
