@@ -155,3 +155,5 @@ git rev-list --all filename
 git rev-list origin/user/bob/testbranch -1 src/bfiles/*.txt
 
 conflicts = !git diff --name-only --diff-filter=U | grep -oE '[^/ ]+$'
+
+---------------------------- end of may 28
