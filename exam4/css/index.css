@@ -1,0 +1,33 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; font-family: "맑은 고딕"; color:#fff}
+div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: inherit}
+.clear:after {clear: both; content: ""; display: block;}
+
+#main {background: #6699FF}
+#aux {color: #0066CC}
+
+.wrap {width: 1000px; height: 500px; margin: 0 auto}
+.header {width: 1000px; height: 150px; background: rgba(0,0,0,0.7);}
+.logo {float: left;}
+.navs {float: right; position: relative;}
+.nav {float: left; width: 200px; height: 100px; line-height: 100px; z-index: 9999;}
+
+.nav div {text-align: center; }
+.nav div:hover {background: rgba(0, 102, 204, 0.9)}
+.submenu {text-align: center; line-height: 50px; display: none; position: absolute; width: 200px; }
+.submenu li {background: rgba(255, 255, 255, 0.4)}
+.submenu li:hover {color: #000; background: #06c}
+
+.banner {width: 1000px; height: 350px;position: relative; overflow: hidden;}
+.slide {width: 3000px; height: 350px; position: absolute;top: 0; left: 0; z-index: -100;}
+.slide li {float: left; }
+
+.welcome {position: absolute; width: 400px; height: 100px; background: rgba(0, 102, 204, 0.3); border-radius: 30px; text-align: center; line-height: 45px; top: 50%; left: 50%; transform: translate(-50%, -50%)}
+.welcome h2 {color:/*  rgb(0, 102, 204) */}
+.welcome span {color: #fff}
+
+.btn-slide {position: absolute; width: 400px; text-align: center; bottom:25px; left: 50%; transform: translateX(-50%); cursor: pointer;}
+.btn-prev {width: 40%; float: left; padding: 20px; font-size: 2rem; font-weight: bold}
+.btn-prev:hover {color:rgba(0, 102, 204, 0.9); background: #fff}
+.btn-next {width: 40%; float: left; padding: 20px;font-size: 2rem; font-weight: bold}
+.btn-next:hover {color:rgba(0, 102, 204, 0.9); background: #fff}
