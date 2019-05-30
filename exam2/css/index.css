@@ -49,10 +49,11 @@ a {text-decoration: none; color: inherit}
  .icon-btn {padding: 5px; background: rgba(0, 0, 0, 0.4); width: 50%; margin-left: 20px; color: white; border-radius: 8px; text-align: center; }
  .icon-btn:hover {background: rgb(187, 105, 45, 0.7)}
 
- footer {width: 960px; margin: 0 auto; color:#999; margin-top: 70px;}
- .footer {background: rgb(187, 105, 45, 0.4); padding: 50px;}
+ footer {width: 960px; height: 100px; margin: 0 auto; color:#999; }
+ .footer {background: rgb(187, 105, 45, 0.4); padding: 40px;}
 
  .legal {float: left; line-height: 40px;}
  
 
- .footer p {float: right; }
+ .footer p {float: right; padding  }
+ .footer p:hover {color: white;}
