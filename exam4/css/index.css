@@ -14,8 +14,8 @@ a{text-decoration: none; color: inherit}
 
 .nav div {text-align: center; }
 .nav div:hover {background: rgba(0, 102, 204, 0.9)}
-.submenu {text-align: center; line-height: 50px; display: none; position: absolute; width: 200px; }
-.submenu li {background: rgba(255, 255, 255, 0.4)}
+.submenu {text-align: center; line-height: 50px; display: none; position: absolute; width: 200px;z-index: 9999; }
+.submenu li {background: rgba(255, 255, 255, 0.4); }
 .submenu li:hover {color: #000; background: #06c}
 
 .banner {width: 1000px; height: 350px;position: relative; overflow: hidden;}
