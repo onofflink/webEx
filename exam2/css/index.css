@@ -22,7 +22,7 @@ a {text-decoration: none; color: inherit}
 
 .banner {width: 960px; height: 400px;  overflow: hidden; position: relative; z-index: -100;}
 .slide {width: 5760px; position: absolute;top: 0; left: 0; }
-.slide > li {float: left; overflow: hidden;}
+.slide > li {float: left;}
 
 /*  .banner {width: 960px; height:400px;position: relative; overflow: hidden; z-index: -100;}
  .slide {width:3840px; height: 400px; position: absolute; }
@@ -42,3 +42,17 @@ a {text-decoration: none; color: inherit}
  .partner > h2 {text-align: center; font-size: 1.2rem; color: #000;padding: 25px 0;}
  .partner_info {margin: 0 auto;margin-left: 25px;}
  .partner_info img {width: 90%;}
+
+ .icon {width: 1000px; margin: 0 auto; float: left; margin-bottom: 30px;}
+ .icons {width: 33.3%; float: left;}
+ .icons img {width: 60%;}
+ .icon-btn {padding: 5px; background: rgba(0, 0, 0, 0.4); width: 50%; margin-left: 20px; color: white; border-radius: 8px; text-align: center; }
+ .icon-btn:hover {background: rgb(187, 105, 45, 0.7)}
+
+ footer {width: 960px; margin: 0 auto; color:#999; margin-top: 70px;}
+ .footer {background: rgb(187, 105, 45, 0.4); padding: 50px;}
+
+ .legal {float: left; line-height: 40px;}
+ 
+
+ .footer p {float: right; }
