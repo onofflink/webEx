@@ -15,7 +15,3 @@ var n = 0;
           ani();
      });
 })();
-
-function winOpen(){
-     window.open("win.html", "win", "width=400, height=300, top=200, left=200, toolbar = no, location= no , status = no, menubar = no, resizable = no , scrollbars = no");
-}

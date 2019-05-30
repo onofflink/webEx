@@ -1,0 +1,31 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; color: #666;}
+
+div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit}
+
+.boxing {border: 1px solid red}
+.clear:after {clear: both; content: ""; display: block;}
+#main {color: #969}
+#aux {color: #c99}
+
+.wrap {width: 1200px; margin: 0 auto}
+.header {width: 1000px; height: 180px; background: #fff}
+.logo {float: left;}
+.navs {float: right; text-align: center; z-index: 9999;}
+.nav {float: left; width: 200px; height: 180px; line-height: 100px; text-align: center}
+.nav div:hover {background: rgb(152, 103, 152); color: #fff}
+
+.submenu {line-height: 50px; background: rgba(102, 102, 102, 0.7); color: white}
+.submenu > li {color: #fff;}
+.submenu > li:hover {background: rgba(255,255,255,0.5)}
+
+.banner {width: 1000px;  height: 350px; position: relative; overflow: hidden; }
+.slide {width: 3000px; height: 350px;position: absolute; top: 0; left: 0; z-index: -100;}
+.slide > li {float: left; }
+
+.welcome {position: absolute; width: 350px; height: 120px; text-align: center; background: rgba(255,255,255,0.4); color: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 25px;}
+.welcome h2 {line-height: 120px; }
+
+.btn-slide {position: absolute; width: 350px; height: 40px; text-align: center;  color: #fff; bottom:25px; left: 55%; transform: translateX(-50%); border-radius: 25px; z-index: 9999;}
+.btn-prev {font-size: 2rem; cursor: pointer;float: left;}
+.btn-next {font-size: 2rem; cursor: pointer;;}
