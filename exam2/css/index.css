@@ -30,4 +30,15 @@ a {text-decoration: none; color: inherit}
 
  .welcome {position: absolute; width: 400px; height: 100px; line-height: 100px; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(187, 105, 45, 0.4); color: white; border-radius: 15px;}
 
- 
+ .contents {width: 960px; margin: 0 auto}
+ .notice {float: left; font-size: 0.9rem; }
+ .notice > h2 {text-align: center; font-size: 1.2rem; color: #000; border-bottom: 1px solid #999; width: 99%; padding: 25px 0;}
+ .table {padding: 15px 0;}
+ .table tr>th {text-align: center; font-weight: bold;}
+ .table tr>td {padding: 8px 0; color: #000}
+ .table tr:nth-child(2n) {background: rgba(187, 105, 45, 0.3)}
+
+ .partner {float: left; width: 500px; margin-left: 25px;}
+ .partner > h2 {text-align: center; font-size: 1.2rem; color: #000;padding: 25px 0;}
+ .partner_info {margin: 0 auto;margin-left: 25px;}
+ .partner_info img {width: 90%;}
