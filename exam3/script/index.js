@@ -29,5 +29,5 @@ function modalClose(){
 }
 
 function winOpen(){
-     window.open("win.html", "win", "width=400", "height=400", "top=300", "left=50%", "scrollbars=no", "resize=no", "status=no", "location=no");
+     window.open("win.html", "win", "width=400, height=400, top=300, left=50%, toolbar = no, location= no , status = no, menubar = no, resizable = no , scrollbars = no");
 }
