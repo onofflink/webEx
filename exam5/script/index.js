@@ -4,8 +4,30 @@ $(".nav").hover(function(){
      $("ul", $(this)).stop().slideUp();
 });
 
-var n = 0;
-var depth = 100;
+
+$(".bts").click(function(){
+     var n = $(this).index();
+     $(".bts").css({"color":"#fff"});
+     $(".bts").eq(n).css({"color":"#f30"});
+     $(".slide").stop().animate({"left":(-n*1000)+"px"}, 2000);
+   });
+function popUp(){
+     window.open("contact.html", "contact", "width= 400px, height=300, top=300, left=500, resizable=no, location=no, status=no, scrollbars=no, menubar=no, toolbar=no")
+}
+
+function modalOpen(){
+     $("#modal-bg").show(0);
+     $("#modal-wrap").css("display", "table-cell");
+}
+
+function modalClose(){
+     $("#modal-bg").hide(0);
+     $("#modal-wrap").css("display", "none");
+}
+
+
+/* var n = 0;
+var depth = 100; */
 /* $(".btn-prev").click(function(){
      if(n > 0) n--;
      ani();
@@ -38,23 +60,10 @@ function ani() {
      });
      ani();
 } */
-$(".bts").click(function(){
+/* $(".bts").click(function(){
      var n = $(this).index();
      $(".bts").css({"color": "#fff"});
      $(".bts").eq(n).css({"color": "#f30"});
      $(".slide").eq(n).animate({"left": (-n*1000)+"px"}, 2000);
 })
-
-function winOpen(){
-     window.open("contact.html", "contact", "width= 400px, height=300, top=300, left=500, resizable=no, location=no, status=no, scrollbars=no, menubar=no, toolbar=no")
-}
-
-function modalOpen(){
-     $("#modal-bg").show(0);
-     $("#modal-wrap").css("display", "table-cell");
-}
-
-function modalClose(){
-     $("#modal-bg").hide(0);
-     $("#modal-wrap").css("display", "none");
-}
+ */
