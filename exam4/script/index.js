@@ -31,7 +31,7 @@ function ani() {
 })();
 
 function winOpen(){
-     window.open("contact.html", "win", "width= 400px, height=300, top=300, left=500, resizable=no, location=no, status=no, scrollbars=no")
+     window.open("contact.html", "contact", "width= 400px, height=300, top=300, left=500, resizable=no, location=no, status=no, scrollbars=no, menubar=no, toolbar=no")
 }
 
 function modalOpen(){
