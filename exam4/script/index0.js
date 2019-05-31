@@ -43,5 +43,5 @@ function ani(){
 }
 
 function popUp(){
-  window.open("popUp.html", "win", "width=400, height=200, top=100, left=200");
+  window.open("popUp.html", "win", "width=400, height=200, top=100, left=200, status = no, resizable = no, location = no, toolbar = no, menubar = no, scrollbars = no");
 }

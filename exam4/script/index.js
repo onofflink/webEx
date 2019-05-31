@@ -5,7 +5,7 @@ $(".nav").hover(function(){
 });
 
 var n = 0;
-/* $(".btn-prev").click(function(){
+$(".btn-prev").click(function(){
      if(n > 0) n--;
      ani();
 });
@@ -17,9 +17,9 @@ $(".btn-next").click(function(){
 
 function ani() {
      $(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
-     } */
+     }
 
-(function ani(){
+/* (function ani(){
      $(".slide").delay(2000).animate({"left": "-=1000px"}, 2000, function(){
           n++;
           if(n == 2){
@@ -28,7 +28,7 @@ function ani() {
           }          
      ani();
      });
-})();
+})(); */
 
 function winOpen(){
      window.open("contact.html", "contact", "width= 400px, height=300, top=300, left=500, resizable=no, location=no, status=no, scrollbars=no, menubar=no, toolbar=no")

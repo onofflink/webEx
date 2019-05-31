@@ -5,6 +5,7 @@ $(".nav").hover(function(){
 });
 
 var n = 0;
+var depth = 100;
 /* $(".btn-prev").click(function(){
      if(n > 0) n--;
      ani();
@@ -19,7 +20,7 @@ function ani() {
      $(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
      } */
 
-(function ani(){
+/* (function ani(){
      $(".slide").delay(2000).animate({"left": "-=1000px"}, 2000, function(){
           n++;
           if(n == 2){
@@ -28,7 +29,21 @@ function ani() {
           }          
      ani();
      });
-})();
+})(); */
+
+/* function ani() {
+     var n = $(this).index();
+     $("#bts").click(function(){
+          $(this).css("left", "-n*1000px");
+     });
+     ani();
+} */
+$(".bts").click(function(){
+     var n = $(this).index();
+     $(".bts").css({"color": "#fff"});
+     $(".bts").eq(n).css({"color": "#f30"});
+     $(".slide").eq(n).animate({"left": (-n*1000)+"px"}, 2000);
+})
 
 function winOpen(){
      window.open("contact.html", "contact", "width= 400px, height=300, top=300, left=500, resizable=no, location=no, status=no, scrollbars=no, menubar=no, toolbar=no")
