@@ -16,5 +16,14 @@ var n = 0;
 })();
 
 function winOpen() {
-     window.open("win.html", "win", "width= 300, height=200, top=200, left=200");
+     window.open("win.html", "win", "width= 350, height=300, top=200, left=200, menubar = no, scrollbars = no, status = no, toolbar = no, resizable = no, location = no");
+}
+
+function modalOpen(){
+     $("#modal-bg").show(0);
+     $("#modal-wrap").css("display", "table-cell");
+}
+function modalClose(){
+     $("#modal-bg").hide(0);
+     $("#modal-wrap").css("display", "none");
 }
