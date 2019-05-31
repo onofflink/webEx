@@ -15,3 +15,13 @@ var n = 0;
           ani();
      });
 })();
+
+function modalOpen() {
+     $("#modal-bg").show(0);
+     $("#modal-wrap").css("display", "table-cell");
+}
+
+function modalClose() {
+     $("#modal-bg").hide(0);
+     $("#modal-wrap").css("display", "none");
+}

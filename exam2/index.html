@@ -15,7 +15,7 @@
                <div class="logo"><img src="images/LOGO.jpg" alt="no"></div>
                <div class="navs">
                     <div class="nav">
-                         <div><a href="#">DD 소개</a></div>
+                         <div><a href="javascript:popUp();">DD 소개</a></div>
                     </div>
                     <div class="nav">
                          <div><a href="#">빵 만들기</a></div>
@@ -81,7 +81,7 @@
           </div><!-- notice -->
           <div class="partner">
                <h2>Partner</h2>
-               <div class="partner_info"><a href="javascript:winOpen();"><img src="images/icons/PARTNER.jpg" alt="notice"></a></div>
+               <div class="partner_info"><a href="javascript:modalOpen();"><img src="images/icons/PARTNER.jpg" alt="notice"></a></div>
           </div>
           <div class="icon clear wrap">
                <div class="icons">
@@ -112,5 +112,9 @@
                          사업장주소:서울특별시 금천구 가산동 가산디지털2로</p>
           </div>
      </footer>
+     <div id="modal-bg"></div>
+     <div id="modal-wrap">
+          <div id="modal-body"><a href="javascript: modalClose();"><img src="images/icons/PARTNER_UP.png" alt="no"></a></div>
+     </div>
 </body>
 </html>
