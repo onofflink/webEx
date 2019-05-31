@@ -17,11 +17,17 @@ var n = 0;
       });
 })();
 
+
 function modalOpen(){
-  $("#modal-bg").show(0);
-  $("#modal-wrap").css("display", "table-cell");
+     $("#modal-bg").show(0);
+     $("#modal-wrap").css("display", "table-cell");
 }
 function modalClose(){
-  $("#modal-bg").hide(0);
-  $("#modal-wrap").css("display", "none");
+     $("#modal-bg").hide(0);
+     $("#modal-wrap").css("display", "none");
+}
+
+
+function winOpen() {
+  window.open("win.html", "win", "width=400, height = 300, top = 200, left = 300, toolbar = no, menubar = no, scrollbars = no, status = no, location = no, resizable = no");
 }

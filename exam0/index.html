@@ -15,7 +15,7 @@
     <div class="logo"><img src="images/logo.png" alt="no"></div>
     <div class="navs">
       <div class="nav">
-        <div><a href="#">MENU01</a></div>
+        <div><a href="javascript: winOpen();">MENU01</a></div>
       </div>
       <div class="nav">
         <div><a href="#">MENU02</a></div>
@@ -86,7 +86,7 @@
           <div class="partner">
             <h2>web partner site</h2>
             <div class="partner_info">
-              <a href="javascript: modalOpen();"><img src="images/partner.jpg" alt="no"></a>     
+              <a href="javascript:modalOpen();"><img src="images/partner.jpg" alt="no"></a>     
             </div>
             <pre>
               -센서알고리즘 개발
@@ -152,9 +152,9 @@
     </div>
     
 </div>
-<div class="bg"></div>
-<div class="modal-wrap">
-  <div class="modal-content"><a href="javascript: modalClose();"><img src="images/partner.jpg" alt="no"></a><button>Close</button></div>
+<div id="modal-bg"></div>
+<div id="modal-wrap">
+  <div id="modal-content"><a href="javascript: modalClose();"><img src="images/partner.jpg" alt="no"></a><button onclick="self.close();">Close</button></div>
 </div>
 </body>
 </html>
