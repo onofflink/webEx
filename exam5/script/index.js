@@ -5,6 +5,7 @@ $(".nav").hover(function(){
 });
 
 
+
 $(".bts").click(function(){
      var n = $(this).index();
      $(".bts").css({"color":"#fff"});
