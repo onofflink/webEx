@@ -1,0 +1,52 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; text-align: left; font-size: 16px; color: #333;}
+
+div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit}
+
+.clear:after {clear: both; content: ""; display: block;}
+
+.wrap {width: 1200px; margin: 0 auto;}
+.header {width: 100%; height: 100px; background: #eee;}
+.logo {float: left;}
+.nav-wrap {width: 1200px; height: 100px; background: rgba(0,0,0,0.7);}
+.navs {float: right; text-align: center}
+.nav {float: left; width: 200px; height: 100px; line-height: 100px;}
+.nav div {color: #fff;}
+.nav div:hover {background: #fff; color:green;}
+.submenu {width: 200px; height: 150px; line-height: 50px; background: rgba(0, 128, 0, 0.5); color: #fff; display: none;}
+.submenu > li {}
+.submenu > li:hover {background: rgba(0,0,0,0.4);}
+
+.banner {width: 1200px; height: 300px; margin: 0 auto; position: relative; overflow: hidden; background: #000; z-index: -300;}
+.slide {width: 4800px; height: 300px; position: absolute; z-index: -100;}
+.slide li {float: left; }
+.slide li img {width: 1200px; height:300px;}
+
+.contents {width: 1200px; height: 300px; }
+.notice {width: 33.33%; float: left;}
+.notice h2 {text-align: center; padding: 10px 0;}
+.table {color: #000; font-size: 0.8rem; border-collapse: collapse}
+.table tr>td {padding: 8px 0; margin-right: 10px;}
+.table tr:nth-child(2n) {background: rgba(0, 128, 0, 0.3);}
+.table > tr { cursor: pointer;  padding: 20px 0;}
+
+.partner {width: 33.33%; float: left; margin-top: 20px;}
+
+.partner_info img {width: 120px;}
+
+.gallery {width: 33.33%;float: left; margin-top: 40px;}
+.gallery-wrap {float: left; width: 400px; border: 2px solid green; }
+.gallery-wrap .imgs {text-align: center; margin-left: 30px; }
+.gallery-wrap .imgs img {width: 100px; display: inline; float: left; margin: 30px 5px; }
+
+footer {width: 1200px; height: 100px;}
+.footer {background: rgba(0, 128, 0, 0.3)}
+
+.footer .logo { float: left; padding: 20px;}
+.footer .logo img {width: 150px;}
+
+.footer-wrap {width: 1000px; float: left; vertical-align: middle; padding: 5px 0;}
+
+.legal {width: 33.33%; float: left; padding: 10px 0;}
+
+.copyright {width: 33.33%; float: left;}
