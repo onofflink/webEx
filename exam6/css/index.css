@@ -31,14 +31,16 @@ a {text-decoration: none; color: inherit}
 .table tr:nth-child(2n) {background: rgba(0, 128, 0, 0.3);}
 .table > tr { cursor: pointer;  padding: 20px 0;}
 
-.partner {width: 33.33%; float: left; margin-top: 20px;}
-
-.partner_info img {width: 120px;}
+.partner {width: 33.33%; float: left; margin-top: 20px; position: relative;}
+.partner_info {width:360px; position: absolute; text-align: center}
+.partner_info img {width: 100px; float: left;}
+.slide-btn {width: 100%; text-align: center; font-size: 3rem; color: cornflowerblue; position: absolute; bottom:-150px;}
+.bts {cursor: pointer;}
 
 .gallery {width: 33.33%;float: left; margin-top: 40px;}
-.gallery-wrap {float: left; width: 400px; border: 2px solid green; cursor: pointer;}
-.gallery-wrap .imgs {text-align: center; margin-left: 30px; }
-.gallery-wrap .imgs img {width: 100px; display: inline; float: left; margin: 30px 5px; }
+.gallery-wrap {float: left; width: 400px; border: 2px solid green; cursor: pointer; }
+.gallery-wrap .imgs {text-align: center; margin-left: 30px;}
+.gallery-wrap .imgs img {width: 100px; float: left; margin: 30px 5px; }
 
 footer {width: 1200px; height: 100px;}
 .footer {background: rgba(0, 128, 0, 0.3)}
