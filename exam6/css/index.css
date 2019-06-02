@@ -1,4 +1,4 @@
-html, body {margin: 0; padding: 0; width: 100%; height: 100%; text-align: left; font-size: 16px; color: #333;}
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; text-align: left; font-size: 16px; color: #333; position: relative;}
 
 div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color: inherit}
@@ -6,16 +6,17 @@ a {text-decoration: none; color: inherit}
 .clear:after {clear: both; content: ""; display: block;}
 
 .wrap {width: 1200px; margin: 0 auto;}
-.header {width: 100%; height: 100px; background: #eee;}
+.header {width: 100%; height: 100px; background: #eee;position: relative; }
 .logo {float: left;}
-.nav-wrap {width: 1200px; height: 100px; background: rgba(0,0,0,0.7);}
-.navs {float: right; text-align: center}
-.nav {float: left; width: 200px; height: 100px; line-height: 100px;}
-.nav div {color: #fff;}
+.navs {float: right; text-align: center; width: 900px; background: rgba(0, 128, 0, 0.3)}
+.nav {float: left; height: 100px;}
+.nav div {color: #fff; width: 150px; float: left;width: 200px;  line-height: 100px;}
 .nav div:hover {background: #fff; color:green;}
-.submenu {width: 200px; height: 150px; line-height: 50px; background: rgba(0, 128, 0, 0.5); color: #fff; display: none;}
-.submenu > li {}
-.submenu > li:hover {background: rgba(0,0,0,0.4);}
+.submenu { width: 100%; height: 200px; background: rgba(0,0,0,0.7); color: #fff; position: absolute;top: 100px;  right: 0; display: none;}
+.submenu .sub-bg {float: righ; margin-right: 100px}
+.submenu ul {width: 200px; float: right; text-align: center;}
+.submenu li {width: 200px; height: 50px; line-height: 50px; float: left;}
+.submenu li:hover {background: rgba(0, 128, 0, 0.6);}
 
 .banner {width: 1200px; height: 300px; margin: 0 auto; position: relative; overflow: hidden; background: #000; z-index: -300;}
 .slide {width: 4800px; height: 300px; position: absolute; z-index: -100;}
@@ -35,7 +36,7 @@ a {text-decoration: none; color: inherit}
 .partner_info img {width: 120px;}
 
 .gallery {width: 33.33%;float: left; margin-top: 40px;}
-.gallery-wrap {float: left; width: 400px; border: 2px solid green; }
+.gallery-wrap {float: left; width: 400px; border: 2px solid green; cursor: pointer;}
 .gallery-wrap .imgs {text-align: center; margin-left: 30px; }
 .gallery-wrap .imgs img {width: 100px; display: inline; float: left; margin: 30px 5px; }
 
@@ -50,3 +51,15 @@ footer {width: 1200px; height: 100px;}
 .legal {width: 33.33%; float: left; padding: 10px 0;}
 
 .copyright {width: 33.33%; float: left;}
+
+#modal-bg {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); top: 0; left: 0;z-index: 99999; position: absolute; display: none}
+#modal-wrap {width: 100%; height: 100%; ; top: 0; left: 0;z-index: 99999; position: absolute; display: table-cell;display: none;}
+#modal-body {background: salmon; width: 400px; height: 400px; top: 50%;left: 50%; transform: translate(-50%, -50%); position: absolute;vertical-align: middle;text-align: center; line-height: 400px;}
+#modal-content {color: #fff;}
+
+.modal-table {margin: 0 auto; line-height: 25px; font-size: 0.9rem; float: left; padding: 50px}
+.modal-table tr {width: 100%; padding: 30px 0;}
+.modal-table tr>td:nth-child(1) {width: 50px;padding-right: 10px;}
+.modal-table tr>td:nth-child(2) {text-align: left;}
+
+.modal-btn {padding: 2rem; background: chartreuse; font-size: 3rem;}
