@@ -7,11 +7,11 @@ $("#nav").hover(function(){
 
 var n = 0;
 (function ani(){
-  $(".banner > ul").delay(2000).animate({"left":"-=1000px"}, 1000, function(){
+  $(".banner > ul").delay(2000).animate({"left":"-=960px"}, 1000, function(){
   n++;
-  if(n == 4) {
+  if(n == 3) {
     n = 0;
-  $(this).css("left", "0px");
+  $(this).animate({"left": "0px"}, 2000);
   }
 
   ani();
