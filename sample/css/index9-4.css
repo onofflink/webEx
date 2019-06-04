@@ -1,0 +1,18 @@
+@charset "utf=8";
+
+/* div.wrap>a*2+div.modal-bg+.modal-wrap>div?div#modal-content{내용입니다.}+button#modal-btn{닫기} */
+
+html, body {margin: 0; padding: 0; font-size: 16px; color:#000; text-align: left;}
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+
+a {text-decoration: none; color: inherit}
+
+.clear.after {clear: both; content: ""; display: block;}
+
+.wrap {padding: 100px; text-align: center;}
+
+div#modal-bg {display: none; position: absolute;width: 100%; height: 100%; background: rgba(0,0,0,0.2); top: 0; left: 0;}
+#modal-wrap {display: none; position: absolute;width: 100%; height: 100%; top: 0; left: 0}
+#modal-wrap > div {display: table-cell; text-align: center; vertical-align: middle; z-index: 9999;}
+#modal-content {width: 300px; height: 300px; text-align: center; line-height: 300px; margin: 0 auto; position: relative;}
+#modal-btn {padding: 1rem; position: absolute;right: 0; bottom: 0;}
