@@ -22,5 +22,14 @@ $(".partne img").click(function(){
   winOpen();
 });
 function winOpen(){
-  window.open("win.html", "win", "width=200px, height=150px, top=100, left=100");
+  window.open("win.html", "win", "width=230px, height=170px, top=100, left=100, menubar=no, scrollbars=no, toolbar=no, status=no, location=no, resizable=no");
+}
+
+function modalOpen() {
+  $("#modal-bg").show(0);
+  $("#modal-wrap").css("display", "table");
+}
+function modalClose() {
+  $("#modal-bg").hide(0);
+  $("#modal-wrap").css("display", "none");
 }
