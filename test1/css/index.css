@@ -12,6 +12,14 @@ a {text-decoration: none; color: inherit}
 #modal-bg {width: 100%; height: 100%; background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0;}
 #modal-wrap {width: 100%; height: 100%; position: absolute; width: 100%; height: 100%; margin: 0 auto;}
 #modal-body {position: absolute;width: 500px; height: 500px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: plum;}
+#modal-content {width: 400px; height: 200px; margin: auto; position: absolute; top: 50%; transform: translate(-50%, -90%); left: 50%;}
+.modal-table {width: 100%; border-collapse: collapse; font-size: 0.9rem;}
+.modal-heading {font-size: 1rem; height: 40px; width: 100%; text-align: center !important;}
+.modal-table tr {padding: 2rem; border-bottom: 2px solid white;}
+.modal-table tr>td {padding: 1.2rem;}
+.modal-table tr>td:nth-child(2n) {background: rgba(0,150,136, 0.3);}
+.modal-table tr>td:nth-child(2n+1) {width: 70px;}
+.modal-button {padding:1rem; font-size: 2rem; text-align: center; background: rgba(151, 54, 54, 0.5); margin-left: 170px;}
 
 .all {width: 1000px; height: 1300px;margin: 0 auto;}
 .wrap {width: 960px; height: 500px;}
