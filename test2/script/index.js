@@ -1,7 +1,7 @@
 $(".nav").hover(function(){
-  $("ul", $(this)).stop().slideDown();
+  $(".submenu", $(this)).stop().slideDown();
 }, function() {
-  $("ul", $(this)).stop().slideUp();
+  $(".submenu", $(this)).stop().slideUp();
 });
 
 var n = 0;
@@ -16,5 +16,13 @@ var n = 0;
 })();
 
 function popUp() {
-  window.open("win.html", "win", "width=300, height=150, top=100, left=200");
+  window.open("win.html", "bakery win", "width=300, height=150, top=100, left=200, scrollbars=no, menubar=no, toolbar=no, status=no, location=no, resizable=no");
+}
+
+function modalOpen() {
+}
+
+function modalClose() {
+  $("#modal-bg").hide(0);
+  $("#modal-body").css("display", "none");
 }
