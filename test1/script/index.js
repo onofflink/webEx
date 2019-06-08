@@ -22,7 +22,7 @@ $(".partne img").click(function(){
   winOpen();
 });
 function winOpen(){
-  window.open("win.html", "win", "width=230px, height=170px, top=100, left=100, menubar=no, scrollbars=no, toolbar=no, status=no, location=no, resizable=no");
+  window.open("win.html", "win", "width=430px, height=320px, top=100, left=100, menubar=no, scrollbars=no, toolbar=no, status=no, location=no, resizable=no");
 }
 
 function modalOpen() {
