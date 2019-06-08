@@ -10,100 +10,130 @@
   <script src="script/index.js" defer="defer"></script>
 </head>
 <body>
-<div class="wrap">
-  <div class="header clear">
-    <div class="logo"><img src="images/LOGO.png" alt="no"></div>
-    <div class="navs">
-      <div class="nav">
-        <div><a href="#">MENU1</a></div>
+    <div id="modal-bg"></div>
+    <div id="modal-wrap">
+      <div id="modal-body">
+        <div id="modal-content">
+          <table class="modal-table">
+            <h2 class="modal-heading"><u>후원안내문</u></h2>
+            <tr>
+              <td>안내문 &nbsp;&nbsp;&nbsp;&UpArrowBar;</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla et velit sed!</td>
+            </tr>
+            <tr>
+              <td>후원내용 &UpArrowBar;</td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, accusantium, tempore voluptatibus, enim aspernatur sapiente dicta reiciendis voluptatum doloremque quam illo! Facere aliquam ratione deleniti aperiam nesciunt numquam reprehenderit natus!</td>
+            </tr>
+          </table>
+          <button class="modal-button" onclick="javascript: modalClose();">닫기</button>
+        </div>
       </div>
-      <div class="nav" id="nav">
-        <div class="nav-sub">MENU2</div>      
-      <ul class="submenu">
-        <li><a href="#">submenu1</a></li>
-        <li><a href="#">submenu2</a></li>
-        <li><a href="#">submenu3</a></li>
-      </ul>    
+    </div>
+  <div class="all">
+    <div class="wrap">
+      <div class="header clear">
+        <div class="logo"><img src="images/LOGO.png" alt="no"></div>
+        <div class="navs">
+          <div class="nav">
+            <div><a href="#">MENU1</a></div>
+            <ul class="submenu">
+              <li><a href="#">&nbsp;</a></li>
+            </ul>
+          </div>
+          <div class="nav" id="nav">
+            <div class="nav-sub">MENU2</div>      
+          <ul class="submenu">
+            <li><a href="#">submenu1</a></li>
+            <li><a href="#">submenu2</a></li>
+            <li><a href="#">submenu3</a></li>
+          </ul>    
+          </div>
+          <div class="nav">
+            <div><a href="#">MENU3</a></div>
+            <ul class="submenu">
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div><!-- navs -->
       </div>
-      <div class="nav">
-        <div><a href="#">MENU3</a></div>
+      <div class="banner">
+        <ul>
+          <li><img src="images/images1.jpg" alt="no"></li>
+          <li><img src="images/images2.jpg" alt="no"></li>
+          <li><img src="images/images3.jpg" alt="no"></li>
+          <li><img src="images/images1.jpg" alt="no"></li>
+        </ul>
+      </div><!-- banner -->
+    </div><!-- wrap -->
+    <div class="contents wrap clear">
+      <div class="notice">
+        <h1>공지사항</h1>
+        <table class="table">
+          <tr>
+            <th>제목</th>
+            <th>날짜</th>
+          </tr>
+          <tr>
+            <td><a href="javascript: modalOpen();">다도해 풍광을 한눈에...해남 땅끝 해안누리길 여행하기</a></td>
+            <td>2018-01-10</td>
+          </tr>
+          <tr>
+            <td><a href="#">국토순례 기차여행에 참가하는 학교, 청소년단체 등...</a></td>
+            <td>2017-12-21</td>
+          </tr>
+          <tr>
+            <td><a href="#">설악산 1월초 설경 절정, 기차 여행 상품이 출시되었..</a></td>
+            <td>2017-12-15</td>
+          </tr>
+          <tr>
+            <td><a href="#">여행가이드가 추천하는 국내 겨울여행지 & 관광열차</a></td>
+            <td>2017-12-07</td>
+          </tr>
+          <tr>
+            <td><a href="#">신나는 겨울여행 대관령 눈꽃축제, 고니골 빛축제로..</a></td>
+            <td>2017-12-01</td>
+          </tr>
+        </table><!-- table -->
+      </div><!-- notice -->
+      <div class="partner clear">
+        <h1>정보나눔</h1>
+        <div class="partner_info"><img src="images/icons/info.png" alt="no" onclick="javascript:winOpen();"></div>
       </div>
-    </div><!-- navs -->
-  </div>
-  <div class="banner">
-    <ul>
-      <li><img src="images/images1.jpg" alt="no"></li>
-      <li><img src="images/images2.jpg" alt="no"></li>
-      <li><img src="images/images3.jpg" alt="no"></li>
-      <li><img src="images/images1.jpg" alt="no"></li>
-    </ul>
-  </div><!-- banner -->
-</div><!-- wrap -->
-<div class="contents clear">
-  <div class="notice">
-    <h1>공지사항</h1>
-    <table class="table">
-      <th>제목</th>
-      <th>날짜</th>
-      <tr>
-        <td><a href="#">다도해 풍광을 한눈에...해남 땅끝 해안누리길 여행하기</a></td>
-        <td>2018-01-10</td>
-      </tr>
-      <tr>
-        <td><a href="#">국토순례 기차여행에 참가하는 학교, 청소년단체 등...</a></td>
-        <td>2017-12-21</td>
-      </tr>
-      <tr>
-        <td><a href="#">설악산 1월초 설경 절정, 기차 여행 상품이 출시되었..</a></td>
-        <td>2017-12-15</td>
-      </tr>
-      <tr>
-        <td><a href="#">여행가이드가 추천하는 국내 겨울여행지 & 관광열차</a></td>
-        <td>2017-12-07</td>
-      </tr>
-      <tr>
-        <td><a href="#">신나는 겨울여행 대관령 눈꽃축제, 고니골 빛축제로..</a></td>
-        <td>2017-12-01</td>
-      </tr>
-    </table><!-- table -->
-  </div><!-- notice -->
-  <div class="partner">
-    <h1>정보나눔</h1>
-    <div class="partner_info"><img src="images/icons/info.png" alt="no" onclick="javascript:winOpen();"></div>
-  </div>
-  <div class="icon">
-    <div class="icons">
-      <div class="a">
-        <img src="images/icons/news.png" alt="no">
-        <div class="button" type="button">새소식</div>
+      <div class="clear"></div>
+        <div class="icon">
+          <ul class="icons">
+            <li class="a a1">
+              <img src="images/icons/news.png" alt="no">
+              <div class="button" type="button">새소식</div>
+            </li>
+            <li class="a a2">
+              <img src="images/icons/travelMusic.png" alt="no">
+              <div class="button" type="button">여행음악</div>
+            </li>
+            <li class="a a3">
+              <img src="images/icons/travelManual.png" alt="no">
+              <div class="button" type="button">여행메뉴얼</div>
+            </li>
+          </ul>
+        </div><!-- icon -->
+    </div><!-- contents -->
+    <footer class="wrap clear">
+      <div class="footer-wrap">
+        <ul>
+          <li><a href="#">법적고지</a></li>
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <p>
+            상호명:(주)앤윤컴퍼니<br>
+            대표자:윤정우<br>
+            개인정보관리책임자:김선정<br>
+            상담전화:1588-0789<br>
+            사업장주소:서울특별시 금천구 가산동 가산디지털2로<br>
+        </p>
       </div>
-      <div class="a">
-        <img src="images/icons/travelMusic.png" alt="no">
-        <div class="button" type="button">여행음악</div>
-      </div>
-      <div class="a">
-        <img src="images/icons/travelManual.png" alt="no">
-        <div class="button" type="button">여행메뉴얼</div>
-      </div>
-    </div><!-- icons -->
-  </div><!-- icon -->
-</div><!-- contents -->
-<footer>
-  <div class="footer-wrap">
-    <ul>
-      <li><a href="#">법적고지</a></li>
-      <li><a href="#">개인정보취급방침</a></li>
-      <li><a href="#">개인정보처리방침</a></li>
-    </ul>
-    <p>
-        상호명:(주)앤윤컴퍼니<br>
-        대표자:윤정우<br>
-        개인정보관리책임자:김선정<br>
-        상담전화:1588-0789<br>
-        사업장주소:서울특별시 금천구 가산동 가산디지털2로<br>
-    </p>
-  </div>
-</footer>
-
+    </footer>
+  </div>  
+  
 </body>
 </html>
