@@ -106,7 +106,8 @@ Move folder to a new repository
 run npm init inside both repositories
 run npm install --save git://github.com/user/project.git#commit-ish where you want your dependencies installed
 alias.a !git config --global
-echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txtalias.amd !git add -A && git commit --amend --no-edit
+echo alias.f '!git fetch --all && git rebase origin/master' >>submodule.txt
+alias.amd !git add -A && git commit --amend --no-edit
 alias.sub !git submodule update --init --recursive
 alias.p !git push origin $(git rev-parse --abbrev-ref HEAD)
 alias.submodule '!git clone --recurse-submodules -j8'
