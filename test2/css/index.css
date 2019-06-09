@@ -1,10 +1,57 @@
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; color: #000;}
+div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 
-header {
-  border: 2px solid red;
-}
-#imageslide {
-  border: 5px solid blue;
-}
-#contents {
-  border: 5px solid yellow;
-}
+a {text-decoration: none; color: inherit;}
+.clear:after {display: block; content: ""; display: block;}
+.boxing {border: 1px solid red;}
+
+.wrap {width: 960px; margin: 0 auto; overflow: hidden;}
+.header {width: 960px; height: 150px; color: #ccc; }
+.logo {float: left;}
+.logo img {height: 100px; line-height: 100px;}
+.navs {float: right; width: 700px; text-align: center;position: relative; z-index: 9999; }
+.nav {float: left; width: 200px;}
+.nav > div {height: 150px; line-height: 150px; }
+.nav > div:hover {background: rgba(0,0,0,0.7) }
+.submenu {line-height: 50px; background: rgba(0,0,0,0.4); display: none; width: 200px;  position: relative;  }
+.submenu > li {color: white}
+.submenu > li:hover {background: rgba(0,0,0,0.7)}
+
+
+.banner {width: 960px; height: 400px; margin:0 auto;/*  overflow: hidden; */z-index: -100; position: relative;}
+
+.slide {width: 4800px; height: 400px; position: absolute; background: #000; }
+.slide li {float: left; left: 0; top: 0;}
+
+.welcome {position: absolute;width:  300px; height: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.4); color: white; border-radius: 30px; text-align: center; line-height: 100px;}
+.welcome h1 {font-size: 2rem; margin-top: -10px;}
+.welcome h3 { line-height: 20px; margin-top: -25px;}
+
+.contents { width: 960px; margin: 0 auto;}
+.notice {width: 50%; float: left;}
+.notice h2 {text-align: center; padding:
+  10px 0; margin-bottom: 15px; border-bottom: 1px solid black; width: 92%}
+table {border-collapse: collapse;}
+
+.table tr>th {text-align: center;}
+.table tr>td {padding: 0.6rem 0; }
+tr:nth-child(2n) {background: rgba(0,0,0,0.3);}
+
+.partener {float: left; width: 50%; margin: 0 auto;}
+.partner h2 {text-align: center; padding: 10px 0; }
+.partner_info {text-align: center;}
+.partner_info img {height: 130px; background-repeat: no-repeat }
+
+.icon {width: 960px; margin: 0 auto; float: left;}
+.icons {width: 33%; float: left; background: rgba(255,255,255, 0.4);  color: white; text-align: center;}
+
+.icons img {width: 60%; }
+.btn button {background: rgba(152, 100, 152, 0.4); outline:none; border:none; padding: 20px; border-radius: 15px; color: white; width: 50%;}
+
+
+footer {width: 960px;}
+footer .wrap {height: 100px; background: #ccc; margin-top: 30px; float: left; padding: 10px 20px; line-height: 100px;}
+.footer ul {float: left; line-height: 90px; height: 90px;}
+.footer ul>li {line-height: 25px; padding: 5px 0;}
+.footer p {float: left; margin: 0 60px; line-height: 20px;}
+.footer span {float: left; padding: 0 20px; line-height: 25px; margin-top: 30px;}

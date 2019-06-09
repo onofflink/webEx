@@ -1,0 +1,47 @@
+{
+<<<<<<< HEAD
+     // Use IntelliSense to learn about possible attributes.
+     // Hover to view descriptions of existing attributes.
+     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+     "version": "0.2.0",
+     "configurations": [
+          {
+               "type": "chrome",
+               "request": "launch",
+               "name": "Launch Chrome",
+               "url": "http://localhost:8080",
+               "webRoot": "${workspaceFolder}"
+          },
+          {
+               "type": "chrome",
+               "request": "launch",
+               "name": "Launch Chrome",
+               "url": "http://localhost:8080",
+               "webRoot": "${workspaceFolder}"
+               //test2//script//index.js
+          },
+          {
+               "type": "node",
+               "request": "launch",
+               "name": "Launch Program",
+               "program": "${file}"
+               //test2//script//index.js
+          }
+     ]
+=======
+          // Use IntelliSense to learn about possible attributes.
+          // Hover to view descriptions of existing attributes.
+          // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+          "version": "0.2.0",
+          "configurations": [
+                    {
+                              "type": "chrome",
+                              "request": "launch",
+                              "name": "Launch Chrome",
+                              "url": "http://localhost:8080",
+                              "webRoot": "${workspaceFolder}\\test2\\scripts\\index.js"
+                    }                    
+                   
+          ]
+>>>>>>> add scripts for navs and banner and css, but nav z-index doesn't work yet
+}
