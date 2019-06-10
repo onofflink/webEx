@@ -32,12 +32,15 @@ $('[data-tabs]').css('min-height', height + 40 + 'px');
 }(jQuery, document));
 
 (function($) {
-  var tabs = $(".tabs li a");
-  tabs.click(function(){
-    var content = this.hash.replace('/', '');
-    tabs.removeClass("active");
-    $(this).addClass("active");
+
+	var tabs =  $(".tabs li a");
+  
+	tabs.click(function() {
+		var content = this.hash.replace('/','');
+		tabs.removeClass("active");
+		$(this).addClass("active");
     $("#content").find('p').hide();
-    $("#content").fadeIn(200);
-  });
+    $(content).fadeIn(200);
+	});
+
 })(jQuery);
