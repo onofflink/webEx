@@ -58,7 +58,7 @@ $(".bts").click(function(){
 		tabs.removeClass("active");
 		$(this).addClass("active");
     $("#content").find('p').hide();
-    $(content).fadeIn(200);
+    $(content).fadeIn(800);
 	});
 
 })(jQuery);
