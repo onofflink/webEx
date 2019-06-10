@@ -66,8 +66,7 @@ $(".bts").click(function(){
 		tabs.removeClass("active");
 		$(this).addClass("active");
     $("#content").find('p').hide();
-    $(content).fadeIn(200);
+    $(content).fadeIn(800);
 	});
 
-})(jQuery);
->>>>>>> add news tabs to contents of exam6 of actual test june 1
+})(jQuery);>>>>>>> add news tabs to contents of exam6 of actual test june 1
