@@ -48,6 +48,14 @@ tr:nth-child(2n) {background: rgba(0,0,0,0.3);}
 .icons img {width: 60%; }
 .btn button {background: rgba(152, 100, 152, 0.4); outline:none; border:none; padding: 20px; border-radius: 15px; color: white; width: 50%;}
 
+footer {width: 960px;}
+footer .wrap {height: 100px; background: #ccc; margin-top: 30px; float: left; padding: 10px 20px; line-height: 100px;}
+.footer ul {float: left; line-height: 90px; height: 90px;}
+.footer ul>li {line-height: 25px; padding: 5px 0;}
+.footer p {float: left; margin: 0 60px; line-height: 20px;}
+.footer span {float: left; padding: 0 20px; line-height: 25px; margin-top: 30px;}
+
+
 .tabs {clear: both; position: relative; max-width: 960px; margin: 0 auto;}
 .tab {float: left;}
 .tab label {margin-right: 20px; position: relative; top: 0; cursor: pointer; color: #333;}
@@ -57,9 +65,21 @@ tr:nth-child(2n) {background: rgba(0,0,0,0.3);}
 [type=radio]:checked ~ label ~ .tab-content {z-index: 1; opacity: 1;}
 
 
-footer {width: 960px;}
-footer .wrap {height: 100px; background: #ccc; margin-top: 30px; float: left; padding: 10px 20px; line-height: 100px;}
-.footer ul {float: left; line-height: 90px; height: 90px;}
-.footer ul>li {line-height: 25px; padding: 5px 0;}
-.footer p {float: left; margin: 0 60px; line-height: 20px;}
-.footer span {float: left; padding: 0 20px; line-height: 25px; margin-top: 30px;}
+.slide-toggle {
+  display: none;
+}
+.slidemenu {max-width: 600px; margin: 50px auot; overflow: hidden;}
+.slidemenu label {width: 25%; text-align: center; display: block; float: left;color: #333; opacity: 0.2;}
+.slidemenu label:hover {cursor: pointer; color: #666;}
+.slidemenu label .icon { font-size: 20px; border: solid 2px black; text-align: center; height: 50px; width: 50px; display: block; margin: 0 auto; line-height: 50px; border-radius: 50%;}
+.slider {width: 100%; height: 5px; display: block; background: #ccc; margin-top: 10px; border-radius: 5px;}
+.slider .bar {width: 25%; height: 5px; background: #333; border-radius: 5px;}
+
+.slidemenu label, .slider .bar {transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; }
+
+.slidemenu .slide-toggle:checked + label {opacity: 1;}
+
+.slidemenu #slide-item-1:checked ~ .slider .bar {margin-left: 0;}
+.slidemenu #slide-item-2:checked ~ .slider .bar {margin-left: 25%;}
+.slidemenu #slide-item-3:checked ~ .slider .bar {margin-left: 50%;}
+.slidemenu #slide-item-4:checked ~ .slider .bar {margin-left: 75%;}
