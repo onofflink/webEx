@@ -212,7 +212,7 @@
   </div>
   <div class="clear"></div>
 </footer><!--end of footer-->
-<div data-tabs class="tabs wrap">
+<div data-tabs class="tabs">
     <div class="tab">
       <input type="radio" name="tabgroup" id="tab-1" checked>
       <label for="tab-1">Tab1</label>
@@ -252,7 +252,50 @@
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam placeat iusto, porro, facere consequatur quidem est ipsam asperiores recusandae a cumque laudantium esse! Omnis corrupti nesciunt ab ad laboriosam quod!Aperiam alias repudiandae neque id aliquam aut, facilis deserunt impedit eius illum modi nulla commodi repellat excepturi consequatur, vero in sit corrupti cumque eligendi doloribus corporis est? Fugit, minus quam.</p>
         </h4>
       </div>
-    </div>
+    </div><!-- tab -->
+  </div><!-- tabs -->
+
+  <!-- nav.slidemenu>input*4[type="radio" name="slideItem" checked]#slide-item$$.slide-toggle+label[for="slide-item$$"]>p{♬}+span^^^^div.clear+div.slider>.bar -->
+  <nav class="slidemenu wrap">
+    <input type="radio" name="slideItem" checked="checked" id="slide-item01" class="slide-toggle"/>
+      <label for="slide-item01">
+        <p>♬</p>
+        <span>Home</span>
+      </label>
+    <input type="radio" name="slideItem" id="slide-item02" class="slide-toggle"/>
+      <label for="slide-item02">
+        <p>♬</p>
+        <span>About</span>
+      </label>
+    <input type="radio" name="slideItem" id="slide-item03" class="slide-toggle"/>
+      <label for="slide-item03">
+        <p>♬</p>
+        <span>Folio</span>
+      </label>
+    <input type="radio" name="slideItem" id="slide-item04" class="slide-toggle"/>
+      <label for="slide-item04">
+        <p>♬</p>
+        <span>Blog</span>
+      </label>
+  </nav>
+  <div class="clear"></div>
+  <div class="slider">
+    <div class="bar"></div>
   </div>
+
+<!-- div.tab-wrap>ul.tabs.group>li*3>a.active^^div#content>p#no$*3
+ -->
+ <div class="tab-wrap wrap">
+   <ul class="tabs group">
+     <li><a href="#/no1" class="active">Light &</a></li>
+     <li><a href="#/no2" class="active">Sexy</a></li>
+     <li><a href="#/no3" class="active">Tabs</a></li>
+   </ul>
+   <div id="content">
+     <p id="no1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nemo ipsum, ipsam qui facere reiciendis modi dolorum animi quasi. Earum inventore, enim temporibus voluptatem odio eum consequuntur explicabo cumque quas?</p>
+     <p id="no2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam fugiat debitis accusamus! Sequi, fuga dicta.</p>
+     <p id="no3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, natus quibusdam. Cumque natus eveniet corrupti quae repudiandae accusantium, ipsum commodi blanditiis nesciunt, mollitia neque recusandae, quibusdam sequi animi molestiae architecto.Est exercitationem cumque debitis temporibus pariatur, quis quaerat veritatis consectetur et corporis molestiae quidem, iusto eum ullam. Culpa, quas nesciunt maiores, veniam accusamus quod voluptate impedit voluptates distinctio, explicabo maxime.</p>
+   </div>
+ </div>
 </body>
 </html>>>>>>>> add css to all tags; nvs z index maintained but mv ov to wrap from banner
