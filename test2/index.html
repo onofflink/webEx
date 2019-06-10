@@ -57,9 +57,10 @@
   <title>test2</title>
   <link rel="stylesheet" href="css/index.css" type="text/css">
   <script src="scripts/index.js" defer="defer" type="text/javascript"></script>
-  <script src="scripts/jquery.js" type="text/javascript"></script>
+  <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
 </head>
 <body>
+
  <div class="wrap">
     <header class="header clear">      
         <div class="logo"><a href="#"><img src="images/logo.jpg" alt="logo"></a>
@@ -190,6 +191,7 @@
   </div>
 
 </div><!--  end of contents-->
+  <!-- div.tabs>.tab*4>input#tab-1+label{Tab$}+div.tab-content>h4{Heading$}>p -->
 
 <footer class="wrap"> 
   <div class=" footer wrap clear">
@@ -210,6 +212,47 @@
   </div>
   <div class="clear"></div>
 </footer><!--end of footer-->
+<div data-tabs class="tabs wrap">
+    <div class="tab">
+      <input type="radio" name="tabgroup" id="tab-1" checked>
+      <label for="tab-1">Tab1</label>
+      <div class="tab__content">
+        <h4>
+          Heading1
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut est, voluptatem vitae maxime ipsa inventore nulla quam nihil obcaecati ad similique facilis illo aliquam tempora velit laboriosam id iusto natus.</p>
+        </h4>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="tabgroup" id="tab-2" checked>
+      <label for="tab-2">Tab2</label>
+      <div class="tab__content">
+        <h4>
+          Heading2
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum a, eveniet non ullam vitae.</p>
+        </h4>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="tabgroup" id="tab-3">
+      <label for="tab-3">Tab3</label>
+      <div class="tab__content">
+        <h4>
+          Heading3
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, eum, laborum dignissimos incidunt sint commodi dolores ipsum voluptatem illo, ullam architecto dicta modi quo rem quos harum magni repellendus minus.</p>
+        </h4>
+      </div>
+    </div>
+    <div class="tab">
+      <input type="radio" name="tabgroup" id="tab-4">
+      <label for="tab-4">Tab4</label>
+      <div class="tab__content">
+        <h4>
+          Heading4
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam placeat iusto, porro, facere consequatur quidem est ipsam asperiores recusandae a cumque laudantium esse! Omnis corrupti nesciunt ab ad laboriosam quod!Aperiam alias repudiandae neque id aliquam aut, facilis deserunt impedit eius illum modi nulla commodi repellat excepturi consequatur, vero in sit corrupti cumque eligendi doloribus corporis est? Fugit, minus quam.</p>
+        </h4>
+      </div>
+    </div>
+  </div>
 </body>
-</html>
->>>>>>> add css to all tags; nvs z index maintained but mv ov to wrap from banner
+</html>>>>>>>> add css to all tags; nvs z index maintained but mv ov to wrap from banner
