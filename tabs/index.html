@@ -12,10 +12,11 @@
 <body>
 <!-- div.tab-body>.tabs>.tab*4>input+label{tab$}+.tab-content>h4{heading$}>p -->
 <div class="tab-body">
-     <div class="tabs">
+     <div data-tabs class="tabs">
           <div class="tab">
-               <input type="radio" id="tab1" name="tabgroup"><label for="tab1">tab1</label>
-               <div class="tab-content">
+               <input type="radio" id="tab1" name="tabgroup" checked>
+               <label for="tab1">tab1</label>
+               <div class="tab__content">
                     <h4>
                          heading1
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium consequatur quasi delectus maxime facilis nihil cum aperiam, libero fugit eveniet dolores reiciendis! Cum doloribus voluptatibus animi voluptatum exercitationem ipsum!Rerum quam alias harum veritatis eos amet aliquam id, perspiciatis nam corrupti laboriosam tenetur accusantium qui ad temporibus laudantium esse! Excepturi temporibus possimus id debitis cum est vel saepe praesentium.</p>
@@ -24,7 +25,7 @@
           </div>
           <div class="tab">
                <input type="radio" id="tab2" name="tabgroup"><label for="tab2">tab2</label>
-               <div class="tab-content">
+               <div class="tab__content">
                     <h4>
                          heading2
                          <p>lorem</p>
@@ -33,7 +34,7 @@
           </div>
           <div class="tab">
                <input type="radio" id="tab3" name="tabgroup"><label for="tab3">tab3</label>
-               <div class="tab-content">
+               <div class="tab__content">
                     <h4>
                          heading3
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos distinctio sapiente amet, quidem veritatis dolores, deserunt hic facilis alias quae corporis odio reiciendis ratione veniam cum voluptate illo delectus voluptas?</p>
@@ -42,7 +43,7 @@
           </div>
           <div class="tab">
                <input type="radio" id="tab4" name="tabgroup"><label for="tab4">tab4</label>
-               <div class="tab-content">
+               <div class="tab__content">
                     <h4>
                          heading4
                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, repellendus.</p>

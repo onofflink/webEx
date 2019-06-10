@@ -5,4 +5,26 @@ div, ul, li, ol, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color: inherit}
 .clear:after {display: block; content: ""; clear: both;}
 
-.tab-body {}
+.tab-body {
+     font-family: 'Open Sans', sans-serif;
+     background-color: #C2EABA;
+     padding-top: 50px;
+     line-height: 1.4;
+     font-size: 1.4em;
+     width:100%;
+  }
+  
+  .tabs {
+       clear: both;
+       position: relative;   
+     max-width: 100%;
+     margin: 0 auto;
+     /* you can either manually set a min-height here or do it via JS ---> */
+  }
+  
+  .tab {float: left; width: 25%;}
+  .tab label {margin-right: 20px; position: relative; top: 0; cursor: pointer; color: #333; text-transform: uppercase;}
+  .tab [type=radio] {display: none;}
+  .tab__content {position: relative; top:40px; left: 0; bottom: 0; transition: opacity .2s cubic-bezier(.42,0,.34,1.01); opacity: 0;}
+  [type=raido]:checked ~ label {border-bottom: 2px solid black; color: #666; z-index: 2;}
+  [type=radio]:checked ~ label ~ .tab__content {z-index: 1; opacity: 1;}
