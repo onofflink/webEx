@@ -5,24 +5,26 @@ a {text-decoration: none; color: inherit;}
 .clear:after {display: block; content: ""; display: block;}
 .boxing {border: 1px solid red;}
 
-.wrap {width: 1000px; margin: 0 auto;}
-.header {width: 960px; height: 150px; color: #ccc; position: relative; }
+.wrap {width: 960px; margin: 0 auto; overflow: hidden;}
+.header {width: 960px; height: 150px; color: #ccc; }
 .logo {float: left;}
 .logo img {height: 100px; line-height: 100px;}
-.navs {float: right; width: 700px; text-align: center; }
+.navs {float: right; width: 700px; text-align: center;position: relative; z-index: 9999; }
 .nav {float: left; width: 200px;}
 .nav > div {height: 150px; line-height: 150px; }
 .nav > div:hover {background: rgba(0,0,0,0.7) }
-.submenu {line-height: 50px; background: rgba(0,0,0,0.4); display: none; width: 200px;  position: relative;  z-index: 9999;}
+.submenu {line-height: 50px; background: rgba(0,0,0,0.4); display: none; width: 200px;  position: relative;  }
 .submenu > li {color: white}
 .submenu > li:hover {background: rgba(0,0,0,0.7)}
 
 
-.banner, .banner.wrap {width: 960px; height: 400px;position: relative; margin:0 auto; overflow: hidden;z-index: -1000;}
+.banner {width: 960px; height: 400px; margin:0 auto;/*  overflow: hidden; */z-index: -100; position: relative;}
+
 .slide {width: 4800px; height: 400px; position: absolute; background: #000; }
 .slide li {float: left; left: 0; top: 0;}
 
 .welcome {position: absolute;width:  300px; height: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.4); color: white; border-radius: 30px; text-align: center; line-height: 100px;}
+.welcome h1 {font-size: 2rem; margin-top: -10px;}
 .welcome h3 { line-height: 20px; margin-top: -25px;}
 
 .contents { width: 960px; margin: 0 auto;}
@@ -38,12 +40,69 @@ tr:nth-child(2n) {background: rgba(0,0,0,0.3);}
 .partener {float: left; width: 50%; margin: 0 auto;}
 .partner h2 {text-align: center; padding: 10px 0; }
 .partner_info {text-align: center;}
+.partner_info img {height: 130px; background-repeat: no-repeat }
 
 .icon {width: 960px; margin: 0 auto; float: left;}
-.icons {width: 33.33%; float: left; }
-.icon-btn {padding: 5px; background: rgba(0, 0, 0, 0.4); width: 50%; margin-left: 20px; color: white; border-radius: 8px; text-align: center;}
-.icons img {width: 200px; }
+.icons {width: 33%; float: left; background: rgba(255,255,255, 0.4);  color: white; text-align: center;}
+
+.icons img {width: 60%; }
+.btn button {background: rgba(152, 100, 152, 0.4); outline:none; border:none; padding: 20px; border-radius: 15px; color: white; width: 50%;}
+
+footer {width: 960px;}
+footer .wrap {height: 100px; background: #ccc; margin-top: 30px; float: left; padding: 10px 20px; line-height: 100px;}
+.footer ul {float: left; line-height: 90px; height: 90px;}
+.footer ul>li {line-height: 25px; padding: 5px 0;}
+.footer p {float: left; margin: 0 60px; line-height: 20px;}
+.footer span {float: left; padding: 0 20px; line-height: 25px; margin-top: 30px;}
 
 
-footer {border: 1px solid black; width: 960px;}
-footer .wrap {height: 100px; background: #ccc;}
+.tab-body {background: #c2eaba; line-height: 1.4; font-size: 1.4em;}
+.tabs {clear: both; position: relative; max-width: 960px; margin: 0 auto;}
+.tab {float: left;}
+.tab label {margin-right: 20px; position: relative; top: 0; cursor: pointer; color: #333;}
+.tab [type=radio] {display: none;}
+.tab__content { position: relative; top: 40px; left: 0; right: 0; bottom: 0; transition: opacity .2s cubic-bezier(.42,0,.34,1.01); opacity: 0; }
+[type=radio]:checked ~ label {border-bottom: 2px solid #1d1d1d; z-index: 2;}
+[type=radio]:checked ~ label ~ .tab__content {z-index: 1; opacity: 1;}
+
+
+.slide-toggle {
+  display: none;
+}
+.slidemenu {max-width: 600px; margin: 50px auot; overflow: hidden;}
+.slidemenu label {width: 25%; text-align: center; display: block; float: left;color: #333; opacity: 0.2;}
+.slidemenu label:hover {cursor: pointer; color: #666;}
+.slidemenu label .icon { font-size: 20px; border: solid 2px black; text-align: center; height: 50px; width: 50px; display: block; margin: 0 auto; line-height: 50px; border-radius: 50%;}
+.slider {width: 100%; height: 5px; display: block; background: #ccc; margin-top: 10px; border-radius: 5px;}
+.slider .bar {width: 25%; height: 5px; background: #333; border-radius: 5px;}
+
+.slidemenu label, .slider .bar {transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; }
+
+.slidemenu .slide-toggle:checked + label {opacity: 1;}
+
+.slidemenu #slide-item-1:checked ~ .slider .bar {margin-left: 0;}
+.slidemenu #slide-item-2:checked ~ .slider .bar {margin-left: 25%;}
+.slidemenu #slide-item-3:checked ~ .slider .bar {margin-left: 50%;}
+.slidemenu #slide-item-4:checked ~ .slider .bar {margin-left: 75%;}
+
+.yscroll {overflow-y: scroll;}
+.tab-wrap {margin: 0 auto;}
+ul.tabs { width: 600px; height: 100px; margin: 0 auto;overflow: hidden; padding: 0;}
+ul.tabs li {float: left; width: 33.33%;}
+ul.tabs li a {position: relative; display: block; height: 30px; margin-top: 40px; font-size: 1.1rem; text-align: center; color: #fff; background: #6edeef; -webkit-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4); -moz-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4); box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4); border: 0px solid #000; -webkit-transition: padding 0.2s ease, margin 0.2s ease; -moz-transition: padding 0.2s ease, margin 0.2s ease; -o-transition: padding 0.2s ease, margin 0.2s ease; -ms-transition: padding 0.2s ease, margin 0.2s ease; transition: padding 0.2s ease, margin 0.2s ease;}
+
+.tabs li:first-child a {z-index: 3; -webkit-border-top-left-radius: 8px; -moz-border-radius-topleft: 8px; border-top-left-radius: 8px;}
+.tabs li:nth-child(2) a {z-index: 2;}
+.tabs li:last-child a {z-index: 1; -webkit-border-top-left-radius: 2px 8px 25px -2px rgba(0,0,0,0.3); -moz-border-radius-topleft: 2px 8px 25px -2px rgba(0,0,0,0.3); border-top-left-radius: 2px 8px 25px -2px rgba(0,0,0,0.3);
+border-top-right-radius: 8px; -moz-border-radius-topright: 8px; border-top-right-radius: 8px;}
+
+ul.tabs li a:hover {margin: 35px 0 0 0; padding: 10px 0 5px 0;}
+ul.tabs li a.active { margin: 30px 0 0 0; padding: 10px 0 10px 0; background: #545f60; color: #63deef; z-index: 4; outline: none;}
+
+.group:before, .group:after {content: ""; display: table;}
+.group:after {clear: both; }
+
+#content {width: 600px; height: 100px;margin: 0 auto; background: #545f60; box-shadow: 2px 8px 25px -2px; border-bottom-right-radius: 9px; border-bottom-left-radius: 9px;}
+p {padding: 30px 40px; color: #fff; line-height: 26px; font-size: 1.1rem; margin: 0;}
+
+#no1

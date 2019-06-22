@@ -48,3 +48,17 @@ $(".bts").click(function(){
       $(".bts").eq(x).css("color", "#f30");
       $(".partner_info").eq(x).animate({"left": (-x*100)+"px"}, 2000);
 });
+
+(function($) {
+
+	var tabs =  $(".tabs li a");
+  
+	tabs.click(function() {
+		var content = this.hash.replace('/','');
+		tabs.removeClass("active");
+		$(this).addClass("active");
+    $("#content").find('p').hide();
+    $(content).fadeIn(800);
+	});
+
+})(jQuery);
