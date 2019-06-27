@@ -1,6 +1,6 @@
 var Content = $(".content>div");
 $(Content).hide();
-$(Content).first().slideDown(500);
+$(Content).last().slideDown(500);
 $(".tab-buttons span").click(function(){
      var Tabs = $(this).attr("class");
      $("#lamp").removeClass().addClass("#lamp").addClass(Tabs);
