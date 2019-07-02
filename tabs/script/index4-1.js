@@ -1,4 +1,4 @@
-var Content = $(".content > div");
+var Content = $(".content>div");
 $(Content).hide();
 $(Content).last().slideDown(500);
 $(".tab-buttons span").click(function(){
