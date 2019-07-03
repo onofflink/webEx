@@ -16,6 +16,15 @@ var n=0;
   });
 })();
 
+<<<<<<< HEAD
+=======
+$(".partner img").click(function(){
+  winOpen();
+});
+function winOpen(){
+  window.open("win.html", "win", "width=430px, height=320px, top=100, left=100, menubar=no, scrollbars=no, toolbar=no, status=no, location=no, resizable=no");
+}
+>>>>>>> correct a typo for index.js of test1
 
 function modalOpen() {
   $("#modal-bg").show(0);
