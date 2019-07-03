@@ -18,7 +18,7 @@ var n = 0;
 });
 })();
 
-$(".partne img").click(function(){
+$(".partner img").click(function(){
   winOpen();
 });
 function winOpen(){
