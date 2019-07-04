@@ -1,10 +1,10 @@
 (function(){
-  var tabs = $(".tabs li a");
-  tabs.click(function(){
-    var abcd = this.hash.replace("/", "");
-    tabs.removeClass("active");
+  var Tabs = $(".tabs>li>a");
+  Tabs.click(function(){
+    var Content = this.hash.replace("/", "");
+    Tabs.removeClass("active");
     $(this).addClass("active");
     $("#content").find('p').hide();
-    $(abcd).fadeIn(500);
+    $(Content).fadeIn(500);
   });
 })();
