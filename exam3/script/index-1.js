@@ -5,30 +5,29 @@ $(".nav").hover(function(){
 });
 
 var n = 0;
+
 $(".btn-prev").click(function(){
      if(n > 0) n--;
      ani();
 });
-
 $(".btn-next").click(function(){
      if(n < 2) n++;
      ani();
 });
 
-function ani() {
-     $(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
+function ani(){
+$(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
 }
 
-function modalOpen() {
+function modalOpen(){
      $("#modal-bg").show(0);
      $("#modal-wrap").css("display", "table-cell");
 }
-
-function modalClose() {
-     $("#modal-bg").hide();
+function modalClose(){
+     $("#modal-bg").hide(0);
      $("#modal-wrap").css("display", "none");
 }
 
-function winOpen() {
-     window.open("win.html", "win", "width=500, height=500, top=100, left=100, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
+function winOpen(){
+     window.open("win.html", "win", "width=400, height=400, top=300, left=50%, toolbar = no, location= no , status = no, menubar = no, resizable = no , scrollbars = no");
 }
