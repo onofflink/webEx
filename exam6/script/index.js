@@ -1,3 +1,4 @@
+//jshint: version6;
 $(".navs").hover(function(){
       $(".submenu", $(this)).stop().slideDown();
 }, function(){
@@ -6,14 +7,14 @@ $(".navs").hover(function(){
 
 var n = 0;
 (function ani(){
-      $(".slide").delay(2000).animate({"left":"-=1200px"}, 2000, function(){
+      $(".banner ul").delay(2000).animate({"left": "-=1200px"}, 2000, function(){
             n++;
             if (n==3) {
                   n=0;
                   $(this).css("left", "0px");
             }
+            ani();
       });
-      ani();
 })();
 
 function modalOpen(){
