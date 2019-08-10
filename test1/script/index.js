@@ -11,7 +11,7 @@ var n = 0;
   n++;
   if(n == 3) {
     n = 0;
-  $(this).animate({"left": "0px"}, 2000);
+  $(this).css("left", "0px");
   }
 
   ani();
