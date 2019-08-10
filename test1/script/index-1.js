@@ -6,17 +6,6 @@ $(".nav").hover(function(){
 
 var n=0;
 (function ani(){
-<<<<<<< HEAD
-  $(".banner > ul").delay(2000).animate({"left":"-=960px"}, 1000, function(){
-  n++;
-  if(n == 3) {
-    n = 0;
-  $(this).css("left", "0px");
-  }
-
-  ani();
-});
-=======
   $(".banner > ul").delay(2000).animate({"left": "-=960px"}, 2000, function(){
     n++;
     if (n==3) {
@@ -25,7 +14,6 @@ var n=0;
     }
     ani();
   });
->>>>>>> 961d2d9740a2bbd7a4f286eeab49f57ec14f03bd
 })();
 
 
