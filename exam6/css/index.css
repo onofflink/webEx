@@ -18,7 +18,7 @@ a {text-decoration: none; color: inherit}
 .submenu li {width: 200px; height: 50px; line-height: 50px; float: left;}
 .submenu li:hover {background: rgba(0, 128, 0, 0.6);}
 
-.banner {width: 1200px; height: 300px; margin: 0 auto; position: relative; overflow: hidden; background: #000; z-index: -300;}
+.banner {Width: 1200px; height: 300px; margin: 0 auto; position: relative; overflow: hidden; background: #000; z-index: -300;}
 .slide {width: 4800px; height: 300px; position: absolute; z-index: -100;}
 .slide li {float: left; }
 .slide li img {width: 1200px; height:300px;}
