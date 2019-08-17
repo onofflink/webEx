@@ -41,3 +41,11 @@ var depth = 20;
             gallery();
       });
 })();
+
+
+$(".bts").click(function(){
+     var n = $(this).index();
+     $(".bts").css({"color": "#fff"});
+     $(".bts").eq(n).css({"color": "#f30"});
+     $(".partner_info").stop().animate({"left": (-n*360)+"px"},500);
+})
