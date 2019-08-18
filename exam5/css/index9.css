@@ -1,0 +1,66 @@
+
+.color1 {color: #999}
+.color2 {color: #36f}
+.color3 {color: #666}
+.colorOne {background: rgb(153, 153, 153)}
+.colorTwo {background: rgb(51,102,205)}
+
+body, html {margin: 0; padding: 0; width: 100%; height: 100%; color: #666; font-size: 16px; text-align: left;}
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0;list-style: none;}
+
+a {text-decoration: none; color: inherit;}
+
+.clear:after {clear: both; content: ""; display: block;}
+
+.wrap {width: 1000px; margin: 0 auto;}
+.header {width: 100%; height: 150px; background: rgba(153,153,153,0.3);}
+.logo {float: left;}
+.logo img {width: 250px; height: 100px; line-height: 100px; margin: 25px 0}
+.navs {float: right; width: 600px; height: 150px; line-height: 150px; cursor: pointer; text-align: center; z-index: 9999;}
+.nav {float: left; width: 150px;}
+.nav > div {background: rgba(255,255,255,0.4)}
+.nav > div:hover {background: rgb(51, 102, 205); color: #fff}
+
+.submenu {width: 150px; background: rgba(51,102,205, 0.3); color: #666; display: none;}
+.submenu > li {line-height: 50px;}
+.submenu >li:hover {background: rgb(51,102,205); color: #fff}
+
+.banner {width: 1000px; height: 400px; margin: 0 auto; position: relative; z-index: -999; overflow: hidden;}
+.slide {width: 5000px; height: 400px; position: absolute;z-index: -9999;}
+.banner ul > li {float: left;}
+.banner-btn {position: absolute;bottom: 30px; color: #fff; text-align: center; width: 100%; font-size: 3rem;}
+.bts {cursor: pointer;}
+
+.wecome {position: absolute;width: 350px; height: 90px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(51,102,205,0.3); line-height: 90px; text-align: center; border-radius: 15px; font-size: 1.5rem;}
+.wecome h2 {color: rbga(255,255,200,0.4)}
+
+.contents {width: 1000px; height: 500px;}
+.notice {width: 50%; float: left;}
+.notice h2 {padding: 20px; text-align: center; border-bottom: 1px solid black; width: 70%;}
+
+table {border-collapse: collapse; color: #000; font-size: 0.8rem;}
+.table {}
+.table tr>td {padding:8px 0; margin-right: 10px;}
+.table tr:nth-child(2n) {background: rgba(153,153,153,0.3)}
+
+.partner {width: 50%; float: left;}
+.partner h2 {text-align: center; padding: 20px; }
+.partner_info {text-align: center;}
+.partner_info img {width: 90%;}
+
+.icon {width: 1000px; float: left;}
+.icons {float: left; width: 33.33%; text-align: center;}
+.icons img {width: 80%;}
+.icons button {margin: 0 auto; width: 50%; border-radius: 10px; padding: 5px; font-size: 1.2rem;}
+.icon-btn:hover {background: rgba(51,102,205, 0.5)}
+
+footer {width: 1000px; height: 140px;}
+.footer {background: rgba(153,153,153,0.4)}
+.footer-wrap {width: 1000px; float: left; vertical-align: middle; padding: 5px 0;margin-left: 10px;}
+.legal { width: 50%; float: left; padding: 10px 0;}
+.copyright {width: 100%; text-align: center;}
+
+#modal-bg {width: 100%; height: 100%;background: rgba(0,0,0,0.7); top: 0; left: 0; z-index: 9999; position: absolute;}
+#modal-wrap {width: 100%; height: 100%; top: 0; left: 0; position: absolute; display: table-cell;}
+#modal-body {background: salmon; width: 400px; height: 400px; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; vertical-align: middle;}
+
