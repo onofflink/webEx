@@ -44,13 +44,6 @@ var depth = 20;
 
 
 $(".bts").click(function(){
-<<<<<<< HEAD
-     var n = $(this).index();
-     $(".bts").css({"color": "#fff"});
-     $(".bts").eq(n).css({"color": "#f30"});
-     $(".partner_info").stop().animate({"left": (-n*360)+"px"},500);
-})
-=======
       var x = $(this).index();
       $(".bts").css("color", "#f09");
       $(".bts").eq(x).css("color", "#f30");
@@ -66,7 +59,7 @@ $(".bts").click(function(){
 		tabs.removeClass("active");
 		$(this).addClass("active");
     $("#content").find('p').hide();
-    $(content).fadeIn(800);
+    $(content).fadeIn(200);
 	});
 
-})(jQuery);>>>>>>> add news tabs to contents of exam6 of actual test june 1
+})(jQuery);
