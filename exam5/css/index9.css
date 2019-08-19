@@ -12,7 +12,7 @@ a {text-decoration: none; color: inherit;}
 
 .clear:after {clear: both; content: ""; display: block;}
 
-.wrap {width: 1000px; margin: 0 auto;}
+.wrap {width: 1000px; height: 450px; margin: 0 auto;}
 .header {width: 100%; height: 150px; background: rgba(153,153,153,0.3);}
 .logo {float: left;}
 .logo img {width: 250px; height: 100px; line-height: 100px; margin: 25px 0}
@@ -21,18 +21,18 @@ a {text-decoration: none; color: inherit;}
 .nav > div {background: rgba(255,255,255,0.4)}
 .nav > div:hover {background: rgb(51, 102, 205); color: #fff}
 
-.submenu {width: 150px; background: rgba(51,102,205, 0.3); color: #666; display: none; z-index: 9999;}
+.submenu {width: 150px; background: rgba(51,102,205, 0.3); color: #666; display: none;}
 .submenu > li {line-height: 50px;}
 .submenu >li:hover {background: rgb(51,102,205); color: #fff}
 
-.banner {width: 1000px; height: 400px; margin: 0 auto; position: relative; z-index: -999; overflow: hidden;}
-.slide {width: 5000px; height: 400px; position: absolute;z-index: -9999;}
+.banner {width: 1000px; height: 400px; margin: 0 auto; position: relative; overflow: hidden;}
+.slide {width: 5000px; height: 400px; position: absolute;z-index: -9999;top: 0; left: 0;}
 .banner ul > li {float: left;}
 .banner-btn {position: absolute;bottom: 30px; color: #fff; text-align: center; width: 100%; font-size: 3rem;}
 .bts {cursor: pointer;}
 
-.wecome {position: absolute;width: 350px; height: 90px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(51,102,205,0.3); line-height: 90px; text-align: center; border-radius: 15px; font-size: 1.5rem;}
-.wecome h2 {color: rbga(255,255,200,0.4)}
+.welcome {position: absolute;width: 350px; height: 90px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(51,102,205,0.3); line-height: 90px; text-align: center; border-radius: 15px; font-size: 1.5rem;}
+.welcome h2 {color: rbga(255,255,200,0.4)}
 
 .contents {width: 1000px; height: 500px;}
 .notice {width: 50%; float: left;}

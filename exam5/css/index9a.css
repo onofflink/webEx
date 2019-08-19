@@ -1,0 +1,65 @@
+
+.color1 {color: #999}
+.color2 {color: #36f}
+.color3 {color: #666}
+.colorOne {background: rgb(153,153,153)}
+.colorTwo {background: rgb(51,102,205)}
+
+body, html {margin: 0; padding: 0; width: 100%; height: 100%; color: #666; font-size: 16px; text-align: left}
+div, ol, ul, h1, h2, h3, h4 {margin: 0;padding: 0;list-style: none;}
+a {text-decoration: none; color: inherit}
+
+.clear:after {clear: both; content: ""; display: block;}
+
+.wrap {width: 1000px; height: 150px; margin: 0 auto; }
+.header {width: 100%; height: 150px; background: rgba(255,153,255,0.6)}
+.logo {float: left;}
+.logo img {width: 250px; height: 100px; line-height: 150px;vertical-align: middle;}
+.navs {width: 600px; float: right;height: 150px; line-height: 150px; cursor: pointer; text-align: center;}
+.nav {float: left; width: 150px; }
+.nav > div {background: rgba(255,255,255,0.4)}
+.nav > div:hover {background: rgba(51,102,205,0.4); color: #fff;}
+
+.submenu {width: 150px; background: rgba(51,102,205,0.3); color: #666; }
+.submenu > li {line-height: 50px;}
+.submenu > li:hover {background: rgb(51,102,205); color: #fff}
+
+.banner {width: 1000px; height: 400px; margin: 0 auto; position: relative; z-index: -9999; overflow: hidden;}
+.banner > ul > li {float: left;}
+.slide {width: 5000px; height: 400px; position: absolute;}
+.bts {cursor: pointer}
+.banner-btn {position: absolute; bottom: 30px; color: #fff; text-align: center; width: 100%; font-size: 3rem;}
+
+.welcome {position: absolute; width: 350px; height: 90px; top: 50%; left: 50%; transform: translate(-50%, -50%);background: rgba(51,102,205,0.3); line-height: 90px; text-align: center; border-radius: 15px; font-size: 1.5rem;}
+.welcome h2 { color: rgba(255,255,200, 0.8)}
+
+.contents {width: 1000px; height: 500px}
+.notice {width: 50%; float: left;}
+.notice h2 {text-align: center; padding: 20px 0}
+table {border-collapse: collapse;width: 100%;}
+.table {color: #000; float: left;}
+.table tr>td {padding: 8px 0}
+.table tr:nth-child(2n+1) {background: rgba(153,153,153,0.4)}
+
+.partner {width: 50%; float: left;}
+.partner h2 {text-align: center; padding: 20px}
+.partner_info {text-align: center}
+.partner_info img {width: 90%}
+
+.icon {width: 1000px; margin: 30px 0; float: left;}
+.icons {width:  33.33%; float: left; text-align: center}
+.icons img {width: 80%}
+.icons button {margin: 0 auto; width: 50%; padding: 20px; border-radius: 10px; background: rgba(51,102,205,0.5); color: #fff; font-size: 1.4rem; font-weight: bold}
+.icon-btn:hover {background: rgb(51,102,205)}
+
+footer {width: 100%; height: 100px; background: rgba(153,153,153,0.4); position: relative;}
+.footer {padding: 5px 30px}
+.legal {float: left;width: 23%; font-size: 0.9rem; margin-top: 25px;}
+.legal li {float: left;width: 90%}
+.footer-body {width: 77%; float: left;}
+.footer-body p {float: left; width: 500px; margin-top: 25px;}
+.address {width: 300px; height: 100px; line-height: 100px;}
+
+#modal-bg {position: absolute; width: 100%; height: 100%; top:0; left: 0; background: rgba(0,0,0,.8)}
+#modal-wrap {position: absolute;width: 100%; height: 100%; top: 0; left: 0; display: table-cell}
+#modal-body {position: absolute;width: 300px; height: 200px; top: 20%; left: 50%;}
