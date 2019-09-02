@@ -18,7 +18,7 @@ a {text-decoration: none; color: inherit}
 .submenu > li:hover {background: rgba(222, 222, 222, 0.4); color: #000}
 
 
-.banner {width: 1000px; height: 400px; margin: 0 auto; position: relative; overflow: hidden;}
+.banner {width: 1000px; height: 400px; margin: 0 auto; position: relative; overflow: hidden; z-index: -999;}
 
 .banner-btn {position: absolute; width:100%;text-align: center;  color: #fff; bottom:25px; font-size: 2.5rem;}
 .bts {cursor: pointer;}
