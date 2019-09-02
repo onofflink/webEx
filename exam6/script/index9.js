@@ -36,7 +36,7 @@ function popUp() {
 var i = 0;
 var depth =20;
 (function gallery(){
-     $(".gallery-wrap li").eq(i).css("z-index", depth+++).fadeOut(0);
+     $(".gallery-wrap li").eq(i).css("z-index", depth++).fadeOut(0);
      $(".gallery-wrap li").eq(i).delay(2000).fadeIn(2000, function(){
           if (i==2) i=0;
           else i++;
@@ -46,7 +46,7 @@ var depth =20;
 
 $(".bts").click(function(){
      var n = $(this).index();
-     $(".bts").css({"color": "#fff"});
-     $(".bts").css({"color": "#f30"});
-     $(".partner_info").stop().animate({"left": (-n*360)+"px"}, 500);
+     $(".bts a").css("color", "#6495ed");
+     $(".bts a").eq(n).css("color", "#f30");
+     $(".partner_info").stop().animate({"left": (-n*360)+"px"}, 2000);
 });
