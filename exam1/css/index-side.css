@@ -13,11 +13,11 @@ a {text-decoration: none; color: inherit}
 .logo > img {width: 80%;}
 
 .navs {width: 200px; height: 600px; position: absolute;}
-.nav {width: 150px; height: 60px; padding: 0 15px;}
+.nav {width: 150px; height: 100px; padding: 0 15px;}
 .nav div {font-size: 1.2rem; color: #893700; font-weight: bold;}
 .nav div:hover {color: rgb(66, 152, 204); height: 50px; width: 200px;}
 
-.submenu {margin-left: 180px; width: 120px; height: 50px; line-height: 30px; margin-top: -50px; position: absolute; top: 1; display: none; cursor: pointer;}
+.submenu {margin-left: 100px; width: 120px; height: 100px; line-height: 30px; margin-top: -50px; position: absolute; top: 1; display: none; cursor: pointer;}
 .submenu > li {background-color: #893700; text-align: center}
 .submenu > li:hover {color: #000; background: #ccc;}
 
