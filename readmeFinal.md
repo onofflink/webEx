@@ -57,14 +57,16 @@ $(".tab-buttons span").click(function(){
 ```
 > fade banner
 ```
- var n = 0;
+var x = 0;
 var depth = 100;
-function ani(){
-  $(".banner li").eq(n).fadeOut(0).css({"z-index": depth++});
-  $(".banner li").eq(n).delay(2000).fadeIn(2000, function(){
-    n++;
-    if(n == 3) n = 0;
-    ani();
+(function ani(){
+     $(".slide li").eq(x).fadeOut(0).css("z-index", depth++);
+     $(".slide li").eq(x).delay(2000).fadeIn(3000, function(){
+          x++;
+          if(x==3) x=0;
+               ani();          
+     });
+})();  --> psa should be on .slide li
 ```
 > prev next button
 ```

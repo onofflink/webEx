@@ -3,5 +3,24 @@ ul, ol, li, div, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color: inherit;}
 .clear:after {display: block; clear: both; content: ""}
 
+
 #main {color: rgb(66,152,204); background: #893700}
 
+.wrap {width:1000px; margin: 0 auto;}
+.header {width: 100%; height: 100px; background:rgb(66,152,204)}
+.logo {float: left;}
+.navs {float: right; }
+.nav {float: left; width: 200px; height: 60px; z-index: 10;position: relative;}
+.nav > div {width: 200px; text-align: center;line-height: 100px; color: #eee;}
+.nav > div:hover {background: rgba(255,255,255,0.4); color: saddlebrown; font-weight: bolder; letter-spacing: 2px; transition: all .3s ease-in;}
+
+.submenu {width: 200px;text-align: center; z-index: 100; position: absolute; top:100px; line-height: 50px; background: rgba(0,0,0,0.4); }
+.submenu > li {color: white; font-size: 1.2rem; font-weight: normal; display: none;}
+.submenu > li:hover {background: rgba(255,255,255,0.4); font-weight: bolder; transition: all .3s ease-in-out;}
+
+.banner {width: 960px; height: 400px; margin: 0 auto;position: relative; /* overflow: hidden; */}
+/* .slide {width: 960px; height: 400px; position: absolute; top: 0; left: 0; margin: 0 auto; } */
+.slide > li {/* float: left; */ width: 960px; height: 400px; position: absolute; top: 0; left: 0;}
+.slide li img {width: 960px; height: 400px;}
+
+.banner {z-index: -100;}

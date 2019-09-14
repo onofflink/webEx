@@ -5,15 +5,26 @@ $(".nav").hover(function(){
      $("ul", $(this)).stop().slideUp();
 });
 
-var n = 0;
-(function ani(){
-     $(".banner ul").delay(2000).animate({"left": "-=960px"}, 2000, function(){
+/*var n = 0;
+ (function ani(){
+     $(".banner ul").delay(2000).animate({"margin-top": "-=400px"}, 2000, function(){
           n++;
           if (n == 3) {
                n = 0;
-               $(this).css("left", "0px");
+               $(this).css("margin-top", "0px");
           }
           ani();
+     });
+})(); */
+
+var x = 0;
+var depth = 100;
+(function aniFade(){
+     $(".slide li").eq(x).fadeOut(0).css("z-index", depth++);
+     $(".slide li").eq(x).delay(2000).fadeIn(3000, function(){
+          x++;
+          if(x==3) x=0;
+               aniFade();          
      });
 })();
 
