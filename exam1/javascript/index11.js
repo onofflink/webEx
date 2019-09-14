@@ -21,7 +21,7 @@ var x = 0;
 var depth = 100;
 (function aniFade(){
      $(".slide li").eq(x).fadeOut(0).css("z-index", depth++);
-     $(".slide li").eq(x).delay(2000).fadeIn(3000, function(){
+     $(".slide li").eq(x).delay(1000).fadeIn(2000, function(){
           x++;
           if(x==3) x=0;
                aniFade();          
