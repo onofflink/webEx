@@ -3,11 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>exam1 0903</title>
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index11.css">
 	<script src="javascript/jquery.js"></script>
 	<script src="javascript/index.js" defer="defer"></script>
 </head>
 <body>
+	<div id="modal-bg"></div>
+	<div id="modal-wrap">
+		<div id="modal-body">
+			<div id="modal-content">
+				<table class="modal-table">
+					<tr>
+						<td>&#8592; 제목</td>
+						<td>&#8593; Lorem ipsum dolor sit amet.</td>
+					</tr>
+					<tr>
+						<td>&#8592; 제목</td>
+						<td>&#8593; Lorem ipsum dolor sit amet.</td>
+					</tr>
+				</table>
+				<div class="button modal-button"><a href="">&times;</a></div>
+			</div><!-- modal-content -->
+		</div><!-- modal-body -->
+	</div><!-- modal-wrap -->
 	<!-- div.wrap>.header.clear>.logo>img^+div.navs>div.nav>div>a^^div.nav*2>div>a^ul.submenu>li*4>a
 	 -->
 	<div class="wrap">
@@ -45,52 +63,76 @@
 				<li><img src="images/images2.jpg" alt=""></li>
 				<li><img src="images/images3.jpg" alt=""></li>
 				<li><img src="images/images4.jpg" alt=""></li>
-				<li><img src="images/images1.jpg" alt=""></li>
 			</ul>
-			<div class="welcome clear">
+			<div class="welcome welcome1 clear">
 				<h2>여행가이드에 오신것을 환영합니다.</h2>
+			</div>
+			<div class="welcome2">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+			</div>
+			<div class="welcome3">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+			</div>
+			<div class="welcome4">
+				<h2>Lorem ipsum dolor sit amet.</h2>
 			</div>
 		</div>
 	</div>
 	<!-- div.contents.wrap>div.notice>h2+table.table>tr>th*2^tr*5>td>a^td{2019-09-}
 	
  -->	<div class="contents wrap">
-		<div class="notice">
-			<h2>공지사항</h2>
-			<table class="table">
-				<tr>
-					<th>제목</th>
-					<th>날짜</th>
-				</tr>
-				<tr>
-					<td><a href="">다도해 풍광을 한눈에... 해남땅끝 해안누리길 여행하기</a></td>
-					<td>2019-09-1</td>
-				</tr>
-				<tr>
-					<td><a href="">국토순례 기차여행에 참가하는 학교, 청소년단체 등 ...</a></td>
-					<td>2019-09-2</td>
-				</tr>
-				<tr>
-					<td><a href="">설악산 1월초 설경 정절, 기차 여행 상품이 출되 되었....</a></td>
-					<td>2019-09-3</td>
-				</tr>
-				<tr>
-					<td><a href="">여행가이드가 추천하는 국내 겨울여행지 & 관광열차</a></td>
-					<td>2019-09-4</td>
-				</tr>
-				<tr>
-					<td><a href="">신나는 겨울여행 대관령 눈꽃축제, 고니골 빛축제로...</a></td>
-					<td>2019-09-5</td>
-				</tr>
-			</table>
-		</div>
+	 <div class="tab-wrap">
+		 <div class="tabs">
+			 <div class="tab-buttons">
+				 <span class="content1">Tab1</span><span class="content2">Tab2</span>
+				 <div id="lamp" class="content1"></div>
+			 </div><!-- end tab-button -->
+			 <div class="content">
+				 <div class="content1">
+					<div class="notice">
+						<h2>공지사항</h2>
+						<table class="table">
+							<tr>
+								<th>제목</th>
+								<th>날짜</th>
+							</tr>
+							<tr>
+								<td><a href="">다도해 풍광을 한눈에... 해남땅끝 해안누리길 여행하기</a></td>
+								<td>2019-09-1</td>
+							</tr>
+							<tr>
+								<td><a href="">국토순례 기차여행에 참가하는 학교, 청소년단체 등 ...</a></td>
+								<td>2019-09-2</td>
+							</tr>
+							<tr>
+								<td><a href="">설악산 1월초 설경 정절, 기차 여행 상품이 출되 되었....</a></td>
+								<td>2019-09-3</td>
+							</tr>
+							<tr>
+								<td><a href="">여행가이드가 추천하는 국내 겨울여행지 & 관광열차</a></td>
+								<td>2019-09-4</td>
+							</tr>
+							<tr>
+								<td><a href="">신나는 겨울여행 대관령 눈꽃축제, 고니골 빛축제로...</a></td>
+								<td>2019-09-5</td>
+							</tr>
+						</table>
+					</div> <!-- notice -->
+				 </div><!-- content1 -->
+				 <div class="content2">
+					<div class="partner clear">
+						<h2>Partner</h2>
+						<div class="partner_info"><a href="javascript: modalOpen();"><img src="images/icons/info.png" alt="no"></a></div>
+					</div>
+				 </div><!-- content2 -->
+			 </div><!-- end of content -->
+		 </div><!-- end of Tabs -->
+	 </div><!-- end of tab-wrap -->
+		
 	
 	   <!--  div.partner.clear>h2+div.partner_info>a>img
 	
- -->		<div class="partner clear">
-			<h2>Partner</h2>
-			<div class="partner_info"><a href="javascript: modalOpen();"><img src="images/icons/info.png" alt="no"></a></div>
-		</div>
+ -->		
 	    <!--  div.icon>.icons*3>img>div.btn
  -->		<div class="icon">
 			<div class="icons"><img src="images/icons/news.png" alt="no">
@@ -102,8 +144,9 @@
 			<div class="icons"><img src="images/icons/travelManual.png" alt="no">
 					<div class="btn">여행매뉴</div>
 				</div>
-		</div>
-	</div>
+		</div><!-- end of icon -->
+	</div><!-- end of contents -->]
+	
 	<div class="clear"></div>
 	<footer class="footer wrap clear">
 		<div class="footer-wrap">
