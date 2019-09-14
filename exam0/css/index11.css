@@ -12,12 +12,50 @@ a {text-decoration: none; color: inherit;}
 .navs {float: right;position: relative; text-align: center; z-index: 10;}
 .nav {float: left; width: 200px; height: 100px;line-height: 80px;}
 .nav > div {color: yellow; font-weight: bolder; letter-spacing: 2px;}
-.nav > div:hover {color: #fff; font-weight: lighter; background: rgba(255,255,255,0.4);}
+.nav > div:hover {color: #fff; font-weight: lighter; background: rgba(162,245,50,0.4);}
 
-ul.submenu {width: 200px; position: absolute; background: rgba(255,255,255,0.5); line-height: 50px;}
+ul.submenu {width: 200px; position: absolute; line-height: 50px; display: none; background: rgba(155,155,155, 0.4)}
 ul.submenu > li {color: #000; font-weight: lighter;  }
-.submenu > li:hover {color: yellow; font-weight: bolder; letter-spacing: 2px;}
+.submenu > li:hover {color: yellow; font-weight: bolder; letter-spacing: 2px; background:  rgba(255,255,255,0.5);}
 
-.section {width: 100%; height: 700px;}
+.section {width: 100%; height: 400px;}
 
-.banner {width: 1200px; height: 400px; position: relative; margin: 0 auto;}
+.banner {width: 1000px; height: 400px; position: relative; margin: 0 auto; overflow: hidden;}
+.slide {width: 7000px; height: 400px; position: absolute; top: 0;}
+.slide li {float: left;}
+
+.welcome {position: absolute; width: 400px; height: 100px; top: 50%; left: 50%; transform: translate(-40%, -50%); background: rgba(0,0,0,0.4); color: #fff; border-radius: 25px; line-height: 50px; text-align: center }
+
+.contents {width: 1200px; height: 500px; margin: 0 auto; position: relative;
+}
+.tab-wrap {width: 50%; height: 500px; position: relative;}
+.tab-buttons {width: 100%; height: 40px;}
+.tab-buttons span {font: 400 0.9rem 'open sans', sans-serif; color: #000; background: rgba(162,245,50,0.4); cursor: pointer; display: block; width: 50%; float: left; text-align: center; height: 40px; line-height: 40px; border-bottom: 1px solid #ddd;}
+
+.tab-content {width: 100%; height: 450px; border-bottom: 3px solid #ddd; background: rgba(155,155,155, 0.9); display: inline-block; color: #ddd;}
+
+#lamp {width: 50%; height: 3px; background: red; display: block; position: absolute; top: 40px; transition: all .3s ease-in;}
+#lamp.content2 {left: 50%; transition: all .3s ease-in;}
+#lamp.content1 {left: 0; transition: all .3s ease-in;}
+
+.service {width: 50%; height: 500px; margin: 0 auto; position: absolute; right: 0; top: 0; background: rgba(184, 250, 3, 0.2);}
+.service-table {width: 540px;height: 460px; margin: 0 auto; text-align: center;  border-bottom: 3px solid coral;}
+.sh-center {width: 100%;height: 40px;line-height: 40px; text-align: center; background: rgba(255,155,155, 0.9); display: block; color:red; font-weight: bolder; letter-spacing: 2px;}
+
+.service-table tr>td {width: 500px; }
+.service-table .icon-content {width: 100%; position: relative;}
+.servcie-table .icon-content .icons {background: rgba(255,255,255,0.3)}
+
+.footer {top: 0; padding: 2rem; border: 1px solid black; width: 100%; height: 100px; float: left; margin: 25px 0; position: relative;}
+.footer p:nth-child(1) {padding: 1rem 0 0 0; line-height: 30px; width: 35%; float: left;}
+.footer P:nth-child(2) {text-align: center; float: left; line-height: 100px;}
+
+#modal-bg {width: 100%; height: 100%; background: rgba(0,0,0,0.4); display: none; position: absolute;top: 0; left: 0; z-index: 999;}
+#modal-wrap {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); display: none; position: absolute; top: 0; left: 0; z-index: 999;}
+#modal-body {width: 100%; height: 100%; margin: 0 auto; }
+.modal-content {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,155,155, 0.9); color: white;}
+
+.modal-button-wrap {text-align: center; line-height: 60px; margin: 0 auot; }
+.modal-button {position: absolute;right: 20px; top: -30px; transform: translate(-50%, -50%); background: #fff; color: #000; border-radius: 50%; cursor:pointer; width: 60px; height: 60px; font-size: 4rem; }
+
+

@@ -10,6 +10,16 @@
   <script src="script/index11.js" defer="defer"></script>
 </head>
 <body>
+  <div id="modal-bg"></div>
+  <div id="modal-wrap">
+    <div id="modal-body">
+      <div class="modal-content">
+        <div class="modal-button-wrap"><div class="modal-button"><span><a href="javascript: modalClose();">&times;</a></span></div></div>
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, necessitatibus voluptate delectus perferendis pariatur laboriosam suscipit, reiciendis veritatis incidunt ipsa nam velit sunt? Ipsa delectus non tempore perspiciatis molestiae sequi?Odit blanditiis exercitationem nihil itaque reprehenderit doloribus consectetur hic, quos necessitatibus obcaecati omnis architecto aperiam dolore iure perferendis. Rerum voluptas error in ad consectetur. At similique fuga esse quae consequatur?</h2>
+      </div>
+      
+    </div>
+  </div>
 <!--   .wrap>.header>.logo>img^.navs>.nav*3>div{MENU$}+ul.submenu>li*4>a -->
 <div class="wrap">
   <div class="header clear">
@@ -40,7 +50,7 @@
   </div>
     <div class="section clear">
       <div class="banner">
-        <ul>
+        <ul class="slide">
           <li><img src="images/images1.jpg" alt="no"></li>
           <li><img src="images/images2.jpg" alt="no"></li>
           <li><img src="images/images3.jpg" alt="no"></li>
@@ -62,13 +72,26 @@
               <span class="content1">TAB1</span><span class="content2">TAB2</span>
               <div id="lamp" class="content1"></div>
             </div><!-- tab-buttons -->
-            <div class="content">
+            <div class="tab-content">
+              <div class="content2">
+                <div class="partner">
+                  <h2>web partner site</h2>
+                  <div class="partner_info">
+                    <a href="javascript:modalOpen();"><img src="images/partner.jpg" alt="no"></a>     
+                  </div>
+                  <pre>
+                    -센서알고리즘 개발
+                    -인공지능 로봇 연구
+                    -전자보안제품  생산
+                  </pre>
+                </div>
+              </div><!-- end of content2 -->
               <div class="content1">
                <div class="notice">
                 <h2>공지사항</h2>
                 <table class="table">
                   <tr>
-                    <td class="tom"><a href="">제17회 한국대학교 동문회장배 자선골프대회 안내문...</a></td>
+                    <td class="tom"><a href="javascript: modalOpen();">제17회 한국대학교 동문회장배 자선골프대회 안내문...</a></td>
                     <td>2016-09-12</td>
                   </tr>
                   <tr>
@@ -94,26 +117,14 @@
                 </table>
               </div><!-- end of notice -->
               </div><!-- end of content1 -->
-              <div class="content2">
-                <div class="partner">
-                  <h2>web partner site</h2>
-                  <div class="partner_info">
-                    <a href="javascript:modalOpen();"><img src="images/partner.jpg" alt="no"></a>     
-                  </div>
-                  <pre>
-                    -센서알고리즘 개발
-                    -인공지능 로봇 연구
-                    -전자보안제품  생산
-                  </pre>
-                </div>
-              </div><!-- end of content2 -->
+              
             </div><!-- end of content -->
           </div><!-- end of tabs -->
         </div><!-- end of tab-wrap -->
                 
-        <div class="clear"></div>
         <div class="service clear">
-          <table>
+          <table class="service-table">
+            <span class="sh-center">Service Icons</span>
             <tr>
               <td>
                 <div class="icon_content">

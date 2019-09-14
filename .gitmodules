@@ -1,6 +1,6 @@
 [submodule "webex"]
 	path = webex
-	url = https://github.com/aiegoo/webex
+	url = https://github.com/aiegoo/webex.git
 	branch = master
 [submodule "web-design-license"]
 	path = web-design-license
@@ -8,3 +8,6 @@
 [submodule "portfolio"]
 	path = portfolio
 	url = https://github.com/aiegoo/portfolio
+[submodule "webtutor"]
+	path = webtutor
+	url = https://github.com/aiegoo/webtutor
