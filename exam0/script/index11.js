@@ -52,13 +52,14 @@ $(".tab-buttons span").click(function(){
   });
   
 }); */
-
-$(".btn-prev img").click(function(){
-  if (n > 0) n--;
+var i = 0;
+$(".btn-prev").click(function(){
+  if (i > 0) n--;
   aniSlide();
 });
-$(".btn-next img").click(function(){
-  if (n < 3) n++;
+$(".btn-next").click(function(){
+  if (i < 3);
+  n++;
   aniSlide();
 });
 
