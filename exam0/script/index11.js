@@ -44,3 +44,23 @@ $(".tab-buttons span").click(function(){
     }
   });
 });
+
+/* (function(){
+  $("#gallery img:gt(0)").hide();
+  $("#galleryFolder").click(function(){
+    $("#gallery img:first").fadeOut().next().fadeIn().appendTo("#galleryFolder");
+  });
+  
+}); */
+$(".btn-prev").click(function(){
+  if (n > 0) n--;
+  aniSlide();
+});
+$(".btn-next").click(function(){
+  if (n < 2) n++;
+  aniSlide();
+});
+
+function aniSlide() {
+  $("#gallery").stop().animate({"left": (-n*500)+"px"}, 2000);
+}
