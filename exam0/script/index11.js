@@ -62,5 +62,5 @@ $(".btn-next").click(function(){
 });
 
 function aniSlide() {
-  $("#gallery").stop().animate({"left": (-n*500)+"px"}, 2000);
+  $(".service-slide").stop().animate({"left": (-n*600)+"px"}, 1000);
 }
