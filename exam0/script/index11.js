@@ -54,15 +54,19 @@ $(".tab-buttons span").click(function(){
 }); */
 var i = 0;
 $(".btn-prev").click(function(){
-  if (i > 0) n--;
-  aniSlide();
+  if (i > 0) i--;
+  aniFade();
 });
 $(".btn-next").click(function(){
   if (i < 3);
-  n++;
-  aniSlide();
+  i++;
+  aniFade();
 });
 
-function aniSlide() {
-  $(".service-slide").stop().animate({"left": (-n*600)+"px"}, 1000);
+/* function boxSlide() {
+  $(".service-slide").stop().animate({"left": (-i*600)+"px"}, 1000);
+} */
+
+function aniFade(){
+  $(".service-slide li:first").stop().fadeOut().next().fadeIn().appendTo(".service-slide");
 }
