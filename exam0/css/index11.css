@@ -68,7 +68,7 @@ ul.submenu > li {color: #000; font-weight: lighter;  }
 ul.service-slide li{width: 600x; height: 500px; position: absolute;top: 0; left: 0;}
 /* .service-slide li, #galleryFolder > .service-table {float: left;} */
 
-#gallery-button {position: absolute; top: 50%; left: 0; transform: translate(0, -10%); width:600px; height: 400px; z-index: 999; opacity: 0.3;}
+#gallery-button {position: absolute; top: 90px; left: 0; transform: translate(0, -10%); width:600px; height: 450px; z-index: 999; opacity: 0.3; line-height: 27}
 #gallery-button:hover {opacity: 1; transition: all .1s ease-in}
 .btn-prev {position: absolute; left: 0; width: 100px; height: 100px;}
 .btn-prev img {width: 40px; height: 60px;}

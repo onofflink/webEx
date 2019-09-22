@@ -52,21 +52,31 @@ $(".tab-buttons span").click(function(){
   });
   
 }); */
-var i = 0;
+/* var i = 0;
 $(".btn-prev").click(function(){
   if (i > 0) i--;
-  aniFade();
+  boxSlide();
 });
 $(".btn-next").click(function(){
   if (i < 3);
   i++;
-  aniFade();
+  boxSlide();
 });
 
-/* function boxSlide() {
-  $(".service-slide").stop().animate({"left": (-i*600)+"px"}, 1000);
+function boxSlide() {
+  $(".service-slide").stop().css("left", (-i*600)+"px");
 } */
 
-function aniFade(){
-  $(".service-slide li:first").stop().fadeOut().next().fadeIn().appendTo(".service-slide");
-}
+/* function aniFade(){
+  $(".service-slide li:gt(i)").stop().fadeOut().next().fadeIn().appendTo(".service-slide");
+} */
+
+(function(){
+  $(".service-slide li:gt(0)").hide();
+  $("#gallery-button .btn-prev").click(function(){
+    $(".service-slide li:first").stop().fadeOut(1000).next().fadeIn(1000).end().appendTo(".service-slide");
+  });
+  $("#gallery-button .btn-next").click(function(){
+    $(".service-slide li:last").prependTo(".service-slide").fadeIn().next().fadeOut();
+  });
+})();
