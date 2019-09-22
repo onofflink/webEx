@@ -76,6 +76,18 @@ $(".btn-next").click(function(){
 function ani() {
      $(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
 ```
+> fade next function
+```
+(function(){
+  $(".service-slide li:gt(0)").hide();
+  $("#gallery-button .btn-prev").click(function(){
+    $(".service-slide li:first").stop().fadeOut(1000).next().fadeIn(1000).end().appendTo(".service-slide");
+  });
+  $("#gallery-button .btn-next").click(function(){
+    $(".service-slide li:last").prependTo(".service-slide").fadeIn().next().fadeOut();
+  });
+})();
+```
 > slide updown
 ```
 var n = 0;
