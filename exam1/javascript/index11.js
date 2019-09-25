@@ -56,3 +56,15 @@ $(".tab-buttons span").click(function(){
           }
      });
 });
+
+var i = 0;
+(function aniSlide(){
+     $(".gallery-slide").delay(2000).animate({"left": "-=500px"}, 1000, function(){
+          i++;
+          if(i == 3) {
+               i = 0;
+               $(this).css("left", "0px");
+          }
+          aniSlide();
+     });
+})();

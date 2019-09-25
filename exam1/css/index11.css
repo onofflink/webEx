@@ -29,7 +29,7 @@ a {text-decoration: none; color: inherit;}
 .welcome3 {background: rgba(123,255,255,0.4)}
 .welcome4 {background: rgba(0,250,120,0.4)}
 
-.contents {width: 960px; margin: 0 auto; position: relative;}
+.contents {width: 1000px; margin: 0 auto; position: relative;}
 .tab-wrap {width: 50%; height: 500px; margin: 0 auto; position: relative; border-bottom: 3px solid #ddd; float: left;}
 .tabs {position: relative;}
 .tab-buttons { width: 100%; height: 40px;}
@@ -56,9 +56,14 @@ a {text-decoration: none; color: inherit;}
 .partner_info img {width: 80%;}
 
 
-.gallery-wrap {width: 600px; height: 500px; margin: 0 auto; position: relative; border-bottom: 3px solid #ddd; float: left;}
+.gallery-wrap {width: 500px; height: 500px; margin: 0 auto; position: relative; border-bottom: 3px solid #ddd; float: left; overflow: hidden;}
 .icon { width: 1800px; height: 500px; }
-.icons {width: 500px; height: 500px;}
-.gallery-slide {position: absolute; top: 0; left: 0;}
-.icons ul {width: 100%;}
-.icons ul img {width: 50%;}
+.gallery-slide {position: absolute; top: 0; left: 0; width: 2000px;height: 500px;}
+.gallery-slide li {float: left; text-align: center;}
+.gallery-item {width: 480px; height: 500px; margin: auto 0; padding: 30px}
+.icons {width: 500px; height: 500px; position: relative; }
+
+.icons ul {width: 100%;text-align: center;}
+.icons ul img {width: 40%; height: 50%; display: inline-block;}
+
+.icon-btn { width: 30%; background:rgba(255,127,80,0.5); position: absolute; bottom: 10%; text-align: center; padding: 20px 30px; border-radius: 10px; left:calc(50% - 70px);}
