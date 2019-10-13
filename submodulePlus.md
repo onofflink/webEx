@@ -94,3 +94,17 @@ git rm --cached filename (to remove from the staging area)
 Submodule 'web-design-license' (https://github.com/onofflink/web-design-license.git) registered for path 'web-design-license'
 Cloning into 'D:/repo/school/webtest/web-design-license'...
 Submodule path 'web-design-license': checked out '174edcd2488bdaba5ba9c0984fd92e43174ffe6e'
+
+### submodule deinit  삭제 방법
+> git submodule deinit <path_to_submodule>\
+git rm <path_to_submodule>\
+git commit-m "Removed submodule "\
+rm -rf .git/modules/<path_to_submodule>
+
+> Delete the relevant section from the .gitmodules file.\
+Stage the .gitmodules changes git add .gitmodules\
+Delete the relevant section from .git/config.\
+Run git rm --cached path_to_submodule (no trailing slash).\
+Run rm -rf .git/modules/path_to_submodule (no trailing slash).\
+Commit git commit -m "Removed submodule "\
+Delete the now untracked submodule files rm -rf path_to_submodule
