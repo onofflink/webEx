@@ -33,6 +33,30 @@
 > href="javascript: modalClose();" <br>
 > onclick="alert('sent succesfully'); self.close();"<br>
 
+> image switching
+```
+$(document).ready(function(){
+var images = [
+    "../images/banner-bg.svg",
+    "../images/banner-bg2.svg",
+    "../images/star-bg.svg",
+    "../images/banner-bg3.svg",
+];
+var imageIndex = 0;
+
+$("#previous").on("click", function(){
+    imageIndex = (imageIndex + images.length -1) % (images.length);    
+            $("[class^='banner']").attr('xlink:href', images[imageIndex]);
+});
+$("#next").on("click", function(){
+    imageIndex = (imageIndex+1) % (images.length);
+    $("[class^='banner']").attr('xlink:href', images[imageIndex]);
+});
+$("[class^='banner'").attr(images[0]);
+});
+
+```
+
 > slide buttons
 ```
 $(".bts").click(function(){
