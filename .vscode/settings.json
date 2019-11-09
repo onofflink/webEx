@@ -1,3 +1,4 @@
 {
-      "liveServer.settings.multiRootWorkspaceName": "webex"
+      "liveServer.settings.multiRootWorkspaceName": "webex",
+      "git.ignoreLimitWarning": true
 }

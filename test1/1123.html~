@@ -3,38 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
+  <link href="css/index.css" rel="stylesheet">
+  <script src="script/index.js defer="defer"></script>
+  <script src="script/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-  <div class="wrap">
-    <div class="logo">
-      <img src="images/LOGO.png" alt="">
-      <div class="navs">
-        <div class="nav">
-          <div><a href="">MENU01</a></div>
-          <ul class="clear submenu">
-            <li><a href="">submenu1</a></li>
-            <li><a href="">submenu2</a></li>
-            <li><a href="">submenu3</a></li>
-          </ul>
-        </div>
-        <div class="nav">
-          <div><a href="">MENU02</a></div>
-          <ul class="clear submenu">
-            <li><a href="">submenu1</a></li>
-            <li><a href="">submenu2</a></li>
-            <li><a href="">submenu3</a></li>
-          </ul>
-        </div>
-        <div class="nav">
-          <div><a href="">MENU03</a></div>
-          <ul class="clear submenu">
-            <li><a href="">submenu1</a></li>
-            <li><a href="">submenu2</a></li>
-            <li><a href="">submenu3</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  div.header.clear>div.logo>img[src="images/LOGO.png"]^div.navs>div.nav*3>div>a{MENU0$}^ul.submenu.clear*3>li*4>a
 </body>
 </html>

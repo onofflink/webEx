@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="css/index.css" rel="stylesheet">
+  <script src="script/index.js defer="defer"></script>
+  <script src="script/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  div.header.clear>div.logo>img[src="images/LOGO.png"]^div.navs>div.nav>div>a{MENU0$}
+</body>
+</html>
