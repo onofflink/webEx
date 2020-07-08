@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-size: 16px; text-align: left; color: #999;}
+
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit}
+.clear:both {clear: both; content: ""; display: block;}
+#main-color {background-color: #969;}
+#hover-color {color:#c99 }
+#rgb-color {color: rgba(255, 255, 255, 0.8)}
+
+.boxing {border: 1px solid red}
+.all {min-width: 1000px; min-height: 100%;}
+.wrap {width: 1200px; margin: 0 auto}
+.header {width: 1000px; height: 150px; background:rgba(0,0,0, 0.8)}
+.logo {float: left;}
+
+.navs {float: right; position: relative; z-index: 9999; width: 600px; height: 100%}
+.nav {float: left; width: 200px; text-align: center}
+.nav > div {color: white; height: 150px; line-height: 130px;}
+.nav > div:hover {background: rgba(203, 153, 153, 0.8)}
+.submenu {background: rgba(0, 0, 0, 0.4); width: 200px; display: none; }
+.submenu li {color: white; padding: 1.3rem 0;}
+.submenu li:hover {background: rgba(0,0,0, 0.5)}
+
+/* .banner {width: 1000px; height: 350px; position: relative;overflow: hidden;}
+.banner > ul {}
+.banner li {position: absolute;top: 0; left: 0; z-index: 1;} */
+
+/* .banner {width: 1000px; height: 350px;}
+.banner ul {width: 3000px;position: relative;}
+.banner > ul > li {float: left;} */
+
+/* .banner {width: 1000px; height: 350px; position: relative;  overflow: hidden;}
+.banner ul {width: 3000px; position: absolute; top: 0; left: 0;}
+.banner > ul > li {float: left;}
+.welcome {position: absolute; width: 300px; height: 140px; top:50%; left: 500px; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.4); border-radius: 30px} */
+
+.banner {width: 1000px; height: 350px; position: relative }
+.banner ul {width: 3000px;position: relative; }
+.banner > ul > li {float: left;}
+
+.welcome {position: absolute; width: 300px; height: 140px; top:50%; left: 500px; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.4); border-radius: 30px}
+
+.welcome > h2 {text-align: center; font-weight: bold; padding: 5px 0; line-height: 40px; margin-top: 20px; color: #939}
+.welcome > h2 > span {color: white;}
+.btn-slide {position: absolute;width: 150px; height: 30px; bottom: 50px; left: 500px; transform: translateX(-50%);}
+.btn-slide .btn_prev {border-right: 1px solid white; font-size: 1.5rem; padding-right: 10px;}
+.btn-slide .btn_prev:hover {color: #939}
+.btn-slide .btn_next {font-size: 1.5rem; padding-left: 10px;}
+.btn-slide .btn_next:hover {color: #939}
+
+.btn-dots {position: absolute;width: 150px; height: 30px; bottom: 50px; left: 500px; transform: translateX(-50%); }
+span.dots { color: transparent; text-shadow: 0 0 0 rgb(255, 0, 255); cursor: pointer;}
+
+.contents {width: 1000px; height: 500px;}
+.notice {width: 480px; color: black; float: left;}
+.notice h2 {text-align: center; margin: 15px 0; border-bottom: 1px solid black; width: 95%;}
+.notice tr>td {padding: 0.3rem;}
+.notice tr:nth-child(2n) {background: rgba(203, 153, 153, 0.4)}
+
+.partner {width: 480px; position: relative; float: left;}
+.partner h2 {text-align: center; margin: 17px 0 15px; border-bottom: 1px solid #999; width: 60%; margin-left: 50px}
+img {white-space: nowrap; display: block;}
+.parter_info {width: 500px; margin: 0 auto;}
+.partner_info img:nth-child(1) {width: 80%; margin-left: 20px; cursor: pointer;}
+.partner_info img:nth-child(2) {width: 60%; display: none}
+
+.icon {width: 1000px; margin: 0 auto; float: left; margin-top: 30px;}
+.icons {width:31%; height:230px;  text-align: center; float: left; margin: 0 5px 0 }
+.icons:hover {background: #939;}
+.icons > div {text-align: center; width: 100%;}
+.icons > div img{margin: 0 auto; background: rgba(0, 0, 0, 0.4)}
+.icons > p {line-height: 30px; width: 90%}
+
+footer { height: 150px; width: 1000px; background: #969; max-width: 100%; color: #fff; margin-left: 100px}
+.footer-wrap {padding: 10px 20px;}
+
+.footer ul {width: 40%; float: left;}
+.footer ul > li {margin: 10px 0 0 20px;}
+
+.footer p {float: left; line-height: 30px;}
+
+

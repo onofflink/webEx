@@ -1,0 +1,69 @@
+html, body {margin:0; padding: 0; width: 100%; height: 100%; color: #333; text-align: left; font-size: 16px;}
+ul, ol, li, div, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+.clear:after {display: block; clear: both; content: ""}
+
+
+#main {color: rgb(66,152,204); background: #893700}
+
+.wrap {width:1000px; margin: 0 auto;}
+.header {width: 100%; height: 100px; background:rgb(66,152,204)}
+.logo {float: left;}
+.navs {float: right; }
+.nav {float: left; width: 200px; height: 60px; z-index: 10;position: relative;}
+.nav > div {width: 200px; text-align: center;line-height: 100px; color: #eee;}
+.nav > div:hover {background: rgba(255,255,255,0.4); color: saddlebrown; font-weight: bolder; letter-spacing: 2px; transition: all .3s ease-in;}
+
+.submenu {width: 200px;text-align: center; z-index: 100; position: absolute; top:100px; line-height: 50px; background: rgba(0,0,0,0.4); display:none }
+.submenu > li {color: white; font-size: 1.2rem; font-weight: normal;}
+.submenu > li:hover {background: rgba(255,255,255,0.4); font-weight: bolder; transition: all .3s ease-in-out;}
+
+.banner {width: 960px; height: 400px; margin: 0 auto;position: relative; z-index: -100;/* overflow: hidden; */}
+/* .slide {width: 960px; height: 400px; position: absolute; top: 0; left: 0; margin: 0 auto; } */
+.slide > li {/* float: left; */ width: 960px; height: 400px; position: absolute; top: 0; left: 0;}
+.slide li img {width: 960px; height: 400px;}
+
+.welcome, .welcome1, .welcome2, .welcome3, .welcome4 {position: absolute; width: 400px; height: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.4); color: #fff; text-align: center; border-radius: 25px; line-height: 50px; font-size: 2rem}
+.welcome1 {background: rgba(123,154,255,0.4)}
+.welcome2 {background: rgba(255,154,255,0.4)}
+.welcome3 {background: rgba(123,255,255,0.4)}
+.welcome4 {background: rgba(0,250,120,0.4)}
+
+.contents {width: 1000px; margin: 0 auto; position: relative;}
+.tab-wrap {width: 50%; height: 500px; margin: 0 auto; position: relative; border-bottom: 3px solid #ddd; float: left;}
+.tabs {position: relative;}
+.tab-buttons { width: 100%; height: 40px;}
+.tab-buttons span {font: 400 0.9rem 'open sans', sans-serif; color: #000; background: rgba(162,245,50,0.4); cursor: pointer; display: block; width: 50%; float: left; text-align: center; height: 40px; line-height: 40px;}
+
+.tab-content {width: 100%; height: 450px; background: rgba(155,155,155,0.9); display: inline-block; color: #ddd;}
+#lamp {width: 50%; height: 3px; background:red;display: block; position: absolute; top: 41px; transition: all .3s ease-in;}
+#lamp.content2 {left: 50%; transition: all .3s ease-in}
+#lamp.content1 {left: 0; transition: all .3s ease-in}
+
+.notice {width: 100%; height: 500px; margin: 0 auto;}
+.notice h2 {text-align: center; margin: 25px auto; color: #000;}
+.table {margin: 0 15px}
+.table tr>th {text-align: center; font-weight: bold; padding-bottom: 15px; border-bottom: 1px dotted white;}
+.table tr:first-of-type {padding: 35px auto; color: red;}
+.table tr>td {padding: 50px auto;}
+.table tr>td:nth-child(2n) {margin-left: 10px; font-size: 0.8rem;}
+.table tr>td:first-of-type {margin-top: 50px;}
+.table tr:nth-child(2n) {background:rgba(137,55,0,0.3); color: #000}
+
+.partner {widows: 600px; height: 500px; position: relative;}
+.partner h2 {text-align: center; margin: 25px auto; color: #000;}
+.partner_info {text-align: center}
+.partner_info img {width: 80%;}
+
+
+.gallery-wrap {width: 500px; height: 500px; margin: 0 auto; position: relative; border-bottom: 3px solid #ddd; float: left; overflow: hidden;}
+.icon { width: 1800px; height: 500px; }
+.gallery-slide {position: absolute; top: 0; left: 0; width: 2000px;height: 500px;}
+.gallery-slide li {float: left; text-align: center;}
+.gallery-item {width: 480px; height: 500px; margin: auto 0; padding: 30px}
+.icons {width: 500px; height: 500px; position: relative; }
+
+.icons ul {width: 100%;text-align: center;}
+.icons ul img {width: 40%; height: 50%; display: inline-block;}
+
+.icon-btn { width: 30%; background:rgba(255,127,80,0.5); position: absolute; bottom: 10%; text-align: center; padding: 20px 30px; border-radius: 10px; left:calc(50% - 70px);}

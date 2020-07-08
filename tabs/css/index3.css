@@ -1,0 +1,22 @@
+body, html {margin: 0; padding: 0; width: 100%; height: 100%; text-align: left; color: #000; font-size: 16px; overflow-y: scroll;}
+
+div, ul, ol, li, h1, h2, h3, h4 {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+.clear:after {clear: both; content: ""; display: block;}
+
+.wrap {margin: 0 auto;}
+ul.tabs {width: 390px; height: 80px; margin: 0 auto; overflow: hidden; padding: 0;}
+.tabs li {float: left; width: 130px;}
+ul.tabs li a {position: relative; display: block; height: 30px;margin-top: 40px; font-size: 1.2rem; text-align: center;background: #6edeef; box-shadow: 10px 32px 25px 3px rgba(0,0,0,0.5); 
+transition: padding .2s ease, margin .2s ease;}
+.tabs li:first-child a {z-index: 3;}
+.tabs li:nth-child(2) a {z-index: 2;}
+.tabs li:last-child a {z-index: 1;}
+.tabs li a:hover {}
+
+ul.tabs li a.active {z-index: 4; color: palevioletred;}
+
+.group:before, group:after {content: ""; display: table}
+.group:after {clear: both;}
+
+#content {width: 390px; height: 200px; margin: 0 auto; overflow: hidden;}

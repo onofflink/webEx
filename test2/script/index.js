@@ -6,16 +6,23 @@ $(".nav").hover(function(){
 
 var n = 0;
 (function ani(){
-  $(".banner > ul").delay(2000).animate({"margin-left":"-=960px"}, 2000, function(){
+  $(".banner > ul").delay(2000).animate({"left":"-=960px"}, 2000, function(){
     n++;
     if(n == 5) {
-      n = 0;
-     $(".banner > ul").css("margin-left", "0px");
+     $(".banner > ul").css("left", "0px");
     }
     ani();
   });  
 })();
 
 function popUp() {
-  window.open("win.html", "win", "width=300, height=150, top=100, left=200");
+  window.open("win.html", "bakery win", "width=300, height=150, top=100, left=200, scrollbars=no, menubar=no, toolbar=no, status=no, location=no, resizable=no");
+}
+
+function modalOpen() {
+}
+
+function modalClose() {
+  $("#modal-bg").hide(0);
+  $("#modal-body").css("display", "none");
 }

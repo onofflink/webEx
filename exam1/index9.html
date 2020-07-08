@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exam1 0903</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="javascript/jquery.js"></script>
+	<script src="javascript/index.js" defer="defer"></script>
+</head>
+<body>
+	<!-- div.wrap>.header.clear>.logo>img^+div.navs>div.nav>div>a^^div.nav*2>div>a^ul.submenu>li*4>a
+	 -->
+	<div class="wrap">
+		<div class="header clear">
+			<div class="logo"><img src="images/LOGO.png" alt="#"></div>
+			<div class="navs">
+				<div class="nav">
+					<div><a href="javascript: winOpen();">여행가이드 소개</a></div>
+				</div>
+				<div class="nav">
+					<div><a href="">국내여행지</a></div>
+					<ul class="submenu">
+						<li><a href="">경기/강원</a></li>
+						<li><a href="">충청도</a></li>
+						<li><a href="">전라도</a></li>
+						<li><a href="">경상도</a></li>
+					</ul>
+				</div>
+				<div class="nav">
+					<div><a href="">해외여행지</a></div>
+					<ul class="submenu">
+						<li><a href="">동남아</a></li>
+						<li><a href="">남태평양</a></li>
+						<li><a href="">유럽</a></li>
+						<li><a href="">미주/중남미</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- div.banner>ul.slide.clear>li*4>img^^div.welcome.clear>h2
+		
+ -->		<div class="banner">
+			<ul class="slide clear">
+				<li><img src="images/images1.jpg" alt=""></li>
+				<li><img src="images/images2.jpg" alt=""></li>
+				<li><img src="images/images3.jpg" alt=""></li>
+				<li><img src="images/images4.jpg" alt=""></li>
+				<li><img src="images/images1.jpg" alt=""></li>
+			</ul>
+			<div class="welcome clear">
+				<h2>여행가이드에 오신것을 환영합니다.</h2>
+			</div>
+		</div>
+	</div>
+	<!-- div.contents.wrap>div.notice>h2+table.table>tr>th*2^tr*5>td>a^td{2019-09-}
+	
+ -->	<div class="contents wrap">
+		<div class="notice">
+			<h2>공지사항</h2>
+			<table class="table">
+				<tr>
+					<th>제목</th>
+					<th>날짜</th>
+				</tr>
+				<tr>
+					<td><a href="">다도해 풍광을 한눈에... 해남땅끝 해안누리길 여행하기</a></td>
+					<td>2019-09-1</td>
+				</tr>
+				<tr>
+					<td><a href="">국토순례 기차여행에 참가하는 학교, 청소년단체 등 ...</a></td>
+					<td>2019-09-2</td>
+				</tr>
+				<tr>
+					<td><a href="">설악산 1월초 설경 정절, 기차 여행 상품이 출되 되었....</a></td>
+					<td>2019-09-3</td>
+				</tr>
+				<tr>
+					<td><a href="">여행가이드가 추천하는 국내 겨울여행지 & 관광열차</a></td>
+					<td>2019-09-4</td>
+				</tr>
+				<tr>
+					<td><a href="">신나는 겨울여행 대관령 눈꽃축제, 고니골 빛축제로...</a></td>
+					<td>2019-09-5</td>
+				</tr>
+			</table>
+		</div>
+	
+	   <!--  div.partner.clear>h2+div.partner_info>a>img
+	
+ -->		<div class="partner clear">
+			<h2>Partner</h2>
+			<div class="partner_info"><a href="javascript: modalOpen();"><img src="images/icons/info.png" alt="no"></a></div>
+		</div>
+	    <!--  div.icon>.icons*3>img>div.btn
+ -->		<div class="icon">
+			<div class="icons"><img src="images/icons/news.png" alt="no">
+					<div class="btn">새소식</div>
+				</div>
+			<div class="icons"><img src="images/icons/travelMusic.png" alt="no">
+					<div class="btn">여행음악</div>
+				</div>
+			<div class="icons"><img src="images/icons/travelManual.png" alt="no">
+					<div class="btn">여행매뉴</div>
+				</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<footer class="footer wrap clear">
+		<div class="footer-wrap">
+			<ul class="legal">
+				<li><a href="#">법적고지</a></li>
+				<li><a href="">개인정보취급방침</a></li>
+				<li><a href="">개인정보처리방침</a></li>
+			</ul>
+			<p>
+			상호명:(주)앤윤컴퍼니<br>
+				대표자: 윤정우<br>
+				개인정보관리책임자: 김선정<br>
+				상담전화: 1588-0789<br>
+				사업장주소:서울특별시 금천구 가산동 가산디티털2
+			</p>
+		</div>
+	</footer>
+	<div id="modal-bg"></div>
+	<div id="modla-wrap">
+		<div id="modal-body"><a href="javascript: modalClose();"><img src="" alt=""></a></div>
+	</div>
+</body>
+</html>
