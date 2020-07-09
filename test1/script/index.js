@@ -32,11 +32,3 @@ function modalClose() {
   $("#modal-bg").hide();
   $("#modal-wrap").css("display", "none");
 }
-
-$(".partner img").click(function(){
-  winOpen();
-});
-
-function winOpen() {
-  window.open("win.html", "win", "width=500, height=500, top=100, left=100, scrollbars=no, menubar=no, toolbar=no, resizable=no, status=no, location=no");
-}
