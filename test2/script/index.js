@@ -1,7 +1,7 @@
 $(".nav").hover(function(){
-  $(".submenu", $(this)).stop().slideDown();
+  $("ul", $(this)).stop().slideDown();
 }, function() {
-  $(".submenu", $(this)).stop().slideUp();
+  $("ul", $(this)).stop().slideUp();
 });
 
 var n = 0;
