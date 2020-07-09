@@ -18,14 +18,15 @@ a {text-decoration: none; color: inherit;}
 
 #modal-content {width: 400px; height: 200px; margin: auto; position: absolute; top: 50%; transform: translate(-50%, -90%); left: 50%; text-align: center;}
 
-.modal-table {width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 30px;}
+.modal-table {width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 30px; border: 1px dashed grey;}
 .modal-heading {font-size: 1rem; height: 40px; width: 100%; letter-spacing: 0.4rem;}
 .modal-heading u {text-decoration: none; border-bottom: 1px dashed green; padding: 5px 0;}
 .modal-table tr {padding: 2rem; border-bottom: 2px solid white;}
+.modal-table tr:last-child {border: 1px black;}
 .modal-table tr>td {padding: 1.3rem;}
 .modal-table tr>td:nth-child(2n) {background: rgba(0, 150, 136, 0.3);text-align: left;}
 .modal-table tr>td:nth-child(2n+1) {width: 50px;}
-.modal-button {padding: 1rem; font-size: 2rem; margin: 0 auto; display: block; background: rgba(151, 54, 54, 0.5); border: none; outline: none; transform: translate(40%, -40%);}
+.modal-button {padding: 1rem; font-size: 2rem; margin: 0 auto; display: block; background: rgba(151, 54, 54, 0.5); border: none; outline: none; transform: translate(0, -40%);}
 .modal-button:hover {background: rgba(0,150,136, 0.3);}
 
 .wrap {width: 960px; height: 500px; position: relative;}
