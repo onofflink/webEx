@@ -68,3 +68,7 @@ table tr>td {padding: 5px 0; text-align: right; padding: 0 0 5px 0;}
 .gallery-wrap {float: left; width: 500px; border: 2px solid green; cursor: pointer; background: rgba(100, 149, 20, 0.2); height: 90px;}
 .gallery-wrap .imgs {text-align: center;}
 .gallery .imgs img {width: 380%;}
+
+footer {width: 1000px; height:100px;}
+.footer {background:rgba(0,128,0, 0.3);}
+.foter .logo {float: left;padding: 20px;}
