@@ -42,7 +42,7 @@ a {text-decoration: none; color: inherit}
 .gallery-wrap .imgs {text-align: center; margin-left: 30px;}
 .gallery-wrap .imgs img {width: 100px; float: left; margin: 30px 5px; }
 
-/* .yscroll {width: 1500px; height: 450px; overflow: scroll;} */
+.yscroll {width: 1200px; height: 450px; overflow: hidden;}
 .tab-wrap {width: 900px; margin: 0 auto; padding-top: 20px;}
 ul.tabs {width: 900px; height: 150px; margin: 0 auto; overflow: hidden; padding: 0; margin-bottom: -50px}
 ul.tabs li {float: left; width: 33.33%;}
