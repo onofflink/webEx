@@ -141,3 +141,25 @@ a {
      background: rgba(0,128,0, 0.6);
 }
 
+.banner {
+     width: 1000px;
+     height: 300px;
+     margin: 0 auto;
+     position: relative;
+     overflow: hidden;
+}
+.slide {
+     width: 4000px;
+     height: 300px;
+     position: absolute;
+     
+}
+
+.slide li {
+     float: left;
+}
+
+.slide li img {
+     width: 1000px;
+     height: 300px;
+}
