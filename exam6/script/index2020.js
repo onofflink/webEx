@@ -1,5 +1,5 @@
 $(".navs").hover(function(){
-     $(".submneu", $(this)).stop().slideDown();
+     $(".submenu", $(this)).stop().slideDown();
 }, function(){
      $(".submenu", $(this)).stop().slideUp();
 });
