@@ -122,19 +122,21 @@ a {
      top: 100px;
      right: 0;
      display: none;
+     
 }
 
 .submenu ul {
      width: 150px;
      float: right;
      text-align: center;
+     
 }
 
 .submenu li {
      width: 150px;
      height: 50px;
      line-height: 50px;
-     float: right;
+     float: right;z-index: 100;
 }
 
 .submenu li:hover {
@@ -147,12 +149,12 @@ a {
      margin: 0 auto;
      position: relative;
      overflow: hidden;
+     
 }
 .slide {
      width: 4000px;
      height: 300px;
-     position: absolute;
-     
+     position: absolute;z-index: -300;
 }
 
 .slide li {
