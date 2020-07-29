@@ -176,9 +176,13 @@ a {
 }
 .notice h2 {
      text-align: center;
-
+     padding: 10px 0;
 }
-
+ṫable {
+     color:#000;
+     font-size: 0.8rem;
+     border-collapse: collapse;
+}
 
 .partner {
      width: 50%;
