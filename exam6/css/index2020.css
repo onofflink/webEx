@@ -165,3 +165,52 @@ a {
      width: 1000px;
      height: 300px;
 }
+
+.contents {
+     width: 1000px;
+     height: 100%;
+}
+.notice {
+     width: 49%;
+     float: left;
+}
+.notice h2 {
+     text-align: center;
+
+}
+
+
+.partner {
+     width: 50%;
+     float: right;
+     margin-left: 10px;
+     position: relative;
+}
+.partner_info {
+     position: absolute;
+     width: 360px;
+     text-align: center;
+}
+.partner_info img {
+     width: 100px;
+     float: left;
+}
+.slide-btn {
+     width: 100%;
+     text-align: center;
+     font-size: 3rem;
+     color: cornflowerblue;
+}
+
+.yscroll {
+     width: 1000px;
+     height: 450px;
+}
+.ul.tabs {
+     width: 960px;
+}
+
+footer {
+     width: 1000px;
+     position: relative;
+}
