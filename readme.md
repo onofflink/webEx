@@ -46,6 +46,19 @@ https://gist.github.com/coco-napky/404220405435b3d0373e37ec43e54a23
 `emmet for normal header`
 > .wrap>.header>.logo>img^.navs>.nav*3>div{MENU$$}+ul.submenu>li*3>a{submenu$}
 
+`for contents`
+```
+div.contents.wrap.clear>.notice>h2{공지사항}+table.table>tr>td>a>u{lorem}^^^tr*3>td.td{lorem} 
+
+div.partner>.partner_info>a[href="javascript: popUp();"]>img[src="..exam5/images/icon$"]*3^^div.slide-btn>span.bts{●}*3 
+
+div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]^^div#content>p#news$*3
+
+.clear+footer.footer.wrap>.logo>img^.footer-wrap>.legal>li*3^.copyright+div.family>li*3>a 
+
+```
+
+
 `Jquery`
 href="javascript: modalClose();" onclick="alert('sent successfully'); self.close();"
 
