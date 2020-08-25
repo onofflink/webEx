@@ -58,6 +58,12 @@ div.yscroll>div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]^^div#content>p#new
 
 ```
 
+`partner gallery and tabs`
+```
+div.gallery>.gallery-wrap>ul.imgs>a>li>img{../images/images($).jpg}
+
+div.tab-wrap>ul.tabs.group>li*3>a[href="#/news$"]^^div#content>p#news$*3 
+```
 
 `Jquery`
 href="javascript: modalClose();" onclick="alert('sent successfully'); self.close();"
