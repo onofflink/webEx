@@ -47,7 +47,10 @@ https://gist.github.com/coco-napky/404220405435b3d0373e37ec43e54a23
 > .wrap>.header>.logo>img^.navs>.nav*3>div{MENU$$}+ul.submenu>li*3>a{submenu$}
 
 `Jquery`
+
+```
 href="javascript: modalClose();" onclick="alert('sent successfully'); self.close();"
+```
 
 `slide button`
 
@@ -78,6 +81,7 @@ $(".tab-buttons span").click(function(){
           }
      });
 });
+```
 
 `fade banner`
 
@@ -92,6 +96,7 @@ var depth = 20;
           ani();
      });
 })();
+```
 
 `prev next button`
 
@@ -108,6 +113,7 @@ $(".btn-prev").click(function(){
 function ani(){
      $(".slide").stop().animate({"left": (-n*1000)+"px"}, 2000);
 }
+```
 
 `slide updown`
 
@@ -127,7 +133,6 @@ var n = 0;
 
 `normal slide banner`
 
-
 ```
 var n = 0;
 (function ani(){
@@ -140,6 +145,7 @@ var n = 0;
           ani();
      });
 })();
+
 ```
 
 `side menu`
@@ -151,4 +157,5 @@ $(".nav").hover(function(){
 }, function(){
      $("ul", $(this)).stop().slideUp();
 });
+
 ```
