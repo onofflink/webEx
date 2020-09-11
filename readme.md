@@ -50,6 +50,7 @@ https://gist.github.com/coco-napky/404220405435b3d0373e37ec43e54a23
 href="javascript: modalClose();" onclick="alert('sent successfully'); self.close();"
 
 `slide button`
+
 ```
 var n = 0;
 $(".bts").click(function(){
@@ -59,7 +60,9 @@ $(".bts").click(function(){
      $(".slide).stop().animate({"left": (-n*1000)+"px"}, 2000);
 });
 ```
+
 `tab jquery`
+
 ```
 var Content = $(".content > div");
 $(Content).hide();
@@ -77,6 +80,7 @@ $(".tab-buttons span").click(function(){
 });
 
 `fade banner`
+
 ```
 var n = 0;
 var depth = 20;
@@ -90,6 +94,7 @@ var depth = 20;
 })();
 
 `prev next button`
+
 ```
 $(".btn-next").click(function(){
      if(n<3) n++;
@@ -105,6 +110,7 @@ function ani(){
 }
 
 `slide updown`
+
 ```
 var n = 0;
 (function ani(){
@@ -117,8 +123,12 @@ var n = 0;
           ani();
      });
 })();
+```
 
 `normal slide banner`
+
+
+```
 var n = 0;
 (function ani(){
      $(".slide").delay(2000).animate({"left": "-=1000px"}, 2000, function(){
@@ -130,11 +140,15 @@ var n = 0;
           ani();
      });
 })();
+```
 
 `side menu`
+
+```
 $(".nav").hover(function(){
      $("ul", $(this)).stop().slideDown();
      $(".navs", $(this)).css("z-index", "9999");
 }, function(){
      $("ul", $(this)).stop().slideUp();
 });
+```
